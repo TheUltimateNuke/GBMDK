@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Global Manager
+  - Body (High Priority)
+  - Body (Medium Priority)
+  - Body (Low Priority)
+  - Body (Harmful)
+  - Prop (High Priority)
+  - Prop (Medium Priority)
+  - Prop (Low Priority)
+  - Prop (Harmful)
+  - Status Bar Canvas
+  - Camera Target (Track)
+  - Camera Target (Dont Track)
+  - Can Climb
+  - Cant Climb
+  - Helper (Grab Target)
+  - Helper (Kill Volume)
+  - Grab Target
+  - Actor
+  - Game Manager
+  - Helper (Spawn Point)
+  - Helper (Despawn Volume)
+  - Manager (Rewired)
+  - Target
+  - Helper (Race Finishline)
+  - Music
+  - Input Manager
+  - Voice (Laugh)
+  - Voice (KO)
+  - Voice (Death)
+  - Camera Target
+  - Helper (Falling Kill Volume)
+  - Voice (Break)
+  - Debug Manager
+  - UI
+  - Helper (Game Manager)
+  - 506c61796572
+  - Glass
+  - DynamicWater
+  - DynamicWaterObstruction
+  - DynamicWaterObstructionInverted
+  - DynamicWaterPlaneCollider
+  - Helper (Spawn Group 1)
+  - Helper (Spawn Group 2)
+  - Helper (Spawn Group 3)
+  - Helper (Spawn Group 4)
+  - Helper (Spawn Group 5)
+  - Pause Menu
+  - Throw Point
+  - TrackingCanvas
+  - Water
+  - Helper (AI Spawn)
+  - Ignore Impacts
+  - Body (Super Harmful)
+  - WheelPart
+  - FallenWheelPart
+  - FallenPierPart
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - Railing
+  - Actor
+  - Ball
+  - Ignore Self
+  - Ball Only
+  - Force Volume
+  - Glass
+  - Glass Only
+  - Camera
+  - Ignore Camera
+  - Ignore Glass
+  - Ignore Self & Raycast
+  - Ignore All
+  - Environment
+  - Ignore Actors
+  - Actor Only
+  - UILoading
+  - UIAdditional
+  - UnseenFaces
+  - DefaultNonActor
+  - Kill Volume
+  - IgnoreAllTrigger
+  - Tentacle
+  - Tentacle Sucker
+  - DynamicWaterPlaneCollider
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

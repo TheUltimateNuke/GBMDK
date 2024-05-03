@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073ad7819356393b86a11f2f270f3390, type: 3}
+  m_Name: MapTest-Data
+  m_EditorClassIdentifier: 
+  _sceneRef:
+    m_AssetGUID: 3165812b1c2de9543b8dc565c870d29c
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _spawnList: {fileID: 0}
+  _spawnPattern: {fileID: 0}
+  _audioConfig: {fileID: 0}
+  _wavesData: {fileID: 0}
+  _rumbleData: {fileID: 0}
+  _footballData: {fileID: 0}
+  _overridesRef:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

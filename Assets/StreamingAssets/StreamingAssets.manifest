@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 2474025777
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: maptest.bundle
+      Dependencies: {}
