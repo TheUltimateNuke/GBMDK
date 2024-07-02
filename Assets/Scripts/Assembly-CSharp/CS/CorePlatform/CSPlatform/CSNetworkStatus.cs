@@ -17,5 +17,10 @@ namespace CS.CorePlatform.CSPlatform
 		private void OnConnectionChange(bool obj)
 		{
 		}
+
+		public string DebugDataInfo()
+		{
+			return null;
+		}
 	}
 }

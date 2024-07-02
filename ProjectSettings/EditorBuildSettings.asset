@@ -7,6 +7,6 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Stages/_Setup/_bootScene.unity
-    guid: cb6ab7cefa254314dab342709421451e
+    guid: 7beaa04e580bf6e458877446b4cbddc8
   m_configObjects:
-    com.unity.addressableassets: {fileID: 11400000, guid: b5f29b2c87986784fb4ccea8eeef8582, type: 2}
+    com.unity.addressableassets: {fileID: 11400000, guid: 3beeeba7ca0bda148a9eed7e3463b052, type: 2}

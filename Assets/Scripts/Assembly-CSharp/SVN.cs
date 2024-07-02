@@ -30,8 +30,8 @@ public static class SVN
 
 		public readonly string lastChangedDate;
 
-		public Info(string svnInfoOutput):this()
-		{
+		public Info(string svnInfoOutput) : this()
+        {
 		}
 	}
 

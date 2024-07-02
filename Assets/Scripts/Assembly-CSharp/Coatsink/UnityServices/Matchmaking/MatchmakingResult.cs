@@ -14,8 +14,8 @@ namespace Coatsink.UnityServices.Matchmaking
 
 		public MatchmakingTicketModel originalTicket;
 
-		public MatchmakingResult(MatchmakingState state, string message):this()
-		{
+		public MatchmakingResult(MatchmakingState state, string message) : this()
+        {
 		}
 
 		public bool IsSuccess()

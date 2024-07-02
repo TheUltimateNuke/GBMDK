@@ -12,8 +12,8 @@ namespace GB.VRGUI
 
 			private SunShafts sunShafts;
 
-			public CameraEffects(Camera mainCam):this()
-			{
+			public CameraEffects(Camera mainCam) : this()
+            {
 			}
 
 			public void SetCameraEffectsActive(bool active)

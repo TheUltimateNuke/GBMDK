@@ -1,9 +1,12 @@
 using System;
+using System.Collections.Generic;
 
 namespace GB.Gamemodes
 {
 	public static class GameModeHelpers
 	{
+		private static List<GameModeEnum> gameModeOrder;
+
 		public static GameModeEnum Next(this GameModeEnum current)
 		{
 			return default(GameModeEnum);

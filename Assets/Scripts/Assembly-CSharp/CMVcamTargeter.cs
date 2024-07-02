@@ -50,9 +50,7 @@ public class CMVcamTargeter : MonoBehaviour
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
 		public _003CScaleRemotePlayers_003Ed__54(int _003C_003E1__state)
@@ -79,12 +77,12 @@ public class CMVcamTargeter : MonoBehaviour
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
@@ -127,8 +125,8 @@ public class CMVcamTargeter : MonoBehaviour
 	[Tooltip("Height Offset the camera will attempt to maintain from the target when orbiting.")]
 	private int OrbitHeight;
 
-	[Tooltip("Minimum orbit velocity, is doubled when pressed in the same direction twice.")]
 	[HideInInspector]
+	[Tooltip("Minimum orbit velocity, is doubled when pressed in the same direction twice.")]
 	public float OrbitVel;
 
 	private float _CurrentOrbitVel;

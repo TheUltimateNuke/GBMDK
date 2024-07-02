@@ -33,6 +33,12 @@ namespace GB.Data.Loading
 		private FootballData _footballData;
 
 		[SerializeField]
+		private CaptureTheFlagData _captureTheFlagData;
+
+		[SerializeField]
+		private KingOfTheHillData _kingOfTheHillData;
+
+		[SerializeField]
 		private AssetReference _overridesRef;
 
 		private IDataCache _overrideData;
@@ -54,6 +60,12 @@ namespace GB.Data.Loading
 		public RumbleData RumbleData => null;
 
 		public FootballData FootballData => null;
+
+		public CaptureTheFlagData CaptureTheFlagData => null;
+
+		public KingOfTheHillData KingOfTheHillData => null;
+
+		public AssetReference OverridesRef => null;
 
 		public IDataCache Overrides => null;
 

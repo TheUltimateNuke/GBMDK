@@ -21,6 +21,8 @@ namespace GB.Gamemodes
 		[Description("GAMEMODE_NAME_GANG_MELEE")]
 		GangMelee = 0x40,
 		[Description("GAMEMODE_NAME_RUMBLE")]
-		Rumble = 0x80
+		Rumble = 0x80,
+		[Description("GAMEMODE_NAME_BIGFIGHT")]
+		BigFight = 0x100
 	}
 }

@@ -26,8 +26,8 @@ namespace GB.Game.Tool
 		[SerializeField]
 		private bool _stateEffected;
 
-		[SerializeField]
 		[EnumUtils.EnumFlags]
+		[SerializeField]
 		private Actor.ActorState _needsState;
 
 		[SerializeField]

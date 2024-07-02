@@ -8,7 +8,12 @@ public class TentacleMechanics : MonoBehaviour
 
 	public float maxStartDelay;
 
+	[Tooltip("Reduce Round Time calculation by this amount in seconds")]
+	public float roundTimeAdjustment;
+
 	private float roundTime;
+
+	private float adjustedRountTime;
 
 	public Vector3 disabledPosition;
 
@@ -33,6 +38,12 @@ public class TentacleMechanics : MonoBehaviour
 
 	public float maxAngularVelocityStep;
 
+	public bool AutoCalculateTimes;
+
+	public float ManualIdleTimer;
+
+	public float ManualAttackTimer;
+
 	private float stageTimer;
 
 	private float[] tentacleTimes;
@@ -44,6 +55,13 @@ public class TentacleMechanics : MonoBehaviour
 	private float step;
 
 	private TentacleController tmpTentacle;
+
+	private float IdleTime;
+
+	private float AttackTime;
+
+	[Header("Debug")]
+	public bool DebugPositions;
 
 	private void Start()
 	{
@@ -58,6 +76,14 @@ public class TentacleMechanics : MonoBehaviour
 	}
 
 	private void Update()
+	{
+	}
+
+	private void OnDrawGizmosSelected()
+	{
+	}
+
+	private static void DrawLocationCross(Vector3 location, Color color, float size = 1f)
 	{
 	}
 }

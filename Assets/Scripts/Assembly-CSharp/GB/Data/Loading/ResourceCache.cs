@@ -25,6 +25,8 @@ namespace GB.Data.Loading
 
 		private Action OnLoadedFinished;
 
+		public AssetReference AssetsCache => null;
+
 		public IDataCache Cache => null;
 
 		public int Count => 0;

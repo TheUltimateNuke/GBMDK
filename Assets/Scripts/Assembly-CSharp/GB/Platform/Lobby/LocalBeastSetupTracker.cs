@@ -12,6 +12,8 @@ namespace GB.Platform.Lobby
 
 		private LocalPlayerInfomationCache[] PlayerInfo;
 
+		private bool _drawInspector;
+
 		public int MaxTeam
 		{
 			get

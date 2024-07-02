@@ -36,9 +36,7 @@ public class SignBulbBreaker : MonoBehaviour
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
 		public _003CBreakOuterBulbRoutine_003Ed__16(int _003C_003E1__state)
@@ -65,12 +63,12 @@ public class SignBulbBreaker : MonoBehaviour
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
@@ -105,9 +103,7 @@ public class SignBulbBreaker : MonoBehaviour
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
 		public _003CBreakInnerBulbRoutine_003Ed__17(int _003C_003E1__state)
@@ -134,12 +130,12 @@ public class SignBulbBreaker : MonoBehaviour
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }

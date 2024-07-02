@@ -8,6 +8,8 @@ namespace GB.Platform.Lobby
 	{
 		private int[] _lockedBeasts;
 
+		private bool _drawInspector;
+
 		private void Awake()
 		{
 		}
@@ -20,7 +22,7 @@ namespace GB.Platform.Lobby
 		{
 		}
 
-		private void LobbyPermissionChanged(BaseUserInfo arg1, int arg2, bool arg3, OnlineID id)
+		private void LobbyPermissionChanged(BaseUserInfo user, int controllerId, bool arg3, OnlineID id)
 		{
 		}
 

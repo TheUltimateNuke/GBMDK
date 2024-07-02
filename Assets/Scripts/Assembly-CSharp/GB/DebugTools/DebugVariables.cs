@@ -35,8 +35,6 @@ namespace GB.DebugTools
 
 		public static HashSet<string> checkedPaths;
 
-		public static HashSet<UnityEngine.Object> checkedObjects;
-
 		public static Dictionary<IDebugVariable, TextMeshProUGUI> variables;
 
 		public static Dictionary<string, RectTransform> groupParents;
@@ -50,24 +48,11 @@ namespace GB.DebugTools
 		{
 		}
 
-		[RuntimeInitializeOnLoadMethod]
-		private static void Init()
-		{
-		}
-
 		private void Awake()
 		{
 		}
 
 		private void Update()
-		{
-		}
-
-		private static void GatherAllReferenceTypes()
-		{
-		}
-
-		private void GatherAllReferenceVariables()
 		{
 		}
 

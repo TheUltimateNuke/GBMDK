@@ -37,9 +37,7 @@ public class RandomBreak : MonoBehaviour
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
 		public _003CBreakApplyForce_003Ed__22(int _003C_003E1__state)
@@ -66,12 +64,12 @@ public class RandomBreak : MonoBehaviour
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
@@ -106,9 +104,7 @@ public class RandomBreak : MonoBehaviour
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
 		public _003CBreakRoutine_003Ed__23(int _003C_003E1__state)
@@ -135,12 +131,12 @@ public class RandomBreak : MonoBehaviour
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }

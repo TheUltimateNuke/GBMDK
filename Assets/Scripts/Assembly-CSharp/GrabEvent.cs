@@ -36,9 +36,7 @@ public class GrabEvent : MonoBehaviour
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
 		public _003CGrabCheck_003Ed__12(int _003C_003E1__state)
@@ -65,12 +63,12 @@ public class GrabEvent : MonoBehaviour
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }

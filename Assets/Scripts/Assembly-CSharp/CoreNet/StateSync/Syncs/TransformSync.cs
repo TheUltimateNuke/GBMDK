@@ -118,5 +118,10 @@ namespace CoreNet.StateSync.Syncs
 		public virtual void BlitzBuffer()
 		{
 		}
+
+		public TransformState[] GetStateBuffer()
+		{
+			return null;
+		}
 	}
 }

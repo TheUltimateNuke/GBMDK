@@ -19,8 +19,8 @@ namespace CS.CorePlatform.CSPlatform
 
 			public uint size;
 
-			public MessageQueue(UserInfo target, byte[] message, uint size):this()
-			{
+			public MessageQueue(UserInfo target, byte[] message, uint size) : this()
+            {
 			}
 		}
 
@@ -30,17 +30,25 @@ namespace CS.CorePlatform.CSPlatform
 
 		public static string JOINED_FOR_NONE_INITIAL_USERID;
 
+		private const Debug.Level MESSAGE_LOG_LEVEL_INFO = Debug.Level.INFO | Debug.Level.SPAM;
+
+		private const Debug.Level MESSAGE_LOG_LEVEL_WARN = Debug.Level.WARNING | Debug.Level.SPAM;
+
+		private const Debug.Level MESSAGE_LOG_LEVEL_ERRO = Debug.Level.ERROR | Debug.Level.SPAM;
+
+		private const Debug.Level MESSAGE_LOG_LEVEL_ERRO_RETRYFAIL = Debug.Level.ERROR | Debug.Level.DEEP;
+
 		private int _connectionTrys;
 
 		private int _sendTry;
 
 		private bool _fullyJoined;
 
-		private ITaskResult _currentTask;
+		private int skipCounter;
 
-		private ILobby _currentLobby;
+		private int eventCounter;
 
-		private LobbyTransporter _lobbyMessages;
+		private List<UserInfo> lobbyStatusCache;
 
 		private List<BaseUserInfo> _connectedUsers;
 
@@ -60,23 +68,25 @@ namespace CS.CorePlatform.CSPlatform
 
 		private CSUserEvents _userEvents;
 
-		private const Debug.Level MESSAGE_LOG_LEVEL_INFO = Debug.Level.INFO | Debug.Level.SPAM;
+		private ITaskResult _currentTask;
 
-		private const Debug.Level MESSAGE_LOG_LEVEL_WARN = Debug.Level.WARNING | Debug.Level.SPAM;
+		private ILobby _currentLobby;
 
-		private const Debug.Level MESSAGE_LOG_LEVEL_ERRO = Debug.Level.ERROR | Debug.Level.SPAM;
-
-		private const Debug.Level MESSAGE_LOG_LEVEL_ERRO_RETRYFAIL = Debug.Level.ERROR | Debug.Level.DEEP;
+		private LobbyTransporter _lobbyMessages;
 
 		private object _sendLocker;
 
 		private Queue<MessageQueue> _waitingMessages;
 
-		private int skipCounter;
+		public ILobbyID CurrentLobbyID => null;
 
-		private int eventCounter;
+		public bool IsInLobby => false;
 
-		private List<UserInfo> lobbyStatusCache;
+		public bool IsLobbyHost => false;
+
+		public bool IsJoiningLobby => false;
+
+		public int TotalInLobby => 0;
 
 		private ILobby CurrentLobby
 		{
@@ -89,15 +99,13 @@ namespace CS.CorePlatform.CSPlatform
 			}
 		}
 
-		public ILobbyID CurrentLobbyID => null;
+		public CSOnline(CSUserEvents userEvents)
+		{
+		}
 
-		public bool IsInLobby => false;
-
-		public bool IsLobbyHost => false;
-
-		public bool IsJoiningLobby => false;
-
-		public int TotalInLobby => 0;
+		~CSOnline()
+		{
+		}
 
 		private void CheckFullyJoined()
 		{
@@ -123,14 +131,6 @@ namespace CS.CorePlatform.CSPlatform
 		{
 		}
 
-		public CSOnline(CSUserEvents userEvents)
-		{
-		}
-
-		~CSOnline()
-		{
-		}
-
 		public void CheckForStartupInvite()
 		{
 		}
@@ -139,7 +139,7 @@ namespace CS.CorePlatform.CSPlatform
 		{
 		}
 
-		private void OnInviteAccepted(LocalID arg1, ILobbyID arg2)
+		private void OnInviteAccepted(LocalID wantedUser, ILobbyID lobbyId)
 		{
 		}
 

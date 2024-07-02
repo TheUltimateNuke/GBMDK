@@ -109,9 +109,7 @@ namespace GB.Game
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CEndRoundOrGame_003Ed__86(int _003C_003E1__state)
@@ -138,12 +136,12 @@ namespace GB.Game
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -176,9 +174,7 @@ namespace GB.Game
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CCloseLocalServer_003Ed__89(int _003C_003E1__state)
@@ -205,12 +201,12 @@ namespace GB.Game
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -241,9 +237,7 @@ namespace GB.Game
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CCloseGame_003Ed__90(int _003C_003E1__state)
@@ -270,12 +264,12 @@ namespace GB.Game
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -308,9 +302,7 @@ namespace GB.Game
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CSpawnRoutine_003Ed__96(int _003C_003E1__state)
@@ -337,12 +329,12 @@ namespace GB.Game
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -375,9 +367,7 @@ namespace GB.Game
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CPreStartCountdown_003Ed__98(int _003C_003E1__state)
@@ -404,12 +394,12 @@ namespace GB.Game
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -437,7 +427,7 @@ namespace GB.Game
 
 		private const float kJoinTimeout = 60f;
 
-		private const float kWirelessJoinTimeout = 30f;
+		private const float kWirelessJoinTimeout = 60f;
 
 		private GameType internalGameType;
 

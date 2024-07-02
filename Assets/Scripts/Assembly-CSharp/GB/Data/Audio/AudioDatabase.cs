@@ -15,8 +15,8 @@ namespace GB.Data.Audio
 			[SerializeField]
 			public AudioDatabaseItem audio;
 
-			public Element(string keyValue, AudioDatabaseItem audioValue):this()
-			{
+			public Element(string keyValue, AudioDatabaseItem audioValue) : this()
+            {
 			}
 		}
 

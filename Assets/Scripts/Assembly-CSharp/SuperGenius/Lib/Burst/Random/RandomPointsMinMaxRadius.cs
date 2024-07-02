@@ -7,6 +7,7 @@ using Unity.Mathematics;
 
 namespace SuperGenius.Lib.Burst.Random
 {
+	[StructLayout(LayoutKind.Sequential, Size = 1)]
 	[BurstCompile]
 	public struct RandomPointsMinMaxRadius
 	{
@@ -21,8 +22,8 @@ namespace SuperGenius.Lib.Burst.Random
 
 			public int Z;
 
-			public CellLocation(int index, int x, int y, int z):this()
-			{
+			public CellLocation(int index, int x, int y, int z) : this()
+            {
 			}
 		}
 

@@ -23,8 +23,8 @@ namespace GB.Game
 
 			public int Gang { get; set; }
 
-			public AIBeastData(GameObject ob, NetBeast beastRef, Actor act, int Ga):this()
-			{
+			public AIBeastData(GameObject ob, NetBeast beastRef, Actor act, int Ga) : this()
+            {
 			}
 		}
 
@@ -55,9 +55,7 @@ namespace GB.Game
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CPreGameCountdown_003Ed__19(int _003C_003E1__state)
@@ -84,12 +82,12 @@ namespace GB.Game
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -124,9 +122,7 @@ namespace GB.Game
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CRunWaveLogic_003Ed__28(int _003C_003E1__state)
@@ -153,12 +149,12 @@ namespace GB.Game
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -201,9 +197,7 @@ namespace GB.Game
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CRespawnPlayers_003Ed__29(int _003C_003E1__state)
@@ -230,12 +224,12 @@ namespace GB.Game
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -286,9 +280,7 @@ namespace GB.Game
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CSpawnWaveAI_003Ed__30(int _003C_003E1__state)
@@ -315,12 +307,12 @@ namespace GB.Game
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }

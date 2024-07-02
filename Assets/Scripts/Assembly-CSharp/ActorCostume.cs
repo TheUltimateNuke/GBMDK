@@ -7,6 +7,7 @@ using Costumes;
 using Femur;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 [RequireComponent(typeof(Actor))]
 public class ActorCostume : NetworkBehaviour
@@ -48,7 +49,291 @@ public class ActorCostume : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003COnCostumeFinishedSetting_003Ed__36 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CSetCostume_003Ed__39 : IEnumerator<object>, IEnumerator, IDisposable
+	{
+		private int _003C_003E1__state;
+
+		private object _003C_003E2__current;
+
+		public ActorCostume _003C_003E4__this;
+
+		public CostumeSaveEntry costumeSaveEntry;
+
+		public RigCombine rigCombine;
+
+		public RemoveUnseenMesh removeUnseenMesh;
+
+		private object System_002ECollections_002EGeneric_002EIEnumerator_003CSystem_002EObject_003E_002ECurrent
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+		private object System_002ECollections_002EIEnumerator_002ECurrent
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+        public object Current => throw new NotImplementedException();
+
+        [DebuggerHidden]
+		public _003CSetCostume_003Ed__39(int _003C_003E1__state)
+		{
+		}
+
+		[DebuggerHidden]
+		private void System_002EIDisposable_002EDispose()
+		{
+		}
+
+		private bool MoveNext()
+		{
+			return false;
+		}
+
+		[DebuggerHidden]
+		private void System_002ECollections_002EIEnumerator_002EReset()
+		{
+		}
+
+        bool IEnumerator.MoveNext()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Reset()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+	[CompilerGenerated]
+	private sealed class _003CApplyCostumePreset_003Ed__41 : IEnumerator<object>, IEnumerator, IDisposable
+	{
+		private int _003C_003E1__state;
+
+		private object _003C_003E2__current;
+
+		public ActorCostume _003C_003E4__this;
+
+		public string costumePresetName;
+
+		private object System_002ECollections_002EGeneric_002EIEnumerator_003CSystem_002EObject_003E_002ECurrent
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+		private object System_002ECollections_002EIEnumerator_002ECurrent
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+        public object Current => throw new NotImplementedException();
+
+        [DebuggerHidden]
+		public _003CApplyCostumePreset_003Ed__41(int _003C_003E1__state)
+		{
+		}
+
+		[DebuggerHidden]
+		private void System_002EIDisposable_002EDispose()
+		{
+		}
+
+		private bool MoveNext()
+		{
+			return false;
+		}
+
+		[DebuggerHidden]
+		private void System_002ECollections_002EIEnumerator_002EReset()
+		{
+		}
+
+        bool IEnumerator.MoveNext()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Reset()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+	[CompilerGenerated]
+	private sealed class _003CUpdateCostume_003Ed__49 : IEnumerator<object>, IEnumerator, IDisposable
+	{
+		private int _003C_003E1__state;
+
+		private object _003C_003E2__current;
+
+		public ActorCostume _003C_003E4__this;
+
+		public CostumeSaveEntry costumeSaveEntry;
+
+		public RigCombine rigCombine;
+
+		public RemoveUnseenMesh removeUnseenMesh;
+
+		private List<CostumeObject> _003CnewCostumeObjects_003E5__2;
+
+		private List<CostumeSaveEntry.CostumeSaveItem> _003CnewCostumeSaveItems_003E5__3;
+
+		private object System_002ECollections_002EGeneric_002EIEnumerator_003CSystem_002EObject_003E_002ECurrent
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+		private object System_002ECollections_002EIEnumerator_002ECurrent
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+        public object Current => throw new NotImplementedException();
+
+        [DebuggerHidden]
+		public _003CUpdateCostume_003Ed__49(int _003C_003E1__state)
+		{
+		}
+
+		[DebuggerHidden]
+		private void System_002EIDisposable_002EDispose()
+		{
+		}
+
+		private bool MoveNext()
+		{
+			return false;
+		}
+
+		[DebuggerHidden]
+		private void System_002ECollections_002EIEnumerator_002EReset()
+		{
+		}
+
+        bool IEnumerator.MoveNext()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Reset()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+	[CompilerGenerated]
+	private sealed class _003CLoadCostumeItems_003Ed__52 : IEnumerator<object>, IEnumerator, IDisposable
+	{
+		private int _003C_003E1__state;
+
+		private object _003C_003E2__current;
+
+		public ActorCostume _003C_003E4__this;
+
+		public List<CostumeObject> newCostumeObjects;
+
+		private AsyncOperationHandle<IList<GameObject>>[] _003Cops_003E5__2;
+
+		private bool _003ChasPendingOperations_003E5__3;
+
+		private object System_002ECollections_002EGeneric_002EIEnumerator_003CSystem_002EObject_003E_002ECurrent
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+		private object System_002ECollections_002EIEnumerator_002ECurrent
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+        public object Current => throw new NotImplementedException();
+
+        [DebuggerHidden]
+		public _003CLoadCostumeItems_003Ed__52(int _003C_003E1__state)
+		{
+		}
+
+		[DebuggerHidden]
+		private void System_002EIDisposable_002EDispose()
+		{
+		}
+
+		private bool MoveNext()
+		{
+			return false;
+		}
+
+		[DebuggerHidden]
+		private void System_002ECollections_002EIEnumerator_002EReset()
+		{
+		}
+
+        bool IEnumerator.MoveNext()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Reset()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+	[CompilerGenerated]
+	private sealed class _003CFinalizeSetCostume_003Ed__55 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -74,12 +359,10 @@ public class ActorCostume : NetworkBehaviour
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
-		public _003COnCostumeFinishedSetting_003Ed__36(int _003C_003E1__state)
+		public _003CFinalizeSetCostume_003Ed__55(int _003C_003E1__state)
 		{
 		}
 
@@ -103,18 +386,83 @@ public class ActorCostume : NetworkBehaviour
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
     }
 
-	public ColorDatabase UserColorDatabase;
+	[CompilerGenerated]
+	private sealed class _003CDeferFinalizeSetCostume_003Ed__56 : IEnumerator<object>, IEnumerator, IDisposable
+	{
+		private int _003C_003E1__state;
+
+		private object _003C_003E2__current;
+
+		public ActorCostume _003C_003E4__this;
+
+		private object System_002ECollections_002EGeneric_002EIEnumerator_003CSystem_002EObject_003E_002ECurrent
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+		private object System_002ECollections_002EIEnumerator_002ECurrent
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+        public object Current => throw new NotImplementedException();
+
+        [DebuggerHidden]
+		public _003CDeferFinalizeSetCostume_003Ed__56(int _003C_003E1__state)
+		{
+		}
+
+		[DebuggerHidden]
+		private void System_002EIDisposable_002EDispose()
+		{
+		}
+
+		private bool MoveNext()
+		{
+			return false;
+		}
+
+		[DebuggerHidden]
+		private void System_002ECollections_002EIEnumerator_002EReset()
+		{
+		}
+
+        bool IEnumerator.MoveNext()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Reset()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+	public const int TintCount = 4;
 
 	public bool SetVoice;
 
@@ -124,38 +472,43 @@ public class ActorCostume : NetworkBehaviour
 
 	public bool CacheMeshesBeforeReduce;
 
-	public CostumeSaveEntryStruct SaveEntryStruct;
+	[SerializeField]
+	private CostumeSaveEntryStruct SaveEntryStruct;
+
+	[SerializeField]
+	private List<ApplyedCostume> ApplyedCostumes;
 
 	[HideInInspector]
 	[SerializeField]
 	private string _costumePresetName;
 
-	private Actor thisActor;
+	[SerializeField]
+	private SkinnedMeshRenderer Body;
 
-	private IEnumerator SetCostumeOverTimeRef;
+	[SerializeField]
+	private SkinnedMeshRenderer Head;
 
-	public SkinnedMeshRenderer Body;
+	[SerializeField]
+	private Mesh _bodyMeshBackup;
 
-	public SkinnedMeshRenderer Head;
+	[SerializeField]
+	private Mesh _headMeshBackup;
 
-	public List<RigCombine.CombinedObject> CombineResultList;
+	private Actor _actor;
 
-	public List<ApplyedCostume> ApplyedCostumes;
+	private GameObject[][] _costumeItemsCache;
 
-	public Mesh bodyMesh;
+	private bool _shouldDraw;
 
-	public Mesh headMesh;
+	private List<SkinnedMeshRenderer> _skinnedMeshRenderers;
 
-	[HideInInspector]
-	public readonly int TintCount;
+	private List<MeshRenderer> _meshRenderers;
 
-	private CostumeDatabase m_CostumeDatabase;
+	private Coroutine _coroutineSetCostume;
 
-	private CostumePresetDatabase m_CostumePresetDatabase;
+	public CostumeDatabase CostumeDatabase { get; private set; }
 
-	public CostumeDatabase CostumeDatabase => null;
-
-	public CostumePresetDatabase CostumePresetDatabase => null;
+	public CostumePresetDatabase CostumePresetDatabase { get; private set; }
 
 	public CostumeSaveEntry SaveEntry
 	{
@@ -163,16 +516,18 @@ public class ActorCostume : NetworkBehaviour
 		{
 			return null;
 		}
-		set
+		private set
 		{
 		}
 	}
 
-	public string CostumePresetName
+	public string CostumePresetName => null;
+
+	public bool ShouldDraw
 	{
 		get
 		{
-			return null;
+			return false;
 		}
 		set
 		{
@@ -195,39 +550,20 @@ public class ActorCostume : NetworkBehaviour
 	{
 	}
 
-	public void SetCostume(CostumeSaveEntry costumeSaveEntry, RigCombine rigCombine = null, RemoveUnseenMesh removeUnseenMesh = null, MaterialsFromGos materialFromGos = null)
-	{
-	}
-
-	public void UpdateCostume(CostumeSaveEntry costumeSaveEntry, RigCombine rigCombine = null, RemoveUnseenMesh removeUnseenMesh = null, MaterialsFromGos materialFromGos = null)
-	{
-	}
-
-	private void SendOnCostumeSet()
-	{
-	}
-
-	[IteratorStateMachine(typeof(_003COnCostumeFinishedSetting_003Ed__36))]
-	private IEnumerator OnCostumeFinishedSetting()
+	[IteratorStateMachine(typeof(_003CSetCostume_003Ed__39))]
+	public IEnumerator SetCostume(CostumeSaveEntry costumeSaveEntry, RigCombine rigCombine = null, RemoveUnseenMesh removeUnseenMesh = null)
 	{
 		return null;
 	}
 
-	public void ResetCostume()
+	public void SetCostumeSeq(CostumeSaveEntry costumeSaveEntry, RigCombine rigCombine = null, RemoveUnseenMesh removeUnseenMesh = null)
 	{
 	}
 
-	private void ResetCostumePart(RigCombine.CombinedObject combinedObject)
+	[IteratorStateMachine(typeof(_003CApplyCostumePreset_003Ed__41))]
+	public IEnumerator ApplyCostumePreset(string costumePresetName)
 	{
-	}
-
-	private bool SharesAddedObject(RigCombine.CombinedObject combinedObject, GameObject go)
-	{
-		return false;
-	}
-
-	private void ResetCostumeMeshies()
-	{
+		return null;
 	}
 
 	public int GetTintRange(ushort uid)
@@ -248,6 +584,80 @@ public class ActorCostume : NetworkBehaviour
 		return false;
 	}
 
+	public List<GameObject> GetMeshesForPart(CostumeParts part)
+	{
+		return null;
+	}
+
+	public void ForceShouldDraw()
+	{
+	}
+
+	private void ApplyShouldDraw()
+	{
+	}
+
+	[IteratorStateMachine(typeof(_003CUpdateCostume_003Ed__49))]
+	private IEnumerator UpdateCostume(CostumeSaveEntry costumeSaveEntry, RigCombine rigCombine = null, RemoveUnseenMesh removeUnseenMesh = null)
+	{
+		return null;
+	}
+
+	private void UpdateVoice(CostumeSaveEntry costumeSaveEntry)
+	{
+	}
+
+	private void IdentifyNewCostumeObjects(CostumeSaveEntry costumeSaveEntry, ref List<CostumeObject> newCostumeObjects, ref List<CostumeSaveEntry.CostumeSaveItem> newCostumeSaveItems)
+	{
+	}
+
+	[IteratorStateMachine(typeof(_003CLoadCostumeItems_003Ed__52))]
+	private IEnumerator LoadCostumeItems(List<CostumeObject> newCostumeObjects)
+	{
+		return null;
+	}
+
+	private void ApplyNewCostumeObjects(List<CostumeObject> newCostumeObjects, List<CostumeSaveEntry.CostumeSaveItem> newCostumeSaveItems, RigCombine rigCombine)
+	{
+	}
+
+	private void RemoveUnseenMesh(RemoveUnseenMesh removeUnseenMesh)
+	{
+	}
+
+	[IteratorStateMachine(typeof(_003CFinalizeSetCostume_003Ed__55))]
+	private IEnumerator FinalizeSetCostume()
+	{
+		return null;
+	}
+
+	[IteratorStateMachine(typeof(_003CDeferFinalizeSetCostume_003Ed__56))]
+	private IEnumerator DeferFinalizeSetCostume()
+	{
+		return null;
+	}
+
+	private void OnFinalizedSetCostume()
+	{
+	}
+
+	public void ResetCostume()
+	{
+	}
+
+	private void ResetCostumePart(RigCombine.CombinedObject combinedObject)
+	{
+	}
+
+	private bool SharesAddedObject(RigCombine.CombinedObject combinedObject, GameObject go)
+	{
+		return false;
+	}
+
+	private void ResetCostumeMeshies()
+	{
+	}
+
 	private Color GetHairTint(Color value, int level)
 	{
 		return default(Color);
@@ -256,6 +666,10 @@ public class ActorCostume : NetworkBehaviour
 	private Color GetPlayerTint(Color value, int level)
 	{
 		return default(Color);
+	}
+
+	private void ClearRendererCache()
+	{
 	}
 
 	private void UNetVersion()

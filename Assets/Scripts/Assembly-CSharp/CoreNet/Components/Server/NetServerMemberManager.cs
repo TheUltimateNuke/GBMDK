@@ -23,7 +23,7 @@ namespace CoreNet.Components.Server
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CPasswordTimeout_003Ed__23 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CPasswordTimeout_003Ed__24 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -53,12 +53,10 @@ namespace CoreNet.Components.Server
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CPasswordTimeout_003Ed__23(int _003C_003E1__state)
+			public _003CPasswordTimeout_003Ed__24(int _003C_003E1__state)
 			{
 			}
 
@@ -82,12 +80,12 @@ namespace CoreNet.Components.Server
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -98,6 +96,8 @@ namespace CoreNet.Components.Server
 		protected NetServerExit ServerExit;
 
 		protected GBMultiplayServerCommunicator ServerCommunicator;
+
+		private Dictionary<int, int> reservePlayerSlots;
 
 		public int MaxAllowedPlayers
 		{
@@ -162,7 +162,7 @@ namespace CoreNet.Components.Server
 
 		protected abstract void RemoveCustomPlayersFromMember(NetMember member);
 
-		private void AdmitConnection(NetworkConnection conn)
+		private void AdmitConnection(NetworkConnection conn, NetAuthMessage message)
 		{
 		}
 
@@ -170,7 +170,7 @@ namespace CoreNet.Components.Server
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CPasswordTimeout_003Ed__23))]
+		[IteratorStateMachine(typeof(_003CPasswordTimeout_003Ed__24))]
 		private IEnumerator PasswordTimeout(NetConnection connection)
 		{
 			return null;

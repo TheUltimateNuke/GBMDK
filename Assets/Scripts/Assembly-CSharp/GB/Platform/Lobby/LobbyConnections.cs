@@ -40,9 +40,7 @@ namespace GB.Platform.Lobby
 					}
 				}
 
-                object IEnumerator<object>.Current => throw new NotImplementedException();
-
-                object IEnumerator.Current => throw new NotImplementedException();
+                public object Current => throw new NotImplementedException();
 
                 [DebuggerHidden]
 				public _003CPingLoop_003Ed__13(int _003C_003E1__state)
@@ -69,12 +67,12 @@ namespace GB.Platform.Lobby
                     throw new NotImplementedException();
                 }
 
-                void IEnumerator.Reset()
+                public void Reset()
                 {
                     throw new NotImplementedException();
                 }
 
-                void IDisposable.Dispose()
+                public void Dispose()
                 {
                     throw new NotImplementedException();
                 }
@@ -126,6 +124,8 @@ namespace GB.Platform.Lobby
 		private Dictionary<BaseUserInfo, PingCarrier> _pings;
 
 		private StringMessage _ipMessage;
+
+		private bool _drawInspector;
 
 		[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
 		private static void ResetStatics()

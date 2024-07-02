@@ -1,4 +1,6 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Components;
 
 namespace GB.UI
 {
@@ -11,11 +13,13 @@ namespace GB.UI
 		private GameObject _countdownObject;
 
 		[SerializeField]
-		private TextReplacer _countdownText;
+		private LocalizeStringEvent _countdownText;
 
 		public bool playCountdownAudio;
 
 		private int lastVal;
+
+		private TextMeshProUGUI _countdownTextMesh;
 
 		private void Awake()
 		{

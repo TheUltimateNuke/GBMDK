@@ -2,6 +2,7 @@ using System;
 using CoreNet.Utils;
 using GB.Utils;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace GB.Networking.Utils.Spawn
 {
@@ -16,7 +17,7 @@ namespace GB.Networking.Utils.Spawn
 			RespawnPoint = 8,
 			FootballPoint = 0x10,
 			CTFFlag = 0x20,
-			CTFTarget = 0x40
+			HillPoint = 0x40
 		}
 
 		[SerializeField]
@@ -24,17 +25,20 @@ namespace GB.Networking.Utils.Spawn
 		[EnumUtils.EnumFlags]
 		private SpawnPointTypes _spawnPointType;
 
-		[SerializeField]
 		[Tooltip("Spawn point will only spawn for the team that is assigned to this group index (-1 = any | -2 = unassigned | -3 = don't care)")]
+		[SerializeField]
 		private int _groupIndex;
 
-		[Tooltip("Spawn point will only spawn for the team that is assigned index (-1 = any | -2 = unassigned | -3 = don't care)")]
 		[SerializeField]
+		[Tooltip("Spawn point will only spawn for the team that is assigned index (-1 = any | -2 = unassigned | -3 = don't care)")]
 		private int _teamIndex;
 
 		[Tooltip("Weight of use over other points")]
 		[SerializeField]
 		private int _ID;
+
+		[SerializeField]
+		private UnityEvent<int> OnGangSet;
 
 		public SpawnPointTypes SpawnPointType => default(SpawnPointTypes);
 

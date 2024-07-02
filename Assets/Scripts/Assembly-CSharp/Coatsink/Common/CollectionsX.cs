@@ -51,7 +51,7 @@ namespace Coatsink.Common
 				}
 			}
 
-            IndexValuePair<T> IEnumerator<IndexValuePair<T>>.Current => throw new NotImplementedException();
+            public IndexValuePair<T> Current => throw new NotImplementedException();
 
             object IEnumerator.Current => throw new NotImplementedException();
 
@@ -106,12 +106,12 @@ namespace Coatsink.Common
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -162,7 +162,7 @@ namespace Coatsink.Common
 				}
 			}
 
-            TRes IEnumerator<TRes>.Current => throw new NotImplementedException();
+            public TRes Current => throw new NotImplementedException();
 
             object IEnumerator.Current => throw new NotImplementedException();
 
@@ -206,7 +206,7 @@ namespace Coatsink.Common
 				return null;
 			}
 
-            IEnumerator<TRes> IEnumerable<TRes>.GetEnumerator()
+            public IEnumerator<TRes> GetEnumerator()
             {
                 throw new NotImplementedException();
             }
@@ -221,12 +221,12 @@ namespace Coatsink.Common
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -285,7 +285,7 @@ namespace Coatsink.Common
 				}
 			}
 
-            TRes IEnumerator<TRes>.Current => throw new NotImplementedException();
+            public TRes Current => throw new NotImplementedException();
 
             object IEnumerator.Current => throw new NotImplementedException();
 
@@ -333,7 +333,7 @@ namespace Coatsink.Common
 				return null;
 			}
 
-            IEnumerator<TRes> IEnumerable<TRes>.GetEnumerator()
+            public IEnumerator<TRes> GetEnumerator()
             {
                 throw new NotImplementedException();
             }
@@ -348,12 +348,12 @@ namespace Coatsink.Common
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -420,7 +420,7 @@ namespace Coatsink.Common
 				}
 			}
 
-            TRes IEnumerator<TRes>.Current => throw new NotImplementedException();
+            public TRes Current => throw new NotImplementedException();
 
             object IEnumerator.Current => throw new NotImplementedException();
 
@@ -472,7 +472,7 @@ namespace Coatsink.Common
 				return null;
 			}
 
-            IEnumerator<TRes> IEnumerable<TRes>.GetEnumerator()
+            public IEnumerator<TRes> GetEnumerator()
             {
                 throw new NotImplementedException();
             }
@@ -487,12 +487,12 @@ namespace Coatsink.Common
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }

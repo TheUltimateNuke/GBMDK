@@ -63,6 +63,8 @@ namespace GB.Platform.Lobby
 
 		private bool _private;
 
+		private bool _drawInspector;
+
 		public BaseUserInfo Host => default(BaseUserInfo);
 
 		public State CurrentState

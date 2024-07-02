@@ -50,6 +50,8 @@ namespace GB.Platform.Lobby
 
 		private ColourUpdateMessage _messageUpdate;
 
+		private bool _drawInspectorToggleVal;
+
 		private void Awake()
 		{
 		}
@@ -95,7 +97,7 @@ namespace GB.Platform.Lobby
 			return 0;
 		}
 
-		private void OnAllawanceChange(BaseUserInfo arg1, int arg2, bool arg3, OnlineID id)
+		private void OnAllawanceChange(BaseUserInfo user, int arg2, bool arg3, OnlineID id)
 		{
 		}
 
@@ -117,7 +119,7 @@ namespace GB.Platform.Lobby
 			return 0;
 		}
 
-		public int GetNextColour(int start, int change, bool freeonly)
+		public int GetNextColour(int start, int change)
 		{
 			return 0;
 		}
@@ -135,7 +137,7 @@ namespace GB.Platform.Lobby
 		{
 		}
 
-		private void ForceColourChanged(int controllerID, ColourChangeRequestMsg.ColourChange change, int param1)
+		private void ForceColourChanged(int controllerID, ColourChangeRequestMsg.ColourChange change, int colourIndex)
 		{
 		}
 

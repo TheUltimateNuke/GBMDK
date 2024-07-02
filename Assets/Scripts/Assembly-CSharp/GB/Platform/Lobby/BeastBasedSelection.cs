@@ -15,8 +15,8 @@ namespace GB.Platform.Lobby
 
 			public NamebarHandler nameBar;
 
-			public OrderCarrier(int _id, NamebarHandler _nameBar):this()
-			{
+			public OrderCarrier(int _id, NamebarHandler _nameBar) : this()
+            {
 			}
 		}
 

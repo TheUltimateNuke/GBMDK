@@ -3,6 +3,7 @@ using CS.CorePlatform;
 using GB.Data.Loading;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.Localization;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace GB.Core.Bootstrappers
@@ -68,7 +69,7 @@ namespace GB.Core.Bootstrappers
 		{
 		}
 
-		private static void OnLanguageChanged()
+		private static void OnLanguageChanged(Locale locale = null)
 		{
 		}
 

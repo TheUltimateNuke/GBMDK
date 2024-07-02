@@ -45,7 +45,9 @@ namespace CoreNet.StateSync.Routers
 
 		protected Vector3 _PrevPosition;
 
-		protected Vector3 _PrevRotation;
+		public Vector3 _PrevRotation;
+
+		protected Quaternion _PrevQuaternion;
 
 		protected Vector3 _PrevScale;
 

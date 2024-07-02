@@ -1,14 +1,14 @@
 using Cinemachine;
 using Femur;
 using GB.View.UI;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Components;
 using UnityEngine.SceneManagement;
 
 public class CameraTrackingHandler : MonoBehaviour
 {
 	public GameObject spectatingUI;
-
-	public TextReplacer spectatingText;
 
 	public UIController spectatingUIController;
 
@@ -37,6 +37,10 @@ public class CameraTrackingHandler : MonoBehaviour
 	private CMTargetGroupPool _TargetGroups;
 
 	private bool _BlockShowingLabel;
+
+	private TextMeshProUGUI _SpectatingText;
+
+	private LocalizeStringEvent _SpectatingLocStringEvent;
 
 	private void Start()
 	{

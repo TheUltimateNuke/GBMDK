@@ -65,5 +65,7 @@ namespace CS.CorePlatform.CSPlatform
 		public virtual void SetPlayedWith(UserInfo userInfo)
 		{
 		}
+
+		public abstract string DebugDataInfo();
 	}
 }

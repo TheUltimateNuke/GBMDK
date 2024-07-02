@@ -1,3 +1,4 @@
+using Costumes;
 using Femur;
 using GB.Core.UI;
 using GB.Input;
@@ -31,6 +32,8 @@ public class CostumeSelectModal : MonoBehaviour
 
 	private ActorCostume _costumeCache;
 
+	private CostumeSaveEntry _costumeSaveEntry;
+
 	private NetBeast _netBeastRef;
 
 	private CostumeMultiModalHandler _parentRef;
@@ -53,6 +56,8 @@ public class CostumeSelectModal : MonoBehaviour
 	private string _cachedPref;
 
 	private RemappingMenuManager RemappingManagerRef;
+
+	private Coroutine _coroutineSetCostume;
 
 	public void Initialise(int controlID = 0, CostumeMultiModalHandler parentHandler = null)
 	{

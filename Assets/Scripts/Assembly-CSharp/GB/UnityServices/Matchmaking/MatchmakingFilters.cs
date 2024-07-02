@@ -9,5 +9,9 @@ namespace GB.UnityServices.Matchmaking
 		public double Version { get; set; }
 
 		public bool PrivateGame { get; set; }
+
+		public uint HostDefinedBeastCount { get; set; }
+
+		public uint LobbyTotalBeastCount { get; set; }
 	}
 }

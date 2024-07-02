@@ -40,9 +40,7 @@ namespace GB.Game
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CRestartPlay_003Ed__28(int _003C_003E1__state)
@@ -69,12 +67,12 @@ namespace GB.Game
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -107,9 +105,7 @@ namespace GB.Game
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CKickOffCountdown_003Ed__29(int _003C_003E1__state)
@@ -136,12 +132,12 @@ namespace GB.Game
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -174,9 +170,7 @@ namespace GB.Game
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003COverTimeCountdown_003Ed__30(int _003C_003E1__state)
@@ -203,12 +197,12 @@ namespace GB.Game
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }

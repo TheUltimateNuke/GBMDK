@@ -19,8 +19,6 @@ namespace GB.UI.Menu
 		{
 			public Button roomButton;
 
-			public TextReplacer roomTextReplacer;
-
 			public TextMeshProUGUI roomText;
 
 			public TextMeshProUGUI playersPerRoomText;

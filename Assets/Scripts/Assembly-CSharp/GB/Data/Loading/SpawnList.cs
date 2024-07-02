@@ -5,7 +5,7 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 namespace GB.Data.Loading
 {
 	[CreateAssetMenu(fileName = "SpawnList", menuName = "Gang Beasts/Data/Spawn List", order = 1)]
-	public class SpawnList : ScriptableObject, ILoadedAsset, ICompleteTracker
+	public class SpawnList : ScriptableObject, ILoadedAsset, ICompleteTracker, IDataRegister
 	{
 		public enum SpawnType
 		{
@@ -43,18 +43,26 @@ namespace GB.Data.Loading
 		{
 		}
 
+		public void Register()
+		{
+		}
+
+		public void Unregister()
+		{
+		}
+
 		public bool Loading()
 		{
 			return false;
 		}
 
+		public void Unload()
+		{
+		}
+
 		public float PercentComplete()
 		{
 			return 0f;
-		}
-
-		public void Unload()
-		{
 		}
 	}
 }

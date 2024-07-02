@@ -31,6 +31,10 @@ namespace GB.UnityServices.Matchmaking
 
 		public const string MapKey = "map";
 
+		public const string LobbyBeastCount = "lobbybeastcount";
+
+		public const string HostBeastCount = "hostbeastcount";
+
 		public const string EncryptionKey = "encryptionkey";
 
 		public const string DataKey = "data";

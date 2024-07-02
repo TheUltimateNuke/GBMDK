@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
 
 namespace GB.UI
 {
@@ -55,7 +56,7 @@ namespace GB.UI
 		{
 		}
 
-		public void UpdateText()
+		public void UpdateText(Locale locale = null)
 		{
 		}
 	}

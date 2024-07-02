@@ -24,8 +24,8 @@ namespace GB.View.UI
 
 			public Vector3 offsetPosition;
 
-			public VROverriding(bool active):this()
-			{
+			public VROverriding(bool active) : this()
+            {
 			}
 		}
 

@@ -1,17 +1,16 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace Costumes
 {
-	[Serializable]
-	public class CostumeObject
+	public class CostumeObject : ScriptableObject
 	{
 		public ushort _uid;
 
 		public string PartName;
 
-		public GameObject[] CostumeItems;
+		public AssetReferenceGameObject[] CostumeItems;
 
 		public bool Enabled;
 
@@ -31,7 +30,10 @@ namespace Costumes
 
 		public List<string> Tags;
 
-		public CostumeObject(ushort uid)
+		[HideInInspector]
+		public int SortOrder;
+
+		public void Init(ushort uid = 0)
 		{
 		}
 	}

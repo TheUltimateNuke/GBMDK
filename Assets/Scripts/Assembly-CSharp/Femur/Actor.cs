@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using Costumes;
@@ -82,6 +84,337 @@ namespace Femur
 
 		public delegate void SetPrimaryColor(Color value);
 
+		[CompilerGenerated]
+		private sealed class _003CDressBeast_003Ed__147 : IEnumerator<object>, IEnumerator, IDisposable
+		{
+			private int _003C_003E1__state;
+
+			private object _003C_003E2__current;
+
+			public Actor _003C_003E4__this;
+
+			private NetBeast _003Cbeast_003E5__2;
+
+			private object System_002ECollections_002EGeneric_002EIEnumerator_003CSystem_002EObject_003E_002ECurrent
+			{
+				[DebuggerHidden]
+				get
+				{
+					return null;
+				}
+			}
+
+			private object System_002ECollections_002EIEnumerator_002ECurrent
+			{
+				[DebuggerHidden]
+				get
+				{
+					return null;
+				}
+			}
+
+            public object Current => throw new NotImplementedException();
+
+            [DebuggerHidden]
+			public _003CDressBeast_003Ed__147(int _003C_003E1__state)
+			{
+			}
+
+			[DebuggerHidden]
+			private void System_002EIDisposable_002EDispose()
+			{
+			}
+
+			private bool MoveNext()
+			{
+				return false;
+			}
+
+			[DebuggerHidden]
+			private void System_002ECollections_002EIEnumerator_002EReset()
+			{
+			}
+
+            bool IEnumerator.MoveNext()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Reset()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Dispose()
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+		[CompilerGenerated]
+		private sealed class _003CFallbackDress_003Ed__148 : IEnumerator<object>, IEnumerator, IDisposable
+		{
+			private int _003C_003E1__state;
+
+			private object _003C_003E2__current;
+
+			public Actor _003C_003E4__this;
+
+			private object System_002ECollections_002EGeneric_002EIEnumerator_003CSystem_002EObject_003E_002ECurrent
+			{
+				[DebuggerHidden]
+				get
+				{
+					return null;
+				}
+			}
+
+			private object System_002ECollections_002EIEnumerator_002ECurrent
+			{
+				[DebuggerHidden]
+				get
+				{
+					return null;
+				}
+			}
+
+            public object Current => throw new NotImplementedException();
+
+            [DebuggerHidden]
+			public _003CFallbackDress_003Ed__148(int _003C_003E1__state)
+			{
+			}
+
+			[DebuggerHidden]
+			private void System_002EIDisposable_002EDispose()
+			{
+			}
+
+			private bool MoveNext()
+			{
+				return false;
+			}
+
+			[DebuggerHidden]
+			private void System_002ECollections_002EIEnumerator_002EReset()
+			{
+			}
+
+            bool IEnumerator.MoveNext()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Reset()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Dispose()
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+		[CompilerGenerated]
+		private sealed class _003CStart_003Ed__149 : IEnumerator<object>, IEnumerator, IDisposable
+		{
+			private int _003C_003E1__state;
+
+			private object _003C_003E2__current;
+
+			public Actor _003C_003E4__this;
+
+			private object System_002ECollections_002EGeneric_002EIEnumerator_003CSystem_002EObject_003E_002ECurrent
+			{
+				[DebuggerHidden]
+				get
+				{
+					return null;
+				}
+			}
+
+			private object System_002ECollections_002EIEnumerator_002ECurrent
+			{
+				[DebuggerHidden]
+				get
+				{
+					return null;
+				}
+			}
+
+            public object Current => throw new NotImplementedException();
+
+            [DebuggerHidden]
+			public _003CStart_003Ed__149(int _003C_003E1__state)
+			{
+			}
+
+			[DebuggerHidden]
+			private void System_002EIDisposable_002EDispose()
+			{
+			}
+
+			private bool MoveNext()
+			{
+				return false;
+			}
+
+			[DebuggerHidden]
+			private void System_002ECollections_002EIEnumerator_002EReset()
+			{
+			}
+
+            bool IEnumerator.MoveNext()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Reset()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Dispose()
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+		[CompilerGenerated]
+		private sealed class _003CUpdateNetBeatInternal_003Ed__154 : IEnumerator<object>, IEnumerator, IDisposable
+		{
+			private int _003C_003E1__state;
+
+			private object _003C_003E2__current;
+
+			public Actor _003C_003E4__this;
+
+			public NetBeast beast;
+
+			private object System_002ECollections_002EGeneric_002EIEnumerator_003CSystem_002EObject_003E_002ECurrent
+			{
+				[DebuggerHidden]
+				get
+				{
+					return null;
+				}
+			}
+
+			private object System_002ECollections_002EIEnumerator_002ECurrent
+			{
+				[DebuggerHidden]
+				get
+				{
+					return null;
+				}
+			}
+
+            public object Current => throw new NotImplementedException();
+
+            [DebuggerHidden]
+			public _003CUpdateNetBeatInternal_003Ed__154(int _003C_003E1__state)
+			{
+			}
+
+			[DebuggerHidden]
+			private void System_002EIDisposable_002EDispose()
+			{
+			}
+
+			private bool MoveNext()
+			{
+				return false;
+			}
+
+			[DebuggerHidden]
+			private void System_002ECollections_002EIEnumerator_002EReset()
+			{
+			}
+
+            bool IEnumerator.MoveNext()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Reset()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Dispose()
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+		[CompilerGenerated]
+		private sealed class _003CUpdateCostume_003Ed__156 : IEnumerator<object>, IEnumerator, IDisposable
+		{
+			private int _003C_003E1__state;
+
+			private object _003C_003E2__current;
+
+			public Actor _003C_003E4__this;
+
+			public NetBeast beast;
+
+			private object System_002ECollections_002EGeneric_002EIEnumerator_003CSystem_002EObject_003E_002ECurrent
+			{
+				[DebuggerHidden]
+				get
+				{
+					return null;
+				}
+			}
+
+			private object System_002ECollections_002EIEnumerator_002ECurrent
+			{
+				[DebuggerHidden]
+				get
+				{
+					return null;
+				}
+			}
+
+            public object Current => throw new NotImplementedException();
+
+            [DebuggerHidden]
+			public _003CUpdateCostume_003Ed__156(int _003C_003E1__state)
+			{
+			}
+
+			[DebuggerHidden]
+			private void System_002EIDisposable_002EDispose()
+			{
+			}
+
+			private bool MoveNext()
+			{
+				return false;
+			}
+
+			[DebuggerHidden]
+			private void System_002ECollections_002EIEnumerator_002EReset()
+			{
+			}
+
+            bool IEnumerator.MoveNext()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Reset()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Dispose()
+            {
+                throw new NotImplementedException();
+            }
+        }
+
 		public bool isTrackedByCamera;
 
 		private bool hasTriggeredBudBud;
@@ -132,12 +465,6 @@ namespace Femur
 		public GameObject TrackingCanvas;
 
 		private ActorCostume _CostumeCompRef;
-
-		private bool _drawBeast;
-
-		private List<SkinnedMeshRenderer> _beastRendersSkin;
-
-		private List<MeshRenderer> _beastRendersBase;
 
 		public float groundSpeed;
 
@@ -202,6 +529,8 @@ namespace Femur
 		private NameBarHandler _nameBarHandler;
 
 		private bool _setupActorComplete;
+
+		private Coroutine _coroutineUpdateNetBeast;
 
 		public AIProfile _aiProfile;
 
@@ -333,16 +662,7 @@ namespace Femur
 			}
 		}
 
-		public CostumeSaveEntry Costume
-		{
-			get
-			{
-				return null;
-			}
-			set
-			{
-			}
-		}
+		public CostumeSaveEntry Costume => null;
 
 		public int Network_gangID
 		{
@@ -544,14 +864,6 @@ namespace Femur
 		{
 		}
 
-		private void ClearRendererCache()
-		{
-		}
-
-		private void ApplyDrawBeast()
-		{
-		}
-
 		private void OnSceneChanged(Scene prevScene, Scene newScene)
 		{
 		}
@@ -576,16 +888,22 @@ namespace Femur
 		{
 		}
 
-		public void DressBeast()
+		[IteratorStateMachine(typeof(_003CDressBeast_003Ed__147))]
+		public IEnumerator DressBeast()
 		{
+			return null;
 		}
 
-		private void FallbackDress()
+		[IteratorStateMachine(typeof(_003CFallbackDress_003Ed__148))]
+		private IEnumerator FallbackDress()
 		{
+			return null;
 		}
 
-		public void Start()
+		[IteratorStateMachine(typeof(_003CStart_003Ed__149))]
+		public IEnumerator Start()
 		{
+			return null;
 		}
 
 		private void OnHeldBeastAdded(NetBeast beast)
@@ -604,12 +922,20 @@ namespace Femur
 		{
 		}
 
+		[IteratorStateMachine(typeof(_003CUpdateNetBeatInternal_003Ed__154))]
+		private IEnumerator UpdateNetBeatInternal(NetBeast beast)
+		{
+			return null;
+		}
+
 		private void UpdateStatusHandlerPlatform(NetBeast beast)
 		{
 		}
 
-		private void UpdateCostume(NetBeast beast)
+		[IteratorStateMachine(typeof(_003CUpdateCostume_003Ed__156))]
+		private IEnumerator UpdateCostume(NetBeast beast)
 		{
+			return null;
 		}
 
 		public void OnDestroy()

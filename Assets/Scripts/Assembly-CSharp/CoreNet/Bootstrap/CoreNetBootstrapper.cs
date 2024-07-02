@@ -36,9 +36,7 @@ namespace CoreNet.Bootstrap
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003COnSessionDataInternal_003Ed__8(int _003C_003E1__state)
@@ -65,12 +63,12 @@ namespace CoreNet.Bootstrap
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -103,9 +101,7 @@ namespace CoreNet.Bootstrap
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003COnReset_003Ed__18(int _003C_003E1__state)
@@ -132,12 +128,12 @@ namespace CoreNet.Bootstrap
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }

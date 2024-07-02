@@ -11,8 +11,8 @@ namespace SuperGenius.Lib.Burst.Geometry
 
 		public float3 Normal;
 
-		public Plane(float3 center, float3 normal):this()
-		{
+		public Plane(float3 center, float3 normal) : this()
+        {
 		}
 
 		public void CalculateNormal(float3 position)

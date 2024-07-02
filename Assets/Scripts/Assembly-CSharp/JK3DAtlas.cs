@@ -40,8 +40,8 @@ public class JK3DAtlas : ScriptableObject, ISerializationCallbackReceiver
 
 		public Texture2D mask;
 
-		public TextureGroup(Texture2D _albedo, Color _vertex, Texture2D _specularSmoothness, Color _specular, Texture2D _emissive, Texture2D _normal, Texture2D _mask):this()
-		{
+		public TextureGroup(Texture2D _albedo, Color _vertex, Texture2D _specularSmoothness, Color _specular, Texture2D _emissive, Texture2D _normal, Texture2D _mask) : this()
+        {
 		}
 
 		public override int GetHashCode()

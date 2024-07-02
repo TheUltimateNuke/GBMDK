@@ -43,8 +43,8 @@ namespace GB.UI.Beasts
 				}
 			}
 
-			public PointInformation(int pointIndex, Action<int, int> onAssignedChanged):this()
-			{
+			public PointInformation(int pointIndex, Action<int, int> onAssignedChanged) : this()
+            {
 			}
 
 			public void RefreshPoint()
@@ -57,8 +57,8 @@ namespace GB.UI.Beasts
 		{
 			public int[] Order;
 
-			public SpawnOrder(int[] _order):this()
-			{
+			public SpawnOrder(int[] _order) : this()
+            {
 			}
 		}
 
@@ -89,9 +89,7 @@ namespace GB.UI.Beasts
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CPinBeastsRoutine_003Ed__35(int _003C_003E1__state)
@@ -118,12 +116,12 @@ namespace GB.UI.Beasts
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }

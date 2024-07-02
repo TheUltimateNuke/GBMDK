@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using GB.Data.Loading;
 using GB.Networking.Utils.Spawn;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ namespace GB.Game.Data
 {
 	[Serializable]
 	[CreateAssetMenu(fileName = "RumbleData", menuName = "Gang Beasts/Data/Game/Rumble Data", order = 1)]
-	public class RumbleData : ScriptableObject
+	public class RumbleData : ScriptableObject, IDataRegister
 	{
 		[SerializeField]
 		public List<GameObject> beastTypePref;
@@ -51,6 +52,14 @@ namespace GB.Game.Data
 		public GameObject GetSpawnObject(int type)
 		{
 			return null;
+		}
+
+		public void Register()
+		{
+		}
+
+		public void Unregister()
+		{
 		}
 	}
 }

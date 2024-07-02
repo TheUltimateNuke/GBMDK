@@ -2,8 +2,8 @@ using UnityEngine;
 
 namespace Cinemachine
 {
-	[AddComponentMenu(null)]
 	[SaveDuringPlay]
+	[AddComponentMenu(null)]
 	[ExecuteInEditMode]
 	public class GangBeastsGroupComposer : CinemachineComposer
 	{
@@ -51,8 +51,8 @@ namespace Cinemachine
 		[Tooltip("If adjusting FOV, will not set the FOV lower than this.")]
 		public float m_MinimumFOV;
 
-		[Range(1f, 179f)]
 		[Tooltip("If adjusting FOV, will not set the FOV higher than this.")]
+		[Range(1f, 179f)]
 		public float m_MaximumFOV;
 
 		[Tooltip("If adjusting Orthographic Size, will not set it lower than this.")]

@@ -51,9 +51,7 @@ namespace GB.Achievements
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CCheckContinualCondition_003Ed__21(int _003C_003E1__state)
@@ -80,12 +78,12 @@ namespace GB.Achievements
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -114,12 +112,12 @@ namespace GB.Achievements
 
 		private TriggerDetection heldTrigRef;
 
-		[SerializeField]
 		[Tooltip("How long this condition should check for")]
+		[SerializeField]
 		public float Timer;
 
-		[SerializeField]
 		[Tooltip("A Permanence condition must always be met to pass - \r\n a non-Permanence condition must only be met at the end of the timeout.")]
+		[SerializeField]
 		public bool Permanence;
 
 		private Response onComplete;

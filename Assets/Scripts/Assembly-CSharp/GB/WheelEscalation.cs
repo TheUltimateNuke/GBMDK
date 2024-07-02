@@ -38,9 +38,7 @@ namespace GB
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CDoFrameEscalation_003Ed__38(int _003C_003E1__state)
@@ -67,12 +65,12 @@ namespace GB
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -105,9 +103,7 @@ namespace GB
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CDoSpeedEscalation_003Ed__39(int _003C_003E1__state)
@@ -134,12 +130,12 @@ namespace GB
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -174,9 +170,7 @@ namespace GB
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CDoCarriageEscalation_003Ed__40(int _003C_003E1__state)
@@ -203,12 +197,12 @@ namespace GB
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -279,9 +273,9 @@ namespace GB
 		[HideInInspector]
 		public float carriageMalfunctionChance;
 
-		[Space]
-		[Header("Carriage Malfunction")]
 		[SerializeField]
+		[Header("Carriage Malfunction")]
+		[Space]
 		private List<Rigidbody> CarriageRefs;
 
 		[SerializeField]

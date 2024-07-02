@@ -12,6 +12,10 @@ public class SaveSelctionArrows : MonoBehaviour
 	{
 	}
 
+	private void OnControllerButtonsChange(MoveDirection dir)
+	{
+	}
+
 	private void SelectNextSave(MoveDirection dir)
 	{
 	}

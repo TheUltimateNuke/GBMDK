@@ -12,15 +12,10 @@ public class SaveSelection : MonoBehaviour
 
 	private int _saveIndex;
 
-	public int SaveIndex
+	public int SaveIndex => 0;
+
+	public void SetSaveIndex(int saveIndex)
 	{
-		get
-		{
-			return 0;
-		}
-		set
-		{
-		}
 	}
 
 	public int GetSaveCount()

@@ -1,5 +1,6 @@
 using CS.CorePlatform;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.SceneManagement;
 
 namespace GB.Platform.Utils
@@ -39,7 +40,7 @@ namespace GB.Platform.Utils
 		{
 		}
 
-		private void StringLoader_OnLanguageLoaded()
+		private void StringLoader_OnLanguageLoaded(Locale locale = null)
 		{
 		}
 

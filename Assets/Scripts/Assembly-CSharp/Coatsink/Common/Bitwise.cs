@@ -5,11 +5,13 @@ namespace Coatsink.Common
 {
 	public static class Bitwise
 	{
-		[StructLayout(2)]
+		[StructLayout(LayoutKind.Explicit)]
 		public struct TypeUnion
 		{
+			[FieldOffset(0)]
 			public int Int32Bits;
 
+			[FieldOffset(0)]
 			public float FloatBits;
 		}
 

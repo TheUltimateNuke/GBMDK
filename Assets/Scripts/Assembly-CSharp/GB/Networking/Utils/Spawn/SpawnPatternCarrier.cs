@@ -12,17 +12,17 @@ namespace GB.Networking.Utils.Spawn
 		[Serializable]
 		public class Pattern
 		{
-			[Tooltip("Needed gamemode")]
-			[EnumUtils.EnumFlags]
 			[SerializeField]
+			[EnumUtils.EnumFlags]
+			[Tooltip("Needed gamemode")]
 			public GameModeEnum Mode;
 
-			[Tooltip("Needed Min Gangs")]
 			[SerializeField]
+			[Tooltip("Needed Min Gangs")]
 			public int MinGangs;
 
-			[Tooltip("Needed Max Gangs")]
 			[SerializeField]
+			[Tooltip("Needed Max Gangs")]
 			public int MaxGangs;
 
 			[SerializeField]

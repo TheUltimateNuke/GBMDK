@@ -10,5 +10,9 @@ namespace GB.UnityServices.Matchmaking
 		{
 			return null;
 		}
+
+		public static void PrintMMTicket(MatchmakingTicketModel ticket)
+		{
+		}
 	}
 }

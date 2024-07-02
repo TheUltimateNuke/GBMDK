@@ -5,8 +5,8 @@ using UnityEngine;
 
 namespace GB.Networking.Sync
 {
-	[RequireComponent(typeof(ActorCostume))]
 	[RequireComponent(typeof(LazySyncModel))]
+	[RequireComponent(typeof(ActorCostume))]
 	public class CostumeSyncHack : MonoBehaviour
 	{
 		private List<RigidbodySyncRouter> _Routers;

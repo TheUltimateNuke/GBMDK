@@ -15,8 +15,8 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Networking;
 
-[RequireComponent(typeof(MeshFilter))]
 [RequireComponent(typeof(NetworkIdentity))]
+[RequireComponent(typeof(MeshFilter))]
 public class Fracture : NetworkBehaviour
 {
 	[CompilerGenerated]
@@ -70,9 +70,7 @@ public class Fracture : NetworkBehaviour
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
 		public _003CVoronoiSplitMeshJob_003Ed__24(int _003C_003E1__state)
@@ -99,12 +97,12 @@ public class Fracture : NetworkBehaviour
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
@@ -153,9 +151,7 @@ public class Fracture : NetworkBehaviour
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
 		public _003CRaycastEdgeConnect_003Ed__25(int _003C_003E1__state)
@@ -182,12 +178,12 @@ public class Fracture : NetworkBehaviour
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }

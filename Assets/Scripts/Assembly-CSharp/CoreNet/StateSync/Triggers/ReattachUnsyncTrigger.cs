@@ -33,8 +33,8 @@ namespace CoreNet.StateSync.Triggers
 		[SerializeField]
 		private Vector3 hatLocalUp;
 
-		[SerializeField]
 		[Tooltip("How far this hat should snap down after being re-attached. Usually the distance between the bottom of the trigger area, and the top of the wearable hat area")]
+		[SerializeField]
 		private float reparentDownshift;
 
 		private float detachTime;

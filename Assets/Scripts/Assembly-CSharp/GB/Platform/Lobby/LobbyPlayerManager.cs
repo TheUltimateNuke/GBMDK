@@ -99,6 +99,8 @@ namespace GB.Platform.Lobby
 
 		private LobbySnapshot _lobbyPlayerStates;
 
+		private bool _drawInspector;
+
 		public int TotalCache => 0;
 
 		public string LeaveReason
