@@ -72,6 +72,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 /[Aa]ssets/
+!/[Aa]ssets/Editor/
 !/[Aa]ssets/Plugins/
 !/[Aa]ssets/Scripts/
 !/[Aa]ssets/MonoBehaviour/
