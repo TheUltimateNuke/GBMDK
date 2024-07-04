@@ -1,4 +1,7 @@
 using System.Collections.Generic;
+using CoreNet.Utils;
+using Femur;
+using GB.Gamemodes.CTF;
 using GB.Networking.Objects;
 
 namespace GB.Game
@@ -7,11 +10,11 @@ namespace GB.Game
 	{
 		public const string ID = "ctf";
 
-		private static int FLAG_COUNT;
+		private List<CoreNetSpawnPosition> usedSpawns;
 
-		private static int FLAG_WIN_COUNT;
+		private float respawnTimeGap;
 
-		public Dictionary<int, int> playerFlagCount;
+		private GameModeUtils.RespawnManager _respawnManager;
 
 		public override string GetID()
 		{
@@ -30,6 +33,22 @@ namespace GB.Game
 		{
 		}
 
+		public void SpawnFlags(bool start, int count)
+		{
+		}
+
+		public void SpawnFlag(int gangID, bool start)
+		{
+		}
+
+		public void SpawnFlag(int gangID, SpawnParams flagSpawnParams)
+		{
+		}
+
+		private void RespawnKilledFlag(Flag flagKilled)
+		{
+		}
+
 		public override void StartRound()
 		{
 		}
@@ -43,7 +62,7 @@ namespace GB.Game
 		{
 		}
 
-		private void FlagCapture(FlagCapturePoint flagCP)
+		private void FlagCapture(FlagCapturePoint flagCP, Flag flag)
 		{
 		}
 
@@ -57,9 +76,23 @@ namespace GB.Game
 			return null;
 		}
 
+		public override List<NetGang> GetGameWinners()
+		{
+			return null;
+		}
+
 		protected override bool GameWinnerFilter(NetGang gang)
 		{
 			return false;
+		}
+
+		public override void OnBeastDeath(NetBeast beast, Actor actor)
+		{
+		}
+
+		private SpawnParams RespawnParams(NetBeast beast)
+		{
+			return null;
 		}
 	}
 }

@@ -51,5 +51,10 @@ namespace CS.CorePlatform.CSPlatform
 		{
 			return false;
 		}
+
+		public override string DebugDataInfo()
+		{
+			return null;
+		}
 	}
 }

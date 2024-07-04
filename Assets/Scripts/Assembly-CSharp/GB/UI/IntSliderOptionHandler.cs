@@ -10,6 +10,9 @@ namespace GB.UI
 		private int valueIncrement;
 
 		[SerializeField]
+		private bool roundClicksToIncrement;
+
+		[SerializeField]
 		private Slider sliderRef;
 
 		[SerializeField]

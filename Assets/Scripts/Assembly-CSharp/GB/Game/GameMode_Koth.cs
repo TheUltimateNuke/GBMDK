@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using CoreNet.Utils;
 using Femur;
 using GB.Networking.Objects;
 
@@ -6,11 +7,15 @@ namespace GB.Game
 {
 	public class GameMode_Koth : GameMode
 	{
-		private static int WIN_COUNT;
+		private static int MAX_TEAMS;
 
 		public const string ID = "koth";
 
-		public Dictionary<int, int> gangHillCount;
+		private List<CoreNetSpawnPosition> _usedFlagSpawns;
+
+		private float respawnTimeGap;
+
+		private GameModeUtils.RespawnManager _respawnManager;
 
 		public override string GetID()
 		{
@@ -22,6 +27,18 @@ namespace GB.Game
 		}
 
 		public override void Cleanup()
+		{
+		}
+
+		public override void InitRound()
+		{
+		}
+
+		public void SpawnHill(bool start)
+		{
+		}
+
+		private void RespawnKilledHill(TheHill flagKilled)
 		{
 		}
 
@@ -52,9 +69,23 @@ namespace GB.Game
 			return null;
 		}
 
+		public override List<NetGang> GetGameWinners()
+		{
+			return null;
+		}
+
 		protected override bool GameWinnerFilter(NetGang gang)
 		{
 			return false;
+		}
+
+		public override void OnBeastDeath(NetBeast beast, Actor actor)
+		{
+		}
+
+		private SpawnParams RespawnParams(NetBeast beast)
+		{
+			return null;
 		}
 	}
 }

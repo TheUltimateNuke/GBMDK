@@ -175,7 +175,7 @@ namespace CoreNet.StateSync.Routers
 			return false;
 		}
 
-		private bool DeltaOverThreshold(float current, float prev)
+		protected bool DeltaOverThreshold(float current, float prev)
 		{
 			return false;
 		}

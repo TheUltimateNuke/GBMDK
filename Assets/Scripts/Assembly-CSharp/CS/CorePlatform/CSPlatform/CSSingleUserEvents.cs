@@ -61,5 +61,10 @@ namespace CS.CorePlatform.CSPlatform
 		public override void SetPlayedWith(UserInfo userInfo)
 		{
 		}
+
+		public override string DebugDataInfo()
+		{
+			return null;
+		}
 	}
 }

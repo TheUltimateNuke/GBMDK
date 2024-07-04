@@ -42,8 +42,8 @@ namespace GB.Input
 
 			public bool enabled => false;
 
-			public PlayerActions(GangBeastsInputControls wrapper):this()
-			{
+			public PlayerActions(GangBeastsInputControls wrapper) : this()
+            {
 			}
 
 			public InputActionMap Get()
@@ -141,8 +141,8 @@ namespace GB.Input
 
 			public bool enabled => false;
 
-			public UIActions(GangBeastsInputControls wrapper):this()
-			{
+			public UIActions(GangBeastsInputControls wrapper) : this()
+            {
 			}
 
 			public InputActionMap Get()

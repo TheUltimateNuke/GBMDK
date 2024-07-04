@@ -12,7 +12,7 @@ namespace Audio
 	public class AudioResourceLoader : MonoBehaviour, IAsyncResourceLoader
 	{
 		[CompilerGenerated]
-		private sealed class _003CLoadAudioConfigs_003Ed__15 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CLoadAudioConfigs_003Ed__19 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -42,12 +42,10 @@ namespace Audio
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CLoadAudioConfigs_003Ed__15(int _003C_003E1__state)
+			public _003CLoadAudioConfigs_003Ed__19(int _003C_003E1__state)
 			{
 			}
 
@@ -71,12 +69,12 @@ namespace Audio
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -85,6 +83,8 @@ namespace Audio
 		private const string AUDIO_CONFIG_ADDRESS = "Core/Audio/AudioConfig.asset";
 
 		private const string AUDIO_JUKEBOX_ADDRESS = "Core/Audio/JukeboxConfig.asset";
+
+		private const string AUDIO_ADDRESSABLE_LABEL = "Audio";
 
 		public static Action OnCurrentAudioDataChanged;
 
@@ -102,6 +102,8 @@ namespace Audio
 
 		public static JukeboxConfig JukeboxData;
 
+		private bool _isDone;
+
 		[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
 		private static void ResetStatics()
 		{
@@ -116,6 +118,11 @@ namespace Audio
 		{
 		}
 
+		public IList<object> GetAssetKeys()
+		{
+			return null;
+		}
+
 		public void BeginAsyncLoading()
 		{
 		}
@@ -125,7 +132,12 @@ namespace Audio
 			return false;
 		}
 
-		[IteratorStateMachine(typeof(_003CLoadAudioConfigs_003Ed__15))]
+		public bool HasErrors()
+		{
+			return false;
+		}
+
+		[IteratorStateMachine(typeof(_003CLoadAudioConfigs_003Ed__19))]
 		private IEnumerator LoadAudioConfigs()
 		{
 			return null;

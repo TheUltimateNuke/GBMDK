@@ -10,6 +10,8 @@ namespace GB.UI.Beasts
 	{
 		private class PointState
 		{
+			private BeastMenuState _parent;
+
 			private Actor _beast;
 
 			private bool _handsRaised;
@@ -68,6 +70,10 @@ namespace GB.UI.Beasts
 				set
 				{
 				}
+			}
+
+			public PointState(BeastMenuState parent)
+			{
 			}
 
 			public void SetLink(LocalPlayerInfomationCache newLink)
@@ -138,7 +144,11 @@ namespace GB.UI.Beasts
 			{
 			}
 
-			private void SetCostume()
+			private void SetCostumeSeq()
+			{
+			}
+
+			public void ResetCostume()
 			{
 			}
 
@@ -160,6 +170,10 @@ namespace GB.UI.Beasts
 		}
 
 		private void OnDestroy()
+		{
+		}
+
+		private void AssignCoroutine(PointState point, Coroutine routine)
 		{
 		}
 

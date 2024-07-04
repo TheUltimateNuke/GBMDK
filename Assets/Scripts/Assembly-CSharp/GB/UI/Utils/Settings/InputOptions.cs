@@ -29,6 +29,9 @@ namespace GB.UI.Utils.Settings
 		[SerializeField]
 		private InputMapHandler _mapImage;
 
+		[SerializeField]
+		private LocalizedInputMapHandeler _LocalizedMapImage;
+
 		public void ControllerVibrationChanged(bool value)
 		{
 		}

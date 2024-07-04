@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using GB.Gamemodes;
 using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -12,7 +14,11 @@ namespace GB.UI
 
 		public TextMeshProUGUI valueText;
 
-		private int currentIndex;
+		private Dictionary<GameModeEnum, int> perModeIndices;
+
+		private GameModeEnum currentMode;
+
+		private int backupIndex;
 
 		public int CurrentValue => 0;
 
@@ -27,7 +33,13 @@ namespace GB.UI
 			}
 		}
 
+		private bool ValuesExist => false;
+
 		protected override void Start()
+		{
+		}
+
+		public void SetGameMode(GameModeEnum newMode)
 		{
 		}
 

@@ -19,8 +19,8 @@ namespace GB.Game
 
 			public int controllerID;
 
-			public PlayerSpawnQueue(int con, int cont):this()
-			{
+			public PlayerSpawnQueue(int con, int cont) : this()
+            {
 			}
 		}
 
@@ -70,9 +70,7 @@ namespace GB.Game
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CSpawnLoop_003Ed__22(int _003C_003E1__state)
@@ -99,12 +97,87 @@ namespace GB.Game
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+		[CompilerGenerated]
+		private sealed class _003CSpawnNextBeast_003Ed__23 : IEnumerator<object>, IEnumerator, IDisposable
+		{
+			private int _003C_003E1__state;
+
+			private object _003C_003E2__current;
+
+			public GameMode_Rumble _003C_003E4__this;
+
+			public GBSpawnPoint spawnPoint;
+
+			private string _003CnameOverride_003E5__2;
+
+			private GameObject _003CspawnedActor_003E5__3;
+
+			private Actor _003CnewActor_003E5__4;
+
+			private NetBeast _003CnetBeastRef_003E5__5;
+
+			private object System_002ECollections_002EGeneric_002EIEnumerator_003CSystem_002EObject_003E_002ECurrent
+			{
+				[DebuggerHidden]
+				get
+				{
+					return null;
+				}
+			}
+
+			private object System_002ECollections_002EIEnumerator_002ECurrent
+			{
+				[DebuggerHidden]
+				get
+				{
+					return null;
+				}
+			}
+
+            public object Current => throw new NotImplementedException();
+
+            [DebuggerHidden]
+			public _003CSpawnNextBeast_003Ed__23(int _003C_003E1__state)
+			{
+			}
+
+			[DebuggerHidden]
+			private void System_002EIDisposable_002EDispose()
+			{
+			}
+
+			private bool MoveNext()
+			{
+				return false;
+			}
+
+			[DebuggerHidden]
+			private void System_002ECollections_002EIEnumerator_002EReset()
+			{
+			}
+
+            bool IEnumerator.MoveNext()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Reset()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -135,9 +208,7 @@ namespace GB.Game
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CPreGameCountdown_003Ed__33(int _003C_003E1__state)
@@ -164,12 +235,12 @@ namespace GB.Game
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -228,8 +299,10 @@ namespace GB.Game
 			return null;
 		}
 
-		private void SpawnNextBeast(GBSpawnPoint spawnPoint)
+		[IteratorStateMachine(typeof(_003CSpawnNextBeast_003Ed__23))]
+		private IEnumerator SpawnNextBeast(GBSpawnPoint spawnPoint)
 		{
+			return null;
 		}
 
 		public override bool UseGameTimer()

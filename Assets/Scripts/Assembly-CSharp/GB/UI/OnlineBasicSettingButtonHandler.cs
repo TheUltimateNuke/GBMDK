@@ -1,6 +1,7 @@
 using GB.UI.Online;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Localization.Components;
 using UnityEngine.UI;
 
 namespace GB.UI
@@ -20,10 +21,10 @@ namespace GB.UI
 		private GameObject _disableParent;
 
 		[SerializeField]
-		protected TextReplacer _titleReplacer;
+		protected LocalizeStringEvent _titleReplacer;
 
 		[SerializeField]
-		protected TextReplacer _textReplacer;
+		protected LocalizeStringEvent _textReplacer;
 
 		[SerializeField]
 		protected Text _text;

@@ -44,6 +44,10 @@ namespace GB.Game
 		{
 		}
 
+		public override void HandleScore()
+		{
+		}
+
 		protected override bool GameWinnerFilter(NetGang gang)
 		{
 			return false;

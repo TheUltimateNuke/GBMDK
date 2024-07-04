@@ -74,9 +74,7 @@ public static class CostumeCloudSaveLoad
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
 		public _003CSaveCostumeRoutine_003Ed__6(int _003C_003E1__state)
@@ -103,12 +101,12 @@ public static class CostumeCloudSaveLoad
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
@@ -153,9 +151,7 @@ public static class CostumeCloudSaveLoad
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
 		public _003CUpdateCostumeRoutine_003Ed__8(int _003C_003E1__state)
@@ -182,12 +178,12 @@ public static class CostumeCloudSaveLoad
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
@@ -228,9 +224,7 @@ public static class CostumeCloudSaveLoad
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
 		public _003CGetCostumeRoutine_003Ed__10(int _003C_003E1__state)
@@ -257,12 +251,12 @@ public static class CostumeCloudSaveLoad
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }

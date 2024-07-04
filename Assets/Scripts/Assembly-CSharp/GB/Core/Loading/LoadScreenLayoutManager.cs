@@ -1,5 +1,7 @@
 using System;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Components;
 using UnityEngine.UI;
 
 namespace GB.Core.Loading
@@ -15,7 +17,9 @@ namespace GB.Core.Loading
 		}
 
 		[SerializeField]
-		public TextReplacer[] textFields;
+		public LocalizeStringEvent[] textFields;
+
+		private TextMeshProUGUI[] textMeshes;
 
 		[SerializeField]
 		public ImageCarrier[] imageFields;
@@ -32,6 +36,10 @@ namespace GB.Core.Loading
 		public bool ApplyTexture(int point, Texture texture)
 		{
 			return false;
+		}
+
+		private void Start()
+		{
 		}
 	}
 }

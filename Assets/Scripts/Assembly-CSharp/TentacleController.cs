@@ -1,18 +1,14 @@
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 public class TentacleController : MonoBehaviour
 {
-	public enum State
-	{
-		Idle = 0,
-		AttackingTarget = 1,
-		AttackingEnviroment = 2,
-		Retreting = 3,
-		Flailing = 4
-	}
-
 	public TentacleSegment[] segments;
+
+	public TentacleSegment RootSegment;
+
+	public TentacleSegment TipSegment;
 
 	[Header("Physics Settings")]
 	public float idleForce;
@@ -23,13 +19,24 @@ public class TentacleController : MonoBehaviour
 
 	public float upForce;
 
+	public float shrugForce;
+
 	public float maxVelocity;
 
 	public float maxAngularVelocity;
 
 	public Collider splashAudioCollider;
 
-	public LayerMask targetingLayerMask;
+	[Header("Move Position Speed")]
+	public float IdlePosMoveFactor;
+
+	public float AttackPosMoveFactor;
+
+	public float RetreatPosMoveFactor;
+
+	public float FlailPosMoveFactor;
+
+	public float MoveFactorVariation;
 
 	[Header("Targeting Settings")]
 	public Transform searchArea;
@@ -40,6 +47,21 @@ public class TentacleController : MonoBehaviour
 
 	public Vector3 enviromentTarget;
 
+	[Header("Flail Target Settings")]
+	public Vector3 flailTarget;
+
+	public Transform flailTargetSearchCenter;
+
+	public float flailRadius;
+
+	public bool drawFlailTargetArea;
+
+	public LayerMask FlailTargetLayerMask;
+
+	public float flailInterestTime;
+
+	private float flailInterestTimer;
+
 	[Header("Position Settings")]
 	public Vector3 disabledPosition;
 
@@ -49,15 +71,42 @@ public class TentacleController : MonoBehaviour
 
 	public Vector3 retretePosition;
 
-	[Header("Grab Settings")]
-	public LayerMask layerMask;
+	public float MoveThreshold;
 
-	public float gripStrength;
+	[Header("Grab Settings")]
+	public LayerMask ActorTargettingLayerMask;
+
+	public LayerMask EnvironmentTargetingLayerMask;
+
+	public float playerGripStrength;
+
+	public float environmentGripStrength;
 
 	public float releaseHeight;
 
+	public float throwHeight;
+
+	public float minGrabHeight;
+
+	public float ForceReleaseTime;
+
+	public float DragReleaseChanceTimer;
+
+	public float FlailReleaseChanceTimer;
+
+	public float ReleaseTimerVariance;
+
+	public float throwStrengthMultiplier;
+
+	private float releaseTimer;
+
+	private float objectHeldTimer;
+
 	[HideInInspector]
 	public bool hasObject;
+
+	[HideInInspector]
+	public bool objectIsActor;
 
 	public GeneralAudioData grabAudioData;
 
@@ -66,15 +115,50 @@ public class TentacleController : MonoBehaviour
 
 	public float attackTime;
 
+	public float flailTime;
+
+	public float retreatingTime;
+
+	public float dragToDepthsTime;
+
 	[Range(0f, 100f)]
 	public float targetedAttackChance;
 
-	[Header("Status")]
-	public State state;
+	public float InterestTime;
 
-	public State lastState;
+	[Description("Kill (retreating in the depths) is tied to aggression this is added to the range to give a chance of leaving the player alone")]
+	public float forgivePlayerChance;
+
+	public float releaseTargetChance;
+
+	[Header("Tranistion Chance Settings")]
+	[Header("Idle")]
+	public float IdleToFlail;
+
+	[Header("Attack Target")]
+	public float TargetToFlail;
+
+	[Header("Attack Environment")]
+	public float EnvToFlail;
+
+	[Header("Flail")]
+	public float FlailToFlail;
+
+	[Header("Status")]
+	public TentacleControllerState state;
+
+	public TentacleControllerState lastState;
 
 	public float stateTimer;
+
+	[Header("Debug")]
+	public bool InDebug;
+
+	public bool DebugTargets;
+
+	public bool DebugPositions;
+
+	public bool DebugForces;
 
 	private Collider[] _hitColliders;
 
@@ -98,6 +182,10 @@ public class TentacleController : MonoBehaviour
 
 	private bool gameStarted;
 
+	private float InterestTimer;
+
+	private GameObject grabbedObject;
+
 	private void Start()
 	{
 	}
@@ -118,11 +206,68 @@ public class TentacleController : MonoBehaviour
 	{
 	}
 
+	private void Idle()
+	{
+	}
+
+	private void AttackingTarget()
+	{
+	}
+
+	private void AttackingEnvironment()
+	{
+	}
+
+	private void Retreating()
+	{
+	}
+
+	private void Flailing()
+	{
+	}
+
+	private void Shruging()
+	{
+	}
+
 	private void FindTargets()
 	{
 	}
 
+	public void FindNewFlailTarget()
+	{
+	}
+
 	public void UpdateSegmentsFixed()
+	{
+	}
+
+	public void ShrugTentacle(Vector3 ShrugDirection)
+	{
+	}
+
+	public void AttackNewTarget(Rigidbody target)
+	{
+	}
+
+	public void SetGrabbedObject(GameObject newGrabbedObject)
+	{
+	}
+
+	public bool CanGrabObject(GameObject newGrabbedObject)
+	{
+		return false;
+	}
+
+	public void ReleaseTarget()
+	{
+	}
+
+	private void OnDrawGizmosSelected()
+	{
+	}
+
+	private static void DrawLocationCross(Vector3 location, Color color, float size = 1f)
 	{
 	}
 }

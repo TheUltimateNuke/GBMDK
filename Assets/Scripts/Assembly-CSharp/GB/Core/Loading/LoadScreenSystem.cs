@@ -11,7 +11,7 @@ namespace GB.Core.Loading
 	public class LoadScreenSystem : MonoBehaviour, IAsyncResourceLoader
 	{
 		[CompilerGenerated]
-		private sealed class _003CAwaitPrepPipeCompletion_003Ed__48 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CAwaitPrepPipeCompletion_003Ed__51 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -41,12 +41,10 @@ namespace GB.Core.Loading
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CAwaitPrepPipeCompletion_003Ed__48(int _003C_003E1__state)
+			public _003CAwaitPrepPipeCompletion_003Ed__51(int _003C_003E1__state)
 			{
 			}
 
@@ -70,16 +68,18 @@ namespace GB.Core.Loading
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
         }
+
+		private const string LOADING_ADDRESSABLE_LABEL = "Loading";
 
 		private float LoadScreenFadeTime;
 
@@ -166,7 +166,17 @@ namespace GB.Core.Loading
 		{
 		}
 
+		public IList<object> GetAssetKeys()
+		{
+			return null;
+		}
+
 		public bool HasFinishedAsyncLoading()
+		{
+			return false;
+		}
+
+		public bool HasErrors()
 		{
 			return false;
 		}
@@ -231,7 +241,7 @@ namespace GB.Core.Loading
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CAwaitPrepPipeCompletion_003Ed__48))]
+		[IteratorStateMachine(typeof(_003CAwaitPrepPipeCompletion_003Ed__51))]
 		private IEnumerator AwaitPrepPipeCompletion(Action onComplete)
 		{
 			return null;

@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine.EventSystems;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 namespace GB.UI
@@ -34,7 +35,7 @@ namespace GB.UI
 		{
 		}
 
-		private void UpdateText()
+		private void UpdateText(Locale locale)
 		{
 		}
 
@@ -48,6 +49,21 @@ namespace GB.UI
 
 		protected override void OnDisable()
 		{
+		}
+
+		public static int GetSelectedLocaleIndex()
+		{
+			return 0;
+		}
+
+		public static int GetLocaleIndex(Locale locale)
+		{
+			return 0;
+		}
+
+		private string GetLanguageKey(Locale locale)
+		{
+			return null;
 		}
 	}
 }

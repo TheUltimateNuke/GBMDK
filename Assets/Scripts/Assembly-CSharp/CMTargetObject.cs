@@ -18,6 +18,16 @@ public class CMTargetObject : MonoBehaviour
 	[SerializeField]
 	private float _DeadZone;
 
+	[SerializeField]
+	private float _ScoreScreenSmoothTime;
+
+	[SerializeField]
+	private float _ScoreScreenDeadZone;
+
+	private float _smoothTimeToUse;
+
+	private float _deadZoneToUse;
+
 	public float nonhumanWeighting;
 
 	public float nonhumanRadius;
@@ -30,6 +40,8 @@ public class CMTargetObject : MonoBehaviour
 	[SerializeField]
 	private bool _onlyEnabled;
 
+	private bool _coinScreenShowing;
+
 	private CMTrackedObject TrackedObject => null;
 
 	private void Start()
@@ -41,6 +53,14 @@ public class CMTargetObject : MonoBehaviour
 	}
 
 	private void OnDisable()
+	{
+	}
+
+	private void OnCoinScreenShow()
+	{
+	}
+
+	private void OnCoinScreenHide()
 	{
 	}
 

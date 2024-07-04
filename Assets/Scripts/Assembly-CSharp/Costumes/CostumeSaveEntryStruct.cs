@@ -15,8 +15,8 @@ namespace Costumes
 
 			public string timestamp;
 
-			public CostumeCloudDataStruct(CostumeCloudSaveLoad.CostumeCloudData cloudData):this()
-			{
+			public CostumeCloudDataStruct(CostumeCloudSaveLoad.CostumeCloudData cloudData) : this()
+            {
 			}
 
 			public bool IsEmpty()
@@ -65,8 +65,8 @@ namespace Costumes
 
 		public CostumeSaveEntry.CostumeSaveItem[] CostumeSaveItems;
 
-		public CostumeSaveEntryStruct(CostumeSaveEntry entry):this()
-		{
+		public CostumeSaveEntryStruct(CostumeSaveEntry entry) : this()
+        {
 		}
 
 		public bool IsEmpty()

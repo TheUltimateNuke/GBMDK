@@ -99,6 +99,10 @@ namespace GB.UI.Lobby
 		{
 		}
 
+		private void PlatformEvents_OnLobbyLeft()
+		{
+		}
+
 		protected override bool IsCostumeChangeAllowed()
 		{
 			return false;

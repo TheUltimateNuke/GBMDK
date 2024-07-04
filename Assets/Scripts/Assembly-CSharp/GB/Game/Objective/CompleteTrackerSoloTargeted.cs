@@ -11,8 +11,8 @@ namespace GB.Game.Objective
 
 			public int controller;
 
-			public Tracker(int conn, int cont):this()
-			{
+			public Tracker(int conn, int cont) : this()
+            {
 			}
 		}
 

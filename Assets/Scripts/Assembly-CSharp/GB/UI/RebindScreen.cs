@@ -17,8 +17,8 @@ namespace GB.UI
 
 			public string displayString;
 
-			public MappingDisplayNameEntry(string inLayout, string inPath, string inDisplayString):this()
-			{
+			public MappingDisplayNameEntry(string inLayout, string inPath, string inDisplayString) : this()
+            {
 			}
 		}
 

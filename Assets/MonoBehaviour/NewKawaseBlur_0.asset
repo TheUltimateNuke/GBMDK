@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd5d85aa7e37b89005229384498d055e, type: 3}
+  m_Name: NewKawaseBlur
+  m_EditorClassIdentifier:
+  m_Active: 0
+  settings:
+    renderPassEvent: 450
+    blurMaterial: {fileID: 2100000, guid: 10d7e21c077dc2d44b1232fa1122c167, type: 2}
+    blurCompositeMaterial: {fileID: 2100000, guid: 8884d292c4a6b3147ab12173d8e6af80, type: 2}
+    blurSize: 2
+    downsample: 8
+    copyToFramebuffer: 1
+    targetName: _blurTexture

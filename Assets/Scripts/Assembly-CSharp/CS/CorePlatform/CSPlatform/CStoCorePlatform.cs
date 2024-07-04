@@ -16,6 +16,8 @@ namespace CS.CorePlatform.CSPlatform
 
 		private PlatformSystemMessenger _dialogUI;
 
+		private bool _lastPopup;
+
 		private CSUserEvents _users;
 
 		private CSOnline _online;
@@ -27,8 +29,6 @@ namespace CS.CorePlatform.CSPlatform
 		public CSPlayWith _playWith;
 
 		private CSLocConverter _loc;
-
-		private bool _lastPopup;
 
 		public PlatformSystemMessenger Dialog => null;
 
@@ -83,11 +83,16 @@ namespace CS.CorePlatform.CSPlatform
 
 		public override int TotalInLobby => 0;
 
-		public void OnDisable()
+		public override bool SetToUserImage(BaseUserInfo userInfo, ref Texture2D terxtureSetting)
 		{
+			return false;
 		}
 
 		public void Awake()
+		{
+		}
+
+		public void OnDisable()
 		{
 		}
 
@@ -222,11 +227,6 @@ namespace CS.CorePlatform.CSPlatform
 
 		private void CheckUIEvent(bool obj)
 		{
-		}
-
-		public override bool SetToUserImage(BaseUserInfo userInfo, ref Texture2D terxtureSetting)
-		{
-			return false;
 		}
 
 		public override bool ShowSystemMessageYESNO(string body, Action yesAction, Action noAction, string yesMessage = null, string noMessage = null)

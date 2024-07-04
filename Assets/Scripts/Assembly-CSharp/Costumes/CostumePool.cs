@@ -14,7 +14,7 @@ namespace Costumes
 	public class CostumePool : MonoBehaviour, IAsyncResourceLoader
 	{
 		[CompilerGenerated]
-		private sealed class _003CLoadCostumeAssets_003Ed__29 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CLoadCostumeAssets_003Ed__32 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -40,12 +40,10 @@ namespace Costumes
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CLoadCostumeAssets_003Ed__29(int _003C_003E1__state)
+			public _003CLoadCostumeAssets_003Ed__32(int _003C_003E1__state)
 			{
 			}
 
@@ -69,19 +67,19 @@ namespace Costumes
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
         }
 
 		[CompilerGenerated]
-		private sealed class _003CLoadPlayerDataStepped_003Ed__33 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CLoadPlayerDataStepped_003Ed__36 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -111,12 +109,10 @@ namespace Costumes
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CLoadPlayerDataStepped_003Ed__33(int _003C_003E1__state)
+			public _003CLoadPlayerDataStepped_003Ed__36(int _003C_003E1__state)
 			{
 			}
 
@@ -140,12 +136,12 @@ namespace Costumes
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -171,6 +167,8 @@ namespace Costumes
 		public CostumeDatabase m_CostumeDatabase;
 
 		public CostumePresetDatabase m_CostumePresetDatabase;
+
+		private bool _isDone;
 
 		public CostumeDatabase CostumeDatabase => null;
 
@@ -209,12 +207,22 @@ namespace Costumes
 		{
 		}
 
+		public IList<object> GetAssetKeys()
+		{
+			return null;
+		}
+
 		public bool HasFinishedAsyncLoading()
 		{
 			return false;
 		}
 
-		[IteratorStateMachine(typeof(_003CLoadCostumeAssets_003Ed__29))]
+		public bool HasErrors()
+		{
+			return false;
+		}
+
+		[IteratorStateMachine(typeof(_003CLoadCostumeAssets_003Ed__32))]
 		private IEnumerator LoadCostumeAssets()
 		{
 			return null;
@@ -232,7 +240,7 @@ namespace Costumes
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CLoadPlayerDataStepped_003Ed__33))]
+		[IteratorStateMachine(typeof(_003CLoadPlayerDataStepped_003Ed__36))]
 		private IEnumerator LoadPlayerDataStepped()
 		{
 			return null;

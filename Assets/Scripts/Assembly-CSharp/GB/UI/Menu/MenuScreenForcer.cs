@@ -28,16 +28,16 @@ namespace GB.UI.Menu
 		[Tooltip("The online menu controller")]
 		private OnlineMenuController _lobbyMenu;
 
-		[SerializeField]
 		[Tooltip("Screen with the wireless menu controller on")]
+		[SerializeField]
 		private BaseMenuScreen _wirelessLobbyScreen;
 
-		[SerializeField]
 		[Tooltip("The wireless menu controller")]
+		[SerializeField]
 		private WirelessMenuController _wirelessLobbyMenu;
 
-		[SerializeField]
 		[Tooltip("Screen for chekcing has online needs")]
+		[SerializeField]
 		private BaseMenuScreen _onlineChecking;
 
 		[SerializeField]

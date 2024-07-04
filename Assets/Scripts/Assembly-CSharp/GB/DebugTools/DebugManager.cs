@@ -7,6 +7,7 @@ namespace GB.DebugTools
 	{
 		private static readonly int FPS_BUFFER_SIZE;
 
+		[Tooltip("Debug Variables controller reference")]
 		[SerializeField]
 		private DebugVariables _debugVariables;
 

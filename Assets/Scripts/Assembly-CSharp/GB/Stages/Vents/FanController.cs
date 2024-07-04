@@ -51,12 +51,12 @@ namespace GB.Stages.Vents
 		[SerializeField]
 		private float _gravityMultiplayer;
 
-		[Tooltip("Reference to the effector field tied to the fan animation - affects beasts only")]
 		[SerializeField]
+		[Tooltip("Reference to the effector field tied to the fan animation - affects beasts only")]
 		private PushVolume _beastEffectorVolume;
 
-		[SerializeField]
 		[Tooltip("The magnitude of force to be applied by the effector field - affects beasts only")]
+		[SerializeField]
 		private float _beastVolumeThrustMagnitude;
 
 		[SerializeField]
@@ -100,8 +100,8 @@ namespace GB.Stages.Vents
 		[Tooltip("How fast the fan should spin while turned off, expressed as a decimal percentage of the main spin speed")]
 		private float FanOffLazySpinPercent;
 
-		[SerializeField]
 		[Tooltip("At what percentage speed should the force effectors switch off?")]
+		[SerializeField]
 		private float FanSpeedPercentCutoff;
 
 		private float _animationActiveTimer;

@@ -18,6 +18,8 @@ namespace GB.Platform.Lobby
 
 		private Dictionary<BaseUserInfo, OnlinePlayerInfomationCache[]> _lobbyBeasts;
 
+		private bool _drawInspector;
+
 		public int TotalActiveBeasts => 0;
 
 		public static event Action<OnlinePlayerInfomationCache, BeastUtils.PlayerState> OnStateChange

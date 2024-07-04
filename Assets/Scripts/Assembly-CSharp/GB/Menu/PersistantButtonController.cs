@@ -8,6 +8,7 @@ using GB.Setup;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.InputSystem;
+using UnityEngine.Localization;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace GB.Menu
@@ -26,8 +27,8 @@ namespace GB.Menu
 
 			public string[] guids;
 
-			public ControllerGUIDContainer(ControllerType type, string[] guidList):this()
-			{
+			public ControllerGUIDContainer(ControllerType type, string[] guidList) : this()
+            {
 			}
 		}
 
@@ -47,13 +48,13 @@ namespace GB.Menu
 
 			public PersistantButtonElement element;
 
-			public ElementContainer(InputMapActions ac, PersistantButtonElement elem):this()
-			{
+			public ElementContainer(InputMapActions ac, PersistantButtonElement elem) : this()
+            {
 			}
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CLoadConfigs_003Ed__29 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CLoadConfigs_003Ed__32 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -85,12 +86,10 @@ namespace GB.Menu
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CLoadConfigs_003Ed__29(int _003C_003E1__state)
+			public _003CLoadConfigs_003Ed__32(int _003C_003E1__state)
 			{
 			}
 
@@ -114,19 +113,19 @@ namespace GB.Menu
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
         }
 
 		[CompilerGenerated]
-		private sealed class _003CGenerateEC_003Ed__52 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CGenerateEC_003Ed__55 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -160,12 +159,10 @@ namespace GB.Menu
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CGenerateEC_003Ed__52(int _003C_003E1__state)
+			public _003CGenerateEC_003Ed__55(int _003C_003E1__state)
 			{
 			}
 
@@ -189,12 +186,12 @@ namespace GB.Menu
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -236,6 +233,8 @@ namespace GB.Menu
 
 		private Coroutine _loadRoutine;
 
+		private bool _hasErrors;
+
 		public ControllerType ShownController
 		{
 			get
@@ -266,12 +265,22 @@ namespace GB.Menu
 		{
 		}
 
+		public IList<object> GetAssetKeys()
+		{
+			return null;
+		}
+
 		public bool HasFinishedAsyncLoading()
 		{
 			return false;
 		}
 
-		[IteratorStateMachine(typeof(_003CLoadConfigs_003Ed__29))]
+		public bool HasErrors()
+		{
+			return false;
+		}
+
+		[IteratorStateMachine(typeof(_003CLoadConfigs_003Ed__32))]
 		private IEnumerator LoadConfigs()
 		{
 			return null;
@@ -289,7 +298,7 @@ namespace GB.Menu
 		{
 		}
 
-		private void OnLanguageChanged()
+		private void OnLanguageChanged(Locale locale)
 		{
 		}
 
@@ -367,7 +376,7 @@ namespace GB.Menu
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CGenerateEC_003Ed__52))]
+		[IteratorStateMachine(typeof(_003CGenerateEC_003Ed__55))]
 		private IEnumerator GenerateEC(InputMapActions action, Transform parent, ButtonHorizontalAlignment buttonHorizontalAlignment = ButtonHorizontalAlignment.Right)
 		{
 			return null;

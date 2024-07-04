@@ -19,24 +19,24 @@ namespace SuperGenius.Lib.Burst.Geometry
 
 		private bool _isValid;
 
-		public Bounds(UnityEngine.Bounds bounds):this()
-		{
+		public Bounds(UnityEngine.Bounds bounds) : this()
+        {
 		}
 
-		public Bounds(UnityEngine.Bounds bounds, float3 scale):this()
-		{
+		public Bounds(UnityEngine.Bounds bounds, float3 scale) : this()
+        {
 		}
 
-		public Bounds(Bounds bounds, float3 scale):this()
-		{
+		public Bounds(Bounds bounds, float3 scale) : this()
+        {
 		}
 
-		public Bounds(float3 center, float3 extents):this()
-		{
+		public Bounds(float3 center, float3 extents) : this()
+        {
 		}
 
-		public Bounds(ref MeshData meshData):this()
-		{
+		public Bounds(ref MeshData meshData) : this()
+        {
 		}
 
 		public void UpdateBounds(ref MeshData meshData)

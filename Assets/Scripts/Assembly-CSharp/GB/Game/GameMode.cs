@@ -62,9 +62,7 @@ namespace GB.Game
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CStartupSpawnPlayers_003Ed__33(int _003C_003E1__state)
@@ -91,12 +89,12 @@ namespace GB.Game
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -129,9 +127,7 @@ namespace GB.Game
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CPreGameCountdown_003Ed__48(int _003C_003E1__state)
@@ -158,18 +154,18 @@ namespace GB.Game
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
         }
 
-		private static List<int> activeGangIds;
+		protected static List<int> activeGangIds;
 
 		protected GameConfig _Config;
 

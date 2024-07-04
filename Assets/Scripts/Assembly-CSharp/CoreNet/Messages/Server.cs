@@ -20,8 +20,8 @@ namespace CoreNet.Messages
 
 		public bool IsPassworded;
 
-		public Server(HostedGameInfo info):this()
-		{
+		public Server(HostedGameInfo info) : this()
+        {
 		}
 	}
 }

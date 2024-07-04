@@ -12,8 +12,8 @@ namespace GB.Networking.Utils.Spawn
 
 			public Vector3 rotation;
 
-			public Options(Vector3 _offset, Vector3 _rotation):this()
-			{
+			public Options(Vector3 _offset, Vector3 _rotation) : this()
+            {
 			}
 		}
 

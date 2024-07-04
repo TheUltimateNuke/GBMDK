@@ -176,8 +176,8 @@ public class ScreenSpaceReflections : ScriptableRendererFeature
 	[Tooltip("Fades reflections close to the near planes.")]
 	public float distanceFade;
 
-	[Tooltip("Fades reflections close to the screen edges.")]
 	[Range(0f, 1f)]
+	[Tooltip("Fades reflections close to the screen edges.")]
 	public float vignette;
 
 	public Texture2D blueNoise256;

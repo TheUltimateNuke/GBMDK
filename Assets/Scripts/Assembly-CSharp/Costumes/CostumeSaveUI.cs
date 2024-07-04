@@ -98,10 +98,6 @@ namespace Costumes
 		{
 		}
 
-		public void DeleteSave()
-		{
-		}
-
 		public void ConfirmDelete(bool accept)
 		{
 		}

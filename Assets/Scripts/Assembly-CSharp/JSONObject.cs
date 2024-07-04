@@ -56,9 +56,7 @@ public class JSONObject
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
 		public _003CBakeAsync_003Ed__98(int _003C_003E1__state)
@@ -101,17 +99,17 @@ public class JSONObject
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
 
-        IEnumerator<object> IEnumerable<object>.GetEnumerator()
+        public IEnumerator<object> GetEnumerator()
         {
             throw new NotImplementedException();
         }
@@ -270,9 +268,7 @@ public class JSONObject
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
 		public _003CStringifyAsync_003Ed__103(int _003C_003E1__state)
@@ -319,17 +315,17 @@ public class JSONObject
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
 
-        IEnumerator<object> IEnumerable<object>.GetEnumerator()
+        public IEnumerator<object> GetEnumerator()
         {
             throw new NotImplementedException();
         }

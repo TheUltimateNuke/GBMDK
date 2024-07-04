@@ -7,8 +7,8 @@ namespace GB.Achievements
 	[Serializable]
 	public class AchievementTrigger
 	{
-		[SerializeField]
 		[Tooltip("The trigger condition of this trigger - NOTE: HOLD TRIGGERS NOT SUPPORTED FOR ACHIEVEMENTS YET")]
+		[SerializeField]
 		private AchievementTriggerType TriggerType;
 
 		[SerializeField]
@@ -23,16 +23,16 @@ namespace GB.Achievements
 		[Tooltip("Unique game object to listen for collisions on. Ignored if trigger type does not require a unique object.")]
 		private GameObject TriggerListenObj;
 
-		[SerializeField]
 		[Tooltip("Particular beast body part to listen on. Ignored if the trigger type does not require a particular body part")]
+		[SerializeField]
 		private BodyEnum[] ActorListenPart;
 
 		[SerializeField]
 		[Tooltip("The period of time it takes this trigger to 'unset' itself. A value of -1 means the trigger will never unset.")]
 		private float TriggerCancelTime;
 
-		[Tooltip("Whether the beast in question must be alive to trigger this achievement")]
 		[SerializeField]
+		[Tooltip("Whether the beast in question must be alive to trigger this achievement")]
 		private bool AliveBeastsOnly;
 
 		private bool _isLastTrigger;

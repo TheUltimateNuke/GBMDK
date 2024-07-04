@@ -6,7 +6,7 @@ namespace GB.Core.UI
 	public class ModalImageText : ModalHandler
 	{
 		[SerializeField]
-		private ImageReplacer _imageHandler;
+		private LocalizeTextureWithAspectRatioEvent _imageHandler;
 
 		public override void PreInitialise(List<object> parameters)
 		{

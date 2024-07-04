@@ -26,8 +26,8 @@ namespace GB.UI.Beasts
 
 			public ButtonStyle style;
 
-			public InputMap(string ncode, ButtonStyle nstyle):this()
-			{
+			public InputMap(string ncode, ButtonStyle nstyle) : this()
+            {
 			}
 		}
 
@@ -58,9 +58,7 @@ namespace GB.UI.Beasts
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
 			public _003CApplyStay_003Ed__47(int _003C_003E1__state)
@@ -87,12 +85,12 @@ namespace GB.UI.Beasts
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }

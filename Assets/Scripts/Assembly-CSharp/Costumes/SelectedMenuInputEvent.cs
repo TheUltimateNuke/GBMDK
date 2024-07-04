@@ -27,8 +27,8 @@ namespace Costumes
 
 			public CostumeCustomization.CostumeActions Action;
 
-			public InputListener(string _input, string _inputSwitchOverride, inputType _eventType, PointerEventData.InputButton _button, CostumeCustomization.CostumeActions _action):this()
-			{
+			public InputListener(string _input, string _inputSwitchOverride, inputType _eventType, PointerEventData.InputButton _button, CostumeCustomization.CostumeActions _action) : this()
+            {
 			}
 		}
 

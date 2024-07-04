@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using GB.Data.Loading;
 using GB.Networking.Utils.Spawn;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ namespace GB.Game.Data
 {
 	[Serializable]
 	[CreateAssetMenu(fileName = "WavesData", menuName = "Gang Beasts/Data/Game/Waves Data", order = 1)]
-	public class WavesData : ScriptableObject
+	public class WavesData : ScriptableObject, IDataRegister
 	{
 		public const int DEFAULT_AI = 10;
 
@@ -50,6 +51,14 @@ namespace GB.Game.Data
 		public GameObject GetSpawnObject(int type)
 		{
 			return null;
+		}
+
+		public void Register()
+		{
+		}
+
+		public void Unregister()
+		{
 		}
 	}
 }

@@ -13,8 +13,8 @@ namespace GB.UI.Online
 
 			public Color colour;
 
-			public PingLevels(float _over, Color _colour):this()
-			{
+			public PingLevels(float _over, Color _colour) : this()
+            {
 			}
 		}
 

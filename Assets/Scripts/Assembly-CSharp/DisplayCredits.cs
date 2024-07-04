@@ -48,6 +48,9 @@ public class DisplayCredits : MonoBehaviour
 	[SerializeField]
 	private UnityEvent OnCompelete;
 
+	[SerializeField]
+	private bool _debugMode;
+
 	private bool fadeIn;
 
 	private void OnEnable()

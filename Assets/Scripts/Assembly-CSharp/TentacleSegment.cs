@@ -2,15 +2,6 @@ using UnityEngine;
 
 public class TentacleSegment : MonoBehaviour
 {
-	public enum State
-	{
-		Idle = 0,
-		AttackingTarget = 1,
-		AttackingEnviroment = 2,
-		Retreting = 3,
-		Flailing = 4
-	}
-
 	public Rigidbody thisRigidbody;
 
 	public Collider thisCollider;
@@ -18,15 +9,15 @@ public class TentacleSegment : MonoBehaviour
 	[HideInInspector]
 	public ConfigurableJoint joint;
 
-	[HideInInspector]
 	public bool hasGrip;
 
-	[HideInInspector]
 	public float stateTimer;
 
 	public TentacleController controller;
 
 	public bool rootSegment;
+
+	public bool tipSegment;
 
 	public bool showDebugLines;
 
@@ -36,9 +27,15 @@ public class TentacleSegment : MonoBehaviour
 
 	private float wiggleTimer;
 
-	public State state;
+	private Vector3 rootTargetPos;
 
-	private State lastState;
+	private float moveSpeedModifier;
+
+	private TentacleControllerState state;
+
+	private TentacleControllerState lastState;
+
+	public float upForce;
 
 	private Vector3 boundsOffset;
 
@@ -47,6 +44,14 @@ public class TentacleSegment : MonoBehaviour
 	private float currentVelocity;
 
 	private float smoothTime;
+
+	private int tentacleLayer;
+
+	private int railingLayer;
+
+	private int actorLayer;
+
+	private Rigidbody grabbedRigidBody;
 
 	private void Start()
 	{
@@ -60,11 +65,25 @@ public class TentacleSegment : MonoBehaviour
 	{
 	}
 
-	public void FixedUpdateImpl()
+	public void OnStateChanged(TentacleControllerState newState)
 	{
 	}
 
-	private void RootSegmentUpdate(Vector3 rigidbodyPosition)
+	public void FixedUpdateImpl(Vector3 rootMovement)
+	{
+	}
+
+	public Vector3 GetRootSegmentMovement()
+	{
+		return default(Vector3);
+	}
+
+	public float RootToTarget()
+	{
+		return 0f;
+	}
+
+	public void Shrug(Vector3 shrugDirection)
 	{
 	}
 
@@ -100,7 +119,15 @@ public class TentacleSegment : MonoBehaviour
 	{
 	}
 
+	private void OnCollisionEnter(Collision other)
+	{
+	}
+
 	private void OnJointBreak()
+	{
+	}
+
+	private void OnDrawGizmosSelected()
 	{
 	}
 }

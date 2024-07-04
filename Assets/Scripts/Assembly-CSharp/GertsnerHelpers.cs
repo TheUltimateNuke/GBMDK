@@ -4,12 +4,13 @@ using System.Runtime.InteropServices;
 using Unity.Burst;
 using Unity.Mathematics;
 
+[StructLayout(LayoutKind.Sequential, Size = 1)]
 [BurstCompile]
 public struct GertsnerHelpers
 {
-	public delegate void VectorSin_00000A33_0024PostfixBurstDelegate(in float4 v, out float4 vSin);
+	public delegate void VectorSin_00000AD3_0024PostfixBurstDelegate(in float4 v, out float4 vSin);
 
-	internal static class VectorSin_00000A33_0024BurstDirectCall
+	internal static class VectorSin_00000AD3_0024BurstDirectCall
 	{
 		private static IntPtr Pointer;
 
@@ -39,9 +40,9 @@ public struct GertsnerHelpers
 		}
 	}
 
-	public delegate void VectorCos_00000A34_0024PostfixBurstDelegate(in float4 v, out float4 vCos);
+	public delegate void VectorCos_00000AD4_0024PostfixBurstDelegate(in float4 v, out float4 vCos);
 
-	internal static class VectorCos_00000A34_0024BurstDirectCall
+	internal static class VectorCos_00000AD4_0024BurstDirectCall
 	{
 		private static IntPtr Pointer;
 
@@ -71,9 +72,9 @@ public struct GertsnerHelpers
 		}
 	}
 
-	public delegate void GerstnerOffset4_00000A35_0024PostfixBurstDelegate(in float2 xzVtx, in float4 steepness, in float4 amp, in float4 freq, in float4 speed, in float4 dirAB, in float4 dirCD, out float3 offsets);
+	public delegate void GerstnerOffset4_00000AD5_0024PostfixBurstDelegate(in float2 xzVtx, in float4 steepness, in float4 amp, in float4 freq, in float4 speed, in float4 dirAB, in float4 dirCD, out float3 offsets);
 
-	internal static class GerstnerOffset4_00000A35_0024BurstDirectCall
+	internal static class GerstnerOffset4_00000AD5_0024BurstDirectCall
 	{
 		private static IntPtr Pointer;
 
@@ -103,9 +104,9 @@ public struct GertsnerHelpers
 		}
 	}
 
-	public delegate void GetWavePosition_00000A36_0024PostfixBurstDelegate(in float2 position, in float2 time, float fadeStart, float fadeEnd, float waveCount, float waveDistance, in float4 waveDirection, float waveSteepness, int maxWaveCount, in float3 cameraPos, out float3 wavePosOut);
+	public delegate void GetWavePosition_00000AD6_0024PostfixBurstDelegate(in float2 position, in float2 time, float fadeStart, float fadeEnd, float waveCount, float waveDistance, in float4 waveDirection, float waveSteepness, int maxWaveCount, in float3 cameraPos, out float3 wavePosOut);
 
-	internal static class GetWavePosition_00000A36_0024BurstDirectCall
+	internal static class GetWavePosition_00000AD6_0024BurstDirectCall
 	{
 		private static IntPtr Pointer;
 

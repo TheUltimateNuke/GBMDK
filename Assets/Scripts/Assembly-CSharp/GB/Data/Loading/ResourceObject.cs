@@ -22,6 +22,10 @@ namespace GB.Data.Loading
 
 		private Action OnLoadedFinished;
 
+		public AssetReference AssetsCache => null;
+
+		public AsyncOperationStatus Status { get; private set; }
+
 		public object Data => null;
 
 		public bool Loaded => false;

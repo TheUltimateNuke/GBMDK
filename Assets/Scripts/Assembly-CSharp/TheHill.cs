@@ -1,20 +1,26 @@
+using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using Femur;
+using GB.Game;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.UI;
 
-public class TheHill : NetworkBehaviour
+public class TheHill : NetworkBehaviour, IKillTriggered
 {
 	public delegate void HillTickHandler(TheHill hill, Actor hillOwner);
 
-	public Text countText;
+	public TextMeshPro countText;
+
+	public Action<TheHill> OnKilled;
 
 	private Dictionary<Actor, int> playersInTheHill;
 
 	private float tickTimer;
+
+	private bool _captureable;
 
 	private Actor currentOwner;
 
@@ -25,6 +31,17 @@ public class TheHill : NetworkBehaviour
 
 	[SyncVar]
 	private int hillCount;
+
+	public bool Captureable
+	{
+		get
+		{
+			return false;
+		}
+		set
+		{
+		}
+	}
 
 	public Color NetworktargetColor
 	{
@@ -88,6 +105,10 @@ public class TheHill : NetworkBehaviour
 	}
 
 	private void Update()
+	{
+	}
+
+	public void Kill(KillVolumeEvent trigger)
 	{
 	}
 

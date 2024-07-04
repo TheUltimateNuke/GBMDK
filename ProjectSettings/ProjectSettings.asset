@@ -42,11 +42,11 @@ PlayerSettings:
   m_SplashScreenLogos:
   - logo: {fileID: 0}
     duration: 2
-  - logo: {fileID: 21300000, guid: bbf4cc8b1f17bcf4a9f18f83b7ccc850, type: 2}
+  - logo: {fileID: 21300000, guid: 576631b9380e3dc428d909113b33f98a, type: 2}
     duration: 3
-  - logo: {fileID: 21300000, guid: 244cb3e60f392f343ad0ca3b2b184771, type: 2}
+  - logo: {fileID: 21300000, guid: d54e3acf9167ca74b842c7c0ef7a293e, type: 2}
     duration: 3
-  - logo: {fileID: 21300000, guid: a5e43cd7edda34740a3b2574cca9fa2a, type: 2}
+  - logo: {fileID: 21300000, guid: e8f34bb630279624fac77e86b6b93cc6, type: 2}
     duration: 3
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
@@ -170,7 +170,8 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 11400000, guid: 550cec76f20ed6145b0dadf194efacb5, type: 2}
+  - {fileID: 11400000, guid: ff4a70a5c1d7c9d43a6e2a69a3dc7952, type: 2}
+  - {fileID: 11400000, guid: 2a603d2a3c7cbaf4cafa675651c20f92, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1

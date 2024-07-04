@@ -205,15 +205,19 @@ namespace Coatsink.Common
 
 		private struct DeconstructedMember
 		{
-			[StructLayout(2)]
+			[StructLayout(LayoutKind.Explicit)]
 			public struct Value
 			{
+				[FieldOffset(0)]
 				public byte typeCode;
 
+				[FieldOffset(0)]
 				public bool custom;
 
+				[FieldOffset(1)]
 				public int index;
-					
+
+				[FieldOffset(1)]
 				public primitive prim;
 			}
 
@@ -517,8 +521,8 @@ namespace Coatsink.Common
 		{
 		}
 
-		[Conditional("CS_DEBUG")]
 		[Conditional("ENABLE_PROFILER")]
+		[Conditional("CS_DEBUG")]
 		private static void PushProfile(string title)
 		{
 		}

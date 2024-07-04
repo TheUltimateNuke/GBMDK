@@ -35,9 +35,7 @@ public class SimpleBuoyancy : SimpleBuoyancyCollider
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
 		public _003CDelayedSetup_003Ed__29(int _003C_003E1__state)
@@ -64,12 +62,12 @@ public class SimpleBuoyancy : SimpleBuoyancyCollider
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }

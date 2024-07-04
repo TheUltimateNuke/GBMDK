@@ -30,15 +30,15 @@ namespace GB.Setup
 
 			public float fadeScale;
 
-			public LogoSplash(Texture2D _logo, float _fadeIn, float _fadeOut, float _show, float _fadeScale):this()
-			{
+			public LogoSplash(Texture2D _logo, float _fadeIn, float _fadeOut, float _show, float _fadeScale) : this()
+            {
 			}
 		}
 
 		public delegate bool ScreenWaitingCheckDelegate();
 
 		[CompilerGenerated]
-		private sealed class _003CLoadGlobal_003Ed__40 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CLoadGlobal_003Ed__43 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -46,7 +46,7 @@ namespace GB.Setup
 
 			public GlobalSceneLoader _003C_003E4__this;
 
-			private AsyncOperationHandle<GameObject> _003CglobalCreater_003E5__2;
+			private AsyncOperationHandle<GameObject> _003CglobalCreator_003E5__2;
 
 			private int _003Ci_003E5__3;
 
@@ -70,12 +70,10 @@ namespace GB.Setup
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CLoadGlobal_003Ed__40(int _003C_003E1__state)
+			public _003CLoadGlobal_003Ed__43(int _003C_003E1__state)
 			{
 			}
 
@@ -99,19 +97,19 @@ namespace GB.Setup
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
         }
 
 		[CompilerGenerated]
-		private sealed class _003CLoadAsyncResources_003Ed__41 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CLoadAsyncResources_003Ed__44 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -141,12 +139,10 @@ namespace GB.Setup
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CLoadAsyncResources_003Ed__41(int _003C_003E1__state)
+			public _003CLoadAsyncResources_003Ed__44(int _003C_003E1__state)
 			{
 			}
 
@@ -170,19 +166,19 @@ namespace GB.Setup
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
         }
 
 		[CompilerGenerated]
-		private sealed class _003CLoadMenu_003Ed__42 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CLoadMenu_003Ed__45 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -208,12 +204,10 @@ namespace GB.Setup
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CLoadMenu_003Ed__42(int _003C_003E1__state)
+			public _003CLoadMenu_003Ed__45(int _003C_003E1__state)
 			{
 			}
 
@@ -237,19 +231,19 @@ namespace GB.Setup
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
         }
 
 		[CompilerGenerated]
-		private sealed class _003CFadeLoading_003Ed__43 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CFadeLoading_003Ed__46 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -277,12 +271,10 @@ namespace GB.Setup
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CFadeLoading_003Ed__43(int _003C_003E1__state)
+			public _003CFadeLoading_003Ed__46(int _003C_003E1__state)
 			{
 			}
 
@@ -306,19 +298,19 @@ namespace GB.Setup
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
         }
 
 		[CompilerGenerated]
-		private sealed class _003CDisplaySplashScreen_003Ed__45 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CDisplaySplashScreen_003Ed__48 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -352,12 +344,10 @@ namespace GB.Setup
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CDisplaySplashScreen_003Ed__45(int _003C_003E1__state)
+			public _003CDisplaySplashScreen_003Ed__48(int _003C_003E1__state)
 			{
 			}
 
@@ -381,19 +371,19 @@ namespace GB.Setup
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
         }
 
 		[CompilerGenerated]
-		private sealed class _003CStart_003Ed__48 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CStart_003Ed__51 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -421,12 +411,10 @@ namespace GB.Setup
 				}
 			}
 
-            object IEnumerator<object>.Current => throw new NotImplementedException();
-
-            object IEnumerator.Current => throw new NotImplementedException();
+            public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CStart_003Ed__48(int _003C_003E1__state)
+			public _003CStart_003Ed__51(int _003C_003E1__state)
 			{
 			}
 
@@ -450,12 +438,12 @@ namespace GB.Setup
                 throw new NotImplementedException();
             }
 
-            void IEnumerator.Reset()
+            public void Reset()
             {
                 throw new NotImplementedException();
             }
 
-            void IDisposable.Dispose()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -464,6 +452,8 @@ namespace GB.Setup
 		public static GlobalSceneLoader Instance;
 
 		public static readonly string BOOT_LOAD_SCENE;
+
+		public static readonly bool LocalAssets;
 
 		[SerializeField]
 		private AssetReference _globalAssetRef;
@@ -516,6 +506,10 @@ namespace GB.Setup
 		private List<IAsyncResourceLoader> m_AsyncResourceLoaders;
 
 		private List<IPostAsyncLoadingActivator> m_PostAsyncLoadingActivators;
+
+		private AssetsDownloader _downloader;
+
+		private bool _needsToReload;
 
 		public static bool FastLoadMode => false;
 
@@ -574,31 +568,31 @@ namespace GB.Setup
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CLoadGlobal_003Ed__40))]
+		[IteratorStateMachine(typeof(_003CLoadGlobal_003Ed__43))]
 		private IEnumerator LoadGlobal()
 		{
 			return null;
 		}
 
-		[IteratorStateMachine(typeof(_003CLoadAsyncResources_003Ed__41))]
+		[IteratorStateMachine(typeof(_003CLoadAsyncResources_003Ed__44))]
 		private IEnumerator LoadAsyncResources()
 		{
 			return null;
 		}
 
-		[IteratorStateMachine(typeof(_003CLoadMenu_003Ed__42))]
+		[IteratorStateMachine(typeof(_003CLoadMenu_003Ed__45))]
 		private IEnumerator LoadMenu()
 		{
 			return null;
 		}
 
-		[IteratorStateMachine(typeof(_003CFadeLoading_003Ed__43))]
+		[IteratorStateMachine(typeof(_003CFadeLoading_003Ed__46))]
 		private IEnumerator FadeLoading()
 		{
 			return null;
 		}
 
-		[IteratorStateMachine(typeof(_003CDisplaySplashScreen_003Ed__45))]
+		[IteratorStateMachine(typeof(_003CDisplaySplashScreen_003Ed__48))]
 		private IEnumerator DisplaySplashScreen(int splash, ScreenWaitingCheckDelegate isWaitingCheck)
 		{
 			return null;
@@ -612,7 +606,7 @@ namespace GB.Setup
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CStart_003Ed__48))]
+		[IteratorStateMachine(typeof(_003CStart_003Ed__51))]
 		private IEnumerator Start()
 		{
 			return null;

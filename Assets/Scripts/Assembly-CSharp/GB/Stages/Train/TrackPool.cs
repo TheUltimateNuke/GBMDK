@@ -15,8 +15,8 @@ namespace GB.Stages.Train
 
 			public byte tag;
 
-			public SpawnQueue(Direction dir, int props, byte tag):this()
-			{
+			public SpawnQueue(Direction dir, int props, byte tag) : this()
+            {
 			}
 		}
 
@@ -59,8 +59,8 @@ namespace GB.Stages.Train
 
 		public Pool trackEscalationEnd;
 
-		[Header("Landslide Escalation")]
 		[Space]
+		[Header("Landslide Escalation")]
 		public float maxLandslideBoulderScale;
 
 		public Transform[] landSlideBoulderSpawns;
@@ -154,8 +154,8 @@ namespace GB.Stages.Train
 		{
 		}
 
-		[Server]
 		[ContextMenu("Force Track Spawn")]
+		[Server]
 		public void SpawnTrack()
 		{
 		}

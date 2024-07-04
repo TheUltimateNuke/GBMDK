@@ -7,7 +7,7 @@ namespace GB.UI
 	public class ImageOptionButton : ButtonOptionHandler<int>
 	{
 		[SerializeField]
-		private ImageReplacer _image;
+		private LocalizeTextureWithAspectRatioEvent _image;
 
 		[SerializeField]
 		private string _codeStart;

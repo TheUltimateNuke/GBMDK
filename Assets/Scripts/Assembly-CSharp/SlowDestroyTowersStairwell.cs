@@ -35,9 +35,7 @@ public class SlowDestroyTowersStairwell : MonoBehaviour
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
 		public _003CBreakStairsLogic_003Ed__34(int _003C_003E1__state)
@@ -64,12 +62,12 @@ public class SlowDestroyTowersStairwell : MonoBehaviour
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
@@ -102,9 +100,7 @@ public class SlowDestroyTowersStairwell : MonoBehaviour
 			}
 		}
 
-        object IEnumerator<object>.Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
+        public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
 		public _003CPlayCreakingSounds_003Ed__35(int _003C_003E1__state)
@@ -131,12 +127,12 @@ public class SlowDestroyTowersStairwell : MonoBehaviour
             throw new NotImplementedException();
         }
 
-        void IEnumerator.Reset()
+        public void Reset()
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
@@ -170,8 +166,8 @@ public class SlowDestroyTowersStairwell : MonoBehaviour
 
 	public Joint[] otherJoints;
 
-	[HideInInspector]
 	[SerializeField]
+	[HideInInspector]
 	private Rigidbody[] otherJointsBody;
 
 	public float minBreakGap;

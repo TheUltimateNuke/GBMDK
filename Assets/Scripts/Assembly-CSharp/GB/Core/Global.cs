@@ -38,6 +38,9 @@ namespace GB.Core
 		private UIDirector _UIDirector;
 
 		[SerializeField]
+		private LocalizationLoader _localizationLoader;
+
+		[SerializeField]
 		private SceneLoader _sceneLoader;
 
 		[SerializeField]
@@ -90,6 +93,8 @@ namespace GB.Core
 		public NetModel Model => null;
 
 		public UIDirector UIDirector => null;
+
+		public LocalizationLoader LocalizationLoader => null;
 
 		public SceneLoader SceneLoader => null;
 

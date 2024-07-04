@@ -10,7 +10,7 @@ namespace CoreNet.StateSync.Syncs
 
 		public bool Lazy;
 
-		protected float _SyncClockTime;
+		public float _SyncClockTime;
 
 		public bool _UpdateOnFixed;
 

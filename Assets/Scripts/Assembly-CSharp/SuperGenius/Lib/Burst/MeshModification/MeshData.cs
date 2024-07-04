@@ -42,12 +42,12 @@ namespace SuperGenius.Lib.Burst.MeshModification
 
 		public NativeArray<float3> Offset;
 
-		public MeshData(int vertCount, Allocator allocator, int subIndexCount = 1):this()
-		{
+		public MeshData(int vertCount, Allocator allocator, int subIndexCount = 1) : this()
+        {
 		}
 
-		public MeshData(Mesh mesh, Allocator allocator):this()
-		{
+		public MeshData(Mesh mesh, Allocator allocator) : this()
+        {
 		}
 
 		public void SetSubIndexCount(int count)

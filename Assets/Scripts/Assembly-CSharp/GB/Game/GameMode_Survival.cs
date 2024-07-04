@@ -31,6 +31,10 @@ namespace GB.Game
 			return false;
 		}
 
+		public override void HandleScore()
+		{
+		}
+
 		public override List<NetGang> GetRoundWinners()
 		{
 			return null;

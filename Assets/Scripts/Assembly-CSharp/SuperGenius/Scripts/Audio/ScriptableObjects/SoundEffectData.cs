@@ -18,8 +18,8 @@ namespace SuperGenius.Scripts.Audio.ScriptableObjects
 		[SerializeField]
 		public float Pitch;
 
-		[Tooltip("Random Between Pitch +- PitchRandomOffset")]
 		[SerializeField]
+		[Tooltip("Random Between Pitch +- PitchRandomOffset")]
 		public float PitchRandomOffset;
 
 		public float MaxDistance;

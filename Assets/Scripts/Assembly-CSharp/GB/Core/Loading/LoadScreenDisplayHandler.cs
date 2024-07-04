@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using GB.Data.Loading;
+using TMPro;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.Localization.Components;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.UI;
 
@@ -16,13 +18,13 @@ namespace GB.Core.Loading
 		private RawImage _foregroundImage;
 
 		[SerializeField]
-		private TextReplacer _mainTitle;
+		private LocalizeStringEvent _mainTitle;
 
 		[SerializeField]
-		private TextReplacer _subTitle;
+		private LocalizeStringEvent _subTitle;
 
 		[SerializeField]
-		private TextReplacer _loadingText;
+		private TextMeshProUGUI _loadingText;
 
 		[SerializeField]
 		private Canvas _loadingCanvas;
@@ -54,9 +56,9 @@ namespace GB.Core.Loading
 
 		private float _totalLoaded;
 
-		private bool _loading;
-
 		private List<ICompleteTracker> _loadingTasks;
+
+		public bool IsLoading { get; private set; }
 
 		public List<ICompleteTracker> LoadTasks => null;
 
@@ -106,10 +108,6 @@ namespace GB.Core.Loading
 		}
 
 		public void SetSubTitle(string name)
-		{
-		}
-
-		public void DirectSetTitle(string text)
 		{
 		}
 
