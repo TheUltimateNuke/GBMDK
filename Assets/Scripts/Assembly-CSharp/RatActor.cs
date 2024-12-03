@@ -9,7 +9,8 @@ public class RatActor : MonoBehaviour
 		Idle = 0,
 		LookingForTarget = 1,
 		Attacking = 2,
-		Unconscious = 3
+		Carrying = 3,
+		Unconscious = 4
 	}
 
 	public enum CollisionType
@@ -17,6 +18,12 @@ public class RatActor : MonoBehaviour
 		Enter = 0,
 		Stay = 1,
 		Exit = 2
+	}
+
+	public enum SqueakType
+	{
+		Idle = 0,
+		Angry = 1
 	}
 
 	[Header("Status")]
@@ -29,9 +36,15 @@ public class RatActor : MonoBehaviour
 	public State state;
 
 	[Header("Physics")]
-	public float force;
+	public float attackForce;
 
-	public Vector3 exitPosition;
+	public float leapUpForce;
+
+	public float leapForwardForce;
+
+	public float carryForce;
+
+	public Vector3 dropPosition;
 
 	public float maxVelocity;
 
@@ -40,47 +53,106 @@ public class RatActor : MonoBehaviour
 	[Header("Targeting")]
 	public static List<Actor> actorsInSphere;
 
-	public static List<RatActor> ratsInSphere;
-
-	public LayerMask targetingLayerMask;
-
 	public float searchDistance;
+
+	[Header("Audio")]
+	public GeneralAudioData idleSqueakAudioData;
+
+	public GeneralAudioData angrySqueakAudioData;
+
+	public GeneralAudioData knockoutAudioData;
+
+	public GeneralAudioData ratScurryingAudioData;
+
+	public float minTimeBetweenIdleTweets;
+
+	public float maxTimeBetweenIdleTweets;
+
+	public float minTimeBetweenAngryTweets;
+
+	public float maxTimeBetweenAngryTweets;
 
 	private ConfigurableJoint joint;
 
+	private Rigidbody head;
+
 	private Rigidbody body;
 
-	private Rigidbody leftWing;
+	private Rigidbody tailStart;
 
-	private Rigidbody rightWing;
-
-	private Rigidbody tail;
+	private Rigidbody tailEnd;
 
 	private float idleTimer;
 
 	private float unconsciousTimer;
 
-	private float flapTimer;
+	private float runTimer;
 
-	private bool flap;
+	private bool step;
 
-	private Collider[] _hitColliders;
-
-	private int _collidersFound;
-
-	private Rigidbody target;
+	public Rigidbody target;
 
 	private bool setup;
 
 	private SkinnedMeshRenderer skinnedMeshRenderer;
 
-	private float blink;
+	private float blinkTimer;
+
+	private float mouthTimer;
+
+	private int tweets;
+
+	private float timeBetweenTweets;
+
+	private float triggerDelay;
+
+	private float flapDelay;
+
+	private bool onGround;
+
+	private float leapTime;
 
 	private void Start()
 	{
 	}
 
 	private void FixedUpdate()
+	{
+	}
+
+	private void BlinkCheck()
+	{
+	}
+
+	private void BlinkClose()
+	{
+	}
+
+	private void BlinkOpen()
+	{
+	}
+
+	private void Idle()
+	{
+	}
+
+	private void LookForTarget()
+	{
+	}
+
+	private void Attack()
+	{
+	}
+
+	private void Carry()
+	{
+	}
+
+	private void Unconscious()
+	{
+	}
+
+	private void Squeak(SqueakType squeakType)
 	{
 	}
 
@@ -92,19 +164,19 @@ public class RatActor : MonoBehaviour
 	{
 	}
 
-	private void ChangePartGravity(bool useGravity)
-	{
-	}
-
 	private void CheckHealth()
 	{
 	}
 
-	public void OnCollision(Collision collision, CollisionType type)
+	public void OnCollisionEnter(Collision collision)
 	{
 	}
 
-	private void FlapWings()
+	public void CollisionCheck(Collision collision)
+	{
+	}
+
+	private void Run()
 	{
 	}
 

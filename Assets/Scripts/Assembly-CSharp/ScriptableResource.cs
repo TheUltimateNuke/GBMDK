@@ -4,8 +4,8 @@ using UnityEngine;
 [Serializable]
 public class ScriptableResource : ScriptableObject
 {
-	[SerializeField]
 	[ReadOnly]
+	[SerializeField]
 	private string _resourcePath;
 
 	public string resourcePath => null;

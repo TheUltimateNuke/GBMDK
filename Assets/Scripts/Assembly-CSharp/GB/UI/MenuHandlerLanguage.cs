@@ -1,4 +1,5 @@
 using TMPro;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Localization;
 using UnityEngine.UI;
@@ -10,6 +11,10 @@ namespace GB.UI
 		public TextMeshProUGUI languageText;
 
 		private int activeLanguage;
+
+		private TMP_Text[] m_ChildTexts;
+
+		private Color CurrentStateColor => default(Color);
 
 		protected override void Start()
 		{

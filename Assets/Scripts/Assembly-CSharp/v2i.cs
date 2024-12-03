@@ -52,16 +52,22 @@ public struct v2i : Serializer.ISelfConstructor
 		}
 	}
 
-	public v2i(int x, int y) : this()
-    {
+	public v2i(int x, int y)
+	{
+		this.x = 0;
+		this.y = 0;
 	}
 
-	public v2i(Vector2 v) : this()
-    {
+	public v2i(Vector2 v)
+	{
+		x = 0;
+		y = 0;
 	}
 
-	private v2i(BinaryReader reader) : this()
-    {
+	private v2i(BinaryReader reader)
+	{
+		x = 0;
+		y = 0;
 	}
 
 	public void Deconstruct(BinaryWriter writer)

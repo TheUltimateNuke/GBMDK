@@ -28,6 +28,8 @@ namespace Femur
 
 		private Transform[] _cachedVoiceBoxHeadSubObjects;
 
+		private float idleTimeMod;
+
 		private float legActionDelay;
 
 		private float legActionTimer;

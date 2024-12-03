@@ -18,8 +18,10 @@ namespace GB.Platform.Lobby
 
 			public GameObject images;
 
-			public PingSetter(int _number, GameObject _images) : this()
-            {
+			public PingSetter(int _number, GameObject _images)
+			{
+				number = 0;
+				images = null;
 			}
 		}
 

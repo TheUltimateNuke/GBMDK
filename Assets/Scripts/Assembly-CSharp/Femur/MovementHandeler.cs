@@ -67,6 +67,10 @@ namespace Femur
 		{
 		}
 
+		public virtual void Drive()
+		{
+		}
+
 		public virtual void HeadActionReadying()
 		{
 		}

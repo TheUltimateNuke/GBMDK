@@ -7,5 +7,5 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Stages/_Setup/_bootScene.unity
-    guid: 7beaa04e580bf6e458877446b4cbddc8
+    guid: 0c4ca490b4539d84fb4d3ad9536e4117
   m_configObjects: {}

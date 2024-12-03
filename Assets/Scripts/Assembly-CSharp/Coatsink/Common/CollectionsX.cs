@@ -91,6 +91,11 @@ namespace Coatsink.Common
 				return null;
 			}
 
+            public void Dispose()
+            {
+                throw new NotImplementedException();
+            }
+
             public IEnumerator<IndexValuePair<T>> GetEnumerator()
             {
                 throw new NotImplementedException();
@@ -107,11 +112,6 @@ namespace Coatsink.Common
             }
 
             public void Reset()
-            {
-                throw new NotImplementedException();
-            }
-
-            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -206,12 +206,7 @@ namespace Coatsink.Common
 				return null;
 			}
 
-            public IEnumerator<TRes> GetEnumerator()
-            {
-                throw new NotImplementedException();
-            }
-
-            IEnumerator IEnumerable.GetEnumerator()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -226,7 +221,12 @@ namespace Coatsink.Common
                 throw new NotImplementedException();
             }
 
-            public void Dispose()
+            public IEnumerator<TRes> GetEnumerator()
+            {
+                throw new NotImplementedException();
+            }
+
+            IEnumerator IEnumerable.GetEnumerator()
             {
                 throw new NotImplementedException();
             }
@@ -333,12 +333,7 @@ namespace Coatsink.Common
 				return null;
 			}
 
-            public IEnumerator<TRes> GetEnumerator()
-            {
-                throw new NotImplementedException();
-            }
-
-            IEnumerator IEnumerable.GetEnumerator()
+            public void Dispose()
             {
                 throw new NotImplementedException();
             }
@@ -353,7 +348,12 @@ namespace Coatsink.Common
                 throw new NotImplementedException();
             }
 
-            public void Dispose()
+            public IEnumerator<TRes> GetEnumerator()
+            {
+                throw new NotImplementedException();
+            }
+
+            IEnumerator IEnumerable.GetEnumerator()
             {
                 throw new NotImplementedException();
             }
@@ -472,6 +472,11 @@ namespace Coatsink.Common
 				return null;
 			}
 
+            public void Dispose()
+            {
+                throw new NotImplementedException();
+            }
+
             public IEnumerator<TRes> GetEnumerator()
             {
                 throw new NotImplementedException();
@@ -488,11 +493,6 @@ namespace Coatsink.Common
             }
 
             public void Reset()
-            {
-                throw new NotImplementedException();
-            }
-
-            public void Dispose()
             {
                 throw new NotImplementedException();
             }

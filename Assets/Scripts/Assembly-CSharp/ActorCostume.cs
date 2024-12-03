@@ -516,7 +516,7 @@ public class ActorCostume : NetworkBehaviour
 		{
 			return null;
 		}
-		private set
+		set
 		{
 		}
 	}

@@ -2,8 +2,8 @@ using UnityEngine;
 
 namespace Colorful
 {
-	[AddComponentMenu(null)]
 	[RequireComponent(typeof(Camera))]
+	[AddComponentMenu(null)]
 	public class BaseEffect : MonoBehaviour
 	{
 		public Shader Shader;

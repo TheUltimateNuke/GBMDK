@@ -29,8 +29,8 @@ namespace CoreNet.StateSync.Triggers
 		[SerializeField]
 		private Vector3 hatLocalForward;
 
-		[Tooltip("if a hat is not correcly oriented by default, set it's local up here")]
 		[SerializeField]
+		[Tooltip("if a hat is not correcly oriented by default, set it's local up here")]
 		private Vector3 hatLocalUp;
 
 		[Tooltip("How far this hat should snap down after being re-attached. Usually the distance between the bottom of the trigger area, and the top of the wearable hat area")]

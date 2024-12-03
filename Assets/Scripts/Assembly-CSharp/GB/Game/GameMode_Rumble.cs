@@ -19,8 +19,10 @@ namespace GB.Game
 
 			public int controllerID;
 
-			public PlayerSpawnQueue(int con, int cont) : this()
-            {
+			public PlayerSpawnQueue(int con, int cont)
+			{
+				connectionID = 0;
+				controllerID = 0;
 			}
 		}
 

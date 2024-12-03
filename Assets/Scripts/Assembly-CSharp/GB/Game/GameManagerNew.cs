@@ -83,7 +83,7 @@ namespace GB.Game
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CEndRoundOrGame_003Ed__86 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CEndRoundOrGame_003Ed__88 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -112,7 +112,7 @@ namespace GB.Game
             public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CEndRoundOrGame_003Ed__86(int _003C_003E1__state)
+			public _003CEndRoundOrGame_003Ed__88(int _003C_003E1__state)
 			{
 			}
 
@@ -148,7 +148,7 @@ namespace GB.Game
         }
 
 		[CompilerGenerated]
-		private sealed class _003CCloseLocalServer_003Ed__89 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CCloseLocalServer_003Ed__91 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -177,7 +177,7 @@ namespace GB.Game
             public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CCloseLocalServer_003Ed__89(int _003C_003E1__state)
+			public _003CCloseLocalServer_003Ed__91(int _003C_003E1__state)
 			{
 			}
 
@@ -213,7 +213,7 @@ namespace GB.Game
         }
 
 		[CompilerGenerated]
-		private sealed class _003CCloseGame_003Ed__90 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CCloseGame_003Ed__92 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -240,7 +240,7 @@ namespace GB.Game
             public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CCloseGame_003Ed__90(int _003C_003E1__state)
+			public _003CCloseGame_003Ed__92(int _003C_003E1__state)
 			{
 			}
 
@@ -276,7 +276,7 @@ namespace GB.Game
         }
 
 		[CompilerGenerated]
-		private sealed class _003CSpawnRoutine_003Ed__96 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CSpawnRoutine_003Ed__98 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -305,7 +305,7 @@ namespace GB.Game
             public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CSpawnRoutine_003Ed__96(int _003C_003E1__state)
+			public _003CSpawnRoutine_003Ed__98(int _003C_003E1__state)
 			{
 			}
 
@@ -341,7 +341,7 @@ namespace GB.Game
         }
 
 		[CompilerGenerated]
-		private sealed class _003CPreStartCountdown_003Ed__98 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CPreStartCountdown_003Ed__100 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -370,7 +370,7 @@ namespace GB.Game
             public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CPreStartCountdown_003Ed__98(int _003C_003E1__state)
+			public _003CPreStartCountdown_003Ed__100(int _003C_003E1__state)
 			{
 			}
 
@@ -427,7 +427,9 @@ namespace GB.Game
 
 		private const float kJoinTimeout = 60f;
 
-		private const float kWirelessJoinTimeout = 60f;
+		private const float kWirelessJoinTimeout = 120f;
+
+		private const float kJoinAfterKickTimeout = 10f;
 
 		private GameType internalGameType;
 
@@ -456,6 +458,10 @@ namespace GB.Game
 		private RotationConfig internalRotationConfig;
 
 		private GameMode internalActiveGameMode;
+
+		private bool hasTriggeredFirstKick;
+
+		private Vector3 confettiOffset;
 
 		public static GameManagerNew Instance => null;
 
@@ -658,7 +664,7 @@ namespace GB.Game
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CEndRoundOrGame_003Ed__86))]
+		[IteratorStateMachine(typeof(_003CEndRoundOrGame_003Ed__88))]
 		private IEnumerator EndRoundOrGame()
 		{
 			return null;
@@ -672,13 +678,13 @@ namespace GB.Game
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CCloseLocalServer_003Ed__89))]
+		[IteratorStateMachine(typeof(_003CCloseLocalServer_003Ed__91))]
 		private IEnumerator CloseLocalServer()
 		{
 			return null;
 		}
 
-		[IteratorStateMachine(typeof(_003CCloseGame_003Ed__90))]
+		[IteratorStateMachine(typeof(_003CCloseGame_003Ed__92))]
 		private IEnumerator CloseGame()
 		{
 			return null;
@@ -706,7 +712,7 @@ namespace GB.Game
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CSpawnRoutine_003Ed__96))]
+		[IteratorStateMachine(typeof(_003CSpawnRoutine_003Ed__98))]
 		private IEnumerator SpawnRoutine()
 		{
 			return null;
@@ -717,7 +723,7 @@ namespace GB.Game
 			return false;
 		}
 
-		[IteratorStateMachine(typeof(_003CPreStartCountdown_003Ed__98))]
+		[IteratorStateMachine(typeof(_003CPreStartCountdown_003Ed__100))]
 		private IEnumerator PreStartCountdown()
 		{
 			return null;

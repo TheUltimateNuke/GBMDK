@@ -230,9 +230,9 @@ namespace GB
 		[HideInInspector]
 		public float frameMalfunctionChance;
 
-		[SerializeField]
-		[Header("Frame Malfunction")]
 		[Space]
+		[Header("Frame Malfunction")]
+		[SerializeField]
 		private List<Rigidbody> PotentialFrameBreaks;
 
 		[SerializeField]
@@ -273,9 +273,9 @@ namespace GB
 		[HideInInspector]
 		public float carriageMalfunctionChance;
 
+		[Space]
 		[SerializeField]
 		[Header("Carriage Malfunction")]
-		[Space]
 		private List<Rigidbody> CarriageRefs;
 
 		[SerializeField]

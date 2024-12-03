@@ -114,8 +114,8 @@ public class CMVcamTargeter : MonoBehaviour
 	[Tooltip("When this object is not null it pauses regular gang tracking and follows this instead (the Body Target).")]
 	public Transform FollowOverride;
 
-	[HideInInspector]
 	[Tooltip("Dolly in value which will override the current dolly in (Max Dolly in) when a winner is declared.")]
+	[HideInInspector]
 	public float WinnerDollyIn;
 
 	[Tooltip("Time taken to interpolate to the WinnerDollyIn distance towards the target.")]
@@ -125,8 +125,8 @@ public class CMVcamTargeter : MonoBehaviour
 	[Tooltip("Height Offset the camera will attempt to maintain from the target when orbiting.")]
 	private int OrbitHeight;
 
-	[HideInInspector]
 	[Tooltip("Minimum orbit velocity, is doubled when pressed in the same direction twice.")]
+	[HideInInspector]
 	public float OrbitVel;
 
 	private float _CurrentOrbitVel;
@@ -261,11 +261,11 @@ public class CMVcamTargeter : MonoBehaviour
 	{
 	}
 
-	private void GetOrientations()
+	public void GetOrientations()
 	{
 	}
 
-	private void SetOrientation()
+	public void SetOrientation()
 	{
 	}
 

@@ -23,8 +23,12 @@ namespace GB.Game
 
 			public int Gang { get; set; }
 
-			public AIBeastData(GameObject ob, NetBeast beastRef, Actor act, int Ga) : this()
-            {
+			public AIBeastData(GameObject ob, NetBeast beastRef, Actor act, int Ga)
+			{
+				Object = null;
+				netBeastRef = null;
+				AIBeast = null;
+				Gang = 0;
 			}
 		}
 
@@ -415,6 +419,10 @@ namespace GB.Game
 		private IEnumerator SpawnWaveAI(Wave spawnList)
 		{
 			return null;
+		}
+
+		public void SpawnAdditionalDebugAI(int beastType = 0)
+		{
 		}
 
 		public override void EndRound()

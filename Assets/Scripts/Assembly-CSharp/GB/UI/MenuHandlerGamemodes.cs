@@ -3,6 +3,7 @@ using Coatsink.Platform.Systems.User;
 using Coatsink.UnityServices.Matchmaking;
 using GB.Config;
 using GB.Gamemodes;
+using GB.Platform.Lobby;
 using GB.UI.Beasts;
 using GB.UI.Lobby;
 using GB.UnityServices.Matchmaking;
@@ -10,6 +11,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 namespace GB.UI
@@ -92,6 +94,9 @@ namespace GB.UI
 		[SerializeField]
 		private GameModeSetupConfiguration tracker;
 
+		[SerializeField]
+		private GameModeMenuData gameModeMenuData;
+
 		private MatchmakingTicketModel lastRequest;
 
 		private Coroutine _connectionChecker;
@@ -137,6 +142,22 @@ namespace GB.UI
 		}
 
 		protected override void Start()
+		{
+		}
+
+		private void OnlineBeastSetupTracker_OnTeamChange(OnlinePlayerInfomationCache arg1, int arg2)
+		{
+		}
+
+		private void LocalBeastSetupTracker_OnTeamChange(LocalPlayerInfomationCache arg1, int arg2)
+		{
+		}
+
+		private void OnlineBeastSetupTracker_OnStateChange(OnlinePlayerInfomationCache arg1, BeastUtils.PlayerState arg2)
+		{
+		}
+
+		private void LocalBeastSetupTracker_OnStateChange(LocalPlayerInfomationCache arg1, BeastUtils.PlayerState arg2)
 		{
 		}
 
@@ -222,6 +243,11 @@ namespace GB.UI
 
 		private void GenerateUI()
 		{
+		}
+
+		private LocalizedString GetWinSetupString(GameModeEnum type)
+		{
+			return null;
 		}
 
 		private void SetCachedData()

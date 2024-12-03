@@ -15,7 +15,7 @@ public class OnTriggerStayApplyForce : MonoBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CCloseDoor_003Ed__17 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CCloseDoor_003Ed__21 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -44,7 +44,72 @@ public class OnTriggerStayApplyForce : MonoBehaviour
         public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
-		public _003CCloseDoor_003Ed__17(int _003C_003E1__state)
+		public _003CCloseDoor_003Ed__21(int _003C_003E1__state)
+		{
+		}
+
+		[DebuggerHidden]
+		private void System_002EIDisposable_002EDispose()
+		{
+		}
+
+		private bool MoveNext()
+		{
+			return false;
+		}
+
+		[DebuggerHidden]
+		private void System_002ECollections_002EIEnumerator_002EReset()
+		{
+		}
+
+        bool IEnumerator.MoveNext()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Reset()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+	[CompilerGenerated]
+	private sealed class _003COpenDoor_003Ed__22 : IEnumerator<object>, IEnumerator, IDisposable
+	{
+		private int _003C_003E1__state;
+
+		private object _003C_003E2__current;
+
+		public OnTriggerStayApplyForce _003C_003E4__this;
+
+		private object System_002ECollections_002EGeneric_002EIEnumerator_003CSystem_002EObject_003E_002ECurrent
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+		private object System_002ECollections_002EIEnumerator_002ECurrent
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+        public object Current => throw new NotImplementedException();
+
+        [DebuggerHidden]
+		public _003COpenDoor_003Ed__22(int _003C_003E1__state)
 		{
 		}
 
@@ -98,9 +163,16 @@ public class OnTriggerStayApplyForce : MonoBehaviour
 	[SerializeField]
 	private float _waitOpenTime;
 
+	[SerializeField]
+	private float _waitClosedTime;
+
 	private WaitForSeconds _waitTime;
 
+	private WaitForSeconds _waitTimeClosed;
+
 	private Coroutine _closeCheck;
+
+	private Coroutine _openCheck;
 
 	private void Start()
 	{
@@ -122,8 +194,18 @@ public class OnTriggerStayApplyForce : MonoBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CCloseDoor_003Ed__17))]
+	private void StartOpenCheck()
+	{
+	}
+
+	[IteratorStateMachine(typeof(_003CCloseDoor_003Ed__21))]
 	private IEnumerator CloseDoor()
+	{
+		return null;
+	}
+
+	[IteratorStateMachine(typeof(_003COpenDoor_003Ed__22))]
+	private IEnumerator OpenDoor()
 	{
 		return null;
 	}

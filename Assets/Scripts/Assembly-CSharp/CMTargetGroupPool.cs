@@ -67,6 +67,10 @@ public class CMTargetGroupPool : MonoBehaviour
 	{
 	}
 
+	public void ResetAllTargetGroups()
+	{
+	}
+
 	public void DeactivateTargetGroup(CinemachineTargetGroup group)
 	{
 	}
@@ -78,5 +82,9 @@ public class CMTargetGroupPool : MonoBehaviour
 	public TargetGroupAndTrackingInfo GetLocalPlayerTargetGroup()
 	{
 		return null;
+	}
+
+	public void TargetGroupDebugInfo()
+	{
 	}
 }

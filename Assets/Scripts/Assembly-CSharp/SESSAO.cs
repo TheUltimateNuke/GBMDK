@@ -1,8 +1,8 @@
 using UnityEngine;
 
-[ExecuteInEditMode]
-[RequireComponent(typeof(Camera))]
 [AddComponentMenu("Image Effects/Sonic Ether/SESSAO")]
+[RequireComponent(typeof(Camera))]
+[ExecuteInEditMode]
 public class SESSAO : MonoBehaviour
 {
 	private Material material;

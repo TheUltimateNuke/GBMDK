@@ -1,4 +1,6 @@
+using System;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using GB.Data.Loading;
 using GB.Setup;
 using UnityEditor.PostProcessing;
@@ -52,6 +54,10 @@ public class GraphicsManager : MonoBehaviour, IDeferredActivator
 
 	private static FieldInfo MainLightShadowmapResolution_FieldInfo;
 
+	private static FieldInfo AdditionalLightCastsShadows_FieldInfo;
+
+	private static FieldInfo AdditionalLightShadowmapResolution_FieldInfo;
+
 	[SerializeField]
 	private ResourceCache _resources;
 
@@ -62,6 +68,18 @@ public class GraphicsManager : MonoBehaviour, IDeferredActivator
 	public static GraphicsManager Instance => null;
 
 	public IDataCache Resources => null;
+
+	public event Action<GraphicsSettings> GFXSettingsUpdate
+	{
+		[CompilerGenerated]
+		add
+		{
+		}
+		[CompilerGenerated]
+		remove
+		{
+		}
+	}
 
 	[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
 	private static void ResetStatics()
@@ -103,6 +121,10 @@ public class GraphicsManager : MonoBehaviour, IDeferredActivator
 	}
 
 	public void SaveSettings()
+	{
+	}
+
+	public void SaveSettings(SavedSettings newSettings)
 	{
 	}
 

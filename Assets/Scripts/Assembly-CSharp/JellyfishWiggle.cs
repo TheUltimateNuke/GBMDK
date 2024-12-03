@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class JellyfishWiggle : MonoBehaviour
 {
+	private static readonly int JELLYFISH_TENTACLE_COUNT;
+
 	private float m_Speed;
 
 	[Min(0.01f)]
@@ -12,6 +14,8 @@ public class JellyfishWiggle : MonoBehaviour
 	public float MinTentacleRotation;
 
 	public float TentacleRotationSpeed;
+
+	public GameObject[] m_Tentacles;
 
 	private Transform[] m_TentacleTransforms;
 

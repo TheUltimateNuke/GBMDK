@@ -70,5 +70,9 @@ namespace CoreNet.Components
 		{
 			return false;
 		}
+
+		private void NetLog(string logMessage)
+		{
+		}
 	}
 }

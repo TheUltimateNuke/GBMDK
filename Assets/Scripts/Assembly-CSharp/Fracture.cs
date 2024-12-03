@@ -20,7 +20,7 @@ using UnityEngine.Networking;
 public class Fracture : NetworkBehaviour
 {
 	[CompilerGenerated]
-	private sealed class _003CVoronoiSplitMeshJob_003Ed__24 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CVoronoiSplitMeshJob_003Ed__25 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -73,7 +73,7 @@ public class Fracture : NetworkBehaviour
         public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
-		public _003CVoronoiSplitMeshJob_003Ed__24(int _003C_003E1__state)
+		public _003CVoronoiSplitMeshJob_003Ed__25(int _003C_003E1__state)
 		{
 		}
 
@@ -109,7 +109,7 @@ public class Fracture : NetworkBehaviour
     }
 
 	[CompilerGenerated]
-	private sealed class _003CRaycastEdgeConnect_003Ed__25 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CRaycastEdgeConnect_003Ed__26 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -154,7 +154,7 @@ public class Fracture : NetworkBehaviour
         public object Current => throw new NotImplementedException();
 
         [DebuggerHidden]
-		public _003CRaycastEdgeConnect_003Ed__25(int _003C_003E1__state)
+		public _003CRaycastEdgeConnect_003Ed__26(int _003C_003E1__state)
 		{
 		}
 
@@ -206,6 +206,8 @@ public class Fracture : NetworkBehaviour
 	private Transform _fractorRoot;
 
 	private GameObject _fractureShardGameObject;
+
+	public Rigidbody _targetRigidBodyConnection;
 
 	private List<SplitMeshContainer> _splitMeshes;
 
@@ -294,13 +296,13 @@ public class Fracture : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CVoronoiSplitMeshJob_003Ed__24))]
+	[IteratorStateMachine(typeof(_003CVoronoiSplitMeshJob_003Ed__25))]
 	protected IEnumerator VoronoiSplitMeshJob(uint seed, float minRadius, float maxRadius, int maxNewMeshes, EaseFuctions.EaseType easeType = EaseFuctions.EaseType.None)
 	{
 		return null;
 	}
 
-	[IteratorStateMachine(typeof(_003CRaycastEdgeConnect_003Ed__25))]
+	[IteratorStateMachine(typeof(_003CRaycastEdgeConnect_003Ed__26))]
 	private IEnumerator RaycastEdgeConnect()
 	{
 		return null;

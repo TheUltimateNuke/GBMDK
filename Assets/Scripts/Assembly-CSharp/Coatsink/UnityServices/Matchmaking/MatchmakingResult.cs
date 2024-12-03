@@ -14,8 +14,13 @@ namespace Coatsink.UnityServices.Matchmaking
 
 		public MatchmakingTicketModel originalTicket;
 
-		public MatchmakingResult(MatchmakingState state, string message) : this()
-        {
+		public MatchmakingResult(MatchmakingState state, string message)
+		{
+			State = default(MatchmakingState);
+			Message = null;
+			IpAddress = null;
+			Port = 0;
+			originalTicket = null;
 		}
 
 		public bool IsSuccess()

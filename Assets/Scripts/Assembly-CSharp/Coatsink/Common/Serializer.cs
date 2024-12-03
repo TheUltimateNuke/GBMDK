@@ -521,8 +521,8 @@ namespace Coatsink.Common
 		{
 		}
 
-		[Conditional("ENABLE_PROFILER")]
 		[Conditional("CS_DEBUG")]
+		[Conditional("ENABLE_PROFILER")]
 		private static void PushProfile(string title)
 		{
 		}

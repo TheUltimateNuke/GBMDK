@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Costumes;
 using UnityEngine;
@@ -9,6 +10,8 @@ public class SaveSelection : MonoBehaviour
 	public CostumeUISaveLoad CostumeUISaveLoad;
 
 	public CostumeSaveUI CostumeSaveUi;
+
+	public Action<int> SaveIndexChanged;
 
 	private int _saveIndex;
 

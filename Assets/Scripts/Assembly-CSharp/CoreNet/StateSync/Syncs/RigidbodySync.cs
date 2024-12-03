@@ -11,6 +11,9 @@ namespace CoreNet.StateSync.Syncs
 		[SerializeField]
 		private bool _ignoreKinematicChanges;
 
+		[SerializeField]
+		private bool _forceKinematicOnClient;
+
 		private bool testedForRB;
 
 		public bool Syncing => false;
@@ -20,6 +23,10 @@ namespace CoreNet.StateSync.Syncs
 		public override Quaternion CurrentRotation => default(Quaternion);
 
 		public Rigidbody RigidbodyTest => null;
+
+		public override void Init()
+		{
+		}
 
 		public override void SetSyncing(bool syncing, bool isServer)
 		{

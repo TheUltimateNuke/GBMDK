@@ -35,7 +35,7 @@ namespace Femur
 
 		public Rigidbody leftGrabRigidbody;
 
-		public InteractableObject leftGrabInteractable;
+		public InteractableObjectData leftGrabInteractable;
 
 		public ConfigurableJoint rightGrabJoint;
 
@@ -45,7 +45,7 @@ namespace Femur
 
 		public Rigidbody rightGrabRigidbody;
 
-		public InteractableObject rightGrabInteractable;
+		public InteractableObjectData rightGrabInteractable;
 
 		public bool hasSetup;
 
@@ -140,11 +140,6 @@ namespace Femur
 		{
 		}
 
-		[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-		private static void ResetStatics()
-		{
-		}
-
 		public virtual void Setup()
 		{
 		}
@@ -195,12 +190,17 @@ namespace Femur
 			return null;
 		}
 
+		public Transform[] GetAllTransforms()
+		{
+			return null;
+		}
+
 		public Collider[] GetAllColliders()
 		{
 			return null;
 		}
 
-		public InteractableObject[] GetAllInteractables()
+		public InteractableObjectData[] GetAllInteractables()
 		{
 			return null;
 		}

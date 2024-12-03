@@ -22,8 +22,12 @@ namespace SuperGenius.Lib.Burst.Random
 
 			public int Z;
 
-			public CellLocation(int index, int x, int y, int z) : this()
-            {
+			public CellLocation(int index, int x, int y, int z)
+			{
+				Index = 0;
+				X = 0;
+				Y = 0;
+				Z = 0;
 			}
 		}
 

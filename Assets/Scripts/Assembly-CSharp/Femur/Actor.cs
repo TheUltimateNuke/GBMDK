@@ -73,7 +73,8 @@ namespace Femur
 			Jump = 0x10,
 			Fall = 0x20,
 			Climb = 0x40,
-			Swim = 0x80
+			Swim = 0x80,
+			Drive = 0x100
 		}
 
 		public delegate void ActorStateHandler(Actor actor, int connectionID, ActorState state);
@@ -85,7 +86,7 @@ namespace Femur
 		public delegate void SetPrimaryColor(Color value);
 
 		[CompilerGenerated]
-		private sealed class _003CDressBeast_003Ed__147 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CDressBeast_003Ed__150 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -116,7 +117,7 @@ namespace Femur
             public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CDressBeast_003Ed__147(int _003C_003E1__state)
+			public _003CDressBeast_003Ed__150(int _003C_003E1__state)
 			{
 			}
 
@@ -152,7 +153,7 @@ namespace Femur
         }
 
 		[CompilerGenerated]
-		private sealed class _003CFallbackDress_003Ed__148 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CFallbackDress_003Ed__151 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -181,7 +182,7 @@ namespace Femur
             public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CFallbackDress_003Ed__148(int _003C_003E1__state)
+			public _003CFallbackDress_003Ed__151(int _003C_003E1__state)
 			{
 			}
 
@@ -217,7 +218,7 @@ namespace Femur
         }
 
 		[CompilerGenerated]
-		private sealed class _003CStart_003Ed__149 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CStart_003Ed__152 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -246,7 +247,7 @@ namespace Femur
             public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CStart_003Ed__149(int _003C_003E1__state)
+			public _003CStart_003Ed__152(int _003C_003E1__state)
 			{
 			}
 
@@ -282,74 +283,7 @@ namespace Femur
         }
 
 		[CompilerGenerated]
-		private sealed class _003CUpdateNetBeatInternal_003Ed__154 : IEnumerator<object>, IEnumerator, IDisposable
-		{
-			private int _003C_003E1__state;
-
-			private object _003C_003E2__current;
-
-			public Actor _003C_003E4__this;
-
-			public NetBeast beast;
-
-			private object System_002ECollections_002EGeneric_002EIEnumerator_003CSystem_002EObject_003E_002ECurrent
-			{
-				[DebuggerHidden]
-				get
-				{
-					return null;
-				}
-			}
-
-			private object System_002ECollections_002EIEnumerator_002ECurrent
-			{
-				[DebuggerHidden]
-				get
-				{
-					return null;
-				}
-			}
-
-            public object Current => throw new NotImplementedException();
-
-            [DebuggerHidden]
-			public _003CUpdateNetBeatInternal_003Ed__154(int _003C_003E1__state)
-			{
-			}
-
-			[DebuggerHidden]
-			private void System_002EIDisposable_002EDispose()
-			{
-			}
-
-			private bool MoveNext()
-			{
-				return false;
-			}
-
-			[DebuggerHidden]
-			private void System_002ECollections_002EIEnumerator_002EReset()
-			{
-			}
-
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
-
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
-
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-		[CompilerGenerated]
-		private sealed class _003CUpdateCostume_003Ed__156 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CUpdateNetBeatInternal_003Ed__157 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -380,7 +314,7 @@ namespace Femur
             public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CUpdateCostume_003Ed__156(int _003C_003E1__state)
+			public _003CUpdateNetBeatInternal_003Ed__157(int _003C_003E1__state)
 			{
 			}
 
@@ -414,6 +348,75 @@ namespace Femur
                 throw new NotImplementedException();
             }
         }
+
+		[CompilerGenerated]
+		private sealed class _003CUpdateCostume_003Ed__159 : IEnumerator<object>, IEnumerator, IDisposable
+		{
+			private int _003C_003E1__state;
+
+			private object _003C_003E2__current;
+
+			public Actor _003C_003E4__this;
+
+			public NetBeast beast;
+
+			private object System_002ECollections_002EGeneric_002EIEnumerator_003CSystem_002EObject_003E_002ECurrent
+			{
+				[DebuggerHidden]
+				get
+				{
+					return null;
+				}
+			}
+
+			private object System_002ECollections_002EIEnumerator_002ECurrent
+			{
+				[DebuggerHidden]
+				get
+				{
+					return null;
+				}
+			}
+
+            public object Current => throw new NotImplementedException();
+
+            [DebuggerHidden]
+			public _003CUpdateCostume_003Ed__159(int _003C_003E1__state)
+			{
+			}
+
+			[DebuggerHidden]
+			private void System_002EIDisposable_002EDispose()
+			{
+			}
+
+			private bool MoveNext()
+			{
+				return false;
+			}
+
+			[DebuggerHidden]
+			private void System_002ECollections_002EIEnumerator_002EReset()
+			{
+			}
+
+            bool IEnumerator.MoveNext()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Reset()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Dispose()
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+		private const float TARGET_UPDATE_FREQ = 0.5f;
 
 		public bool isTrackedByCamera;
 
@@ -428,8 +431,8 @@ namespace Femur
 		[SerializeField]
 		private int _playerID;
 
-		[SerializeField]
 		[SyncVar(hook = "OnGangIDChanged")]
+		[SerializeField]
 		private int _gangID;
 
 		[SerializeField]
@@ -537,6 +540,8 @@ namespace Femur
 		public bool initializeOnStart;
 
 		public bool IgnoreNetworkSetup;
+
+		private float timeSinceTarget;
 
 		public ActorState lastActorState;
 
@@ -888,19 +893,29 @@ namespace Femur
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CDressBeast_003Ed__147))]
+		public NetBeast GetAssociatedNetBeast()
+		{
+			return null;
+		}
+
+		public uint GetNetIdentityValue()
+		{
+			return 0u;
+		}
+
+		[IteratorStateMachine(typeof(_003CDressBeast_003Ed__150))]
 		public IEnumerator DressBeast()
 		{
 			return null;
 		}
 
-		[IteratorStateMachine(typeof(_003CFallbackDress_003Ed__148))]
+		[IteratorStateMachine(typeof(_003CFallbackDress_003Ed__151))]
 		private IEnumerator FallbackDress()
 		{
 			return null;
 		}
 
-		[IteratorStateMachine(typeof(_003CStart_003Ed__149))]
+		[IteratorStateMachine(typeof(_003CStart_003Ed__152))]
 		public IEnumerator Start()
 		{
 			return null;
@@ -922,7 +937,7 @@ namespace Femur
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CUpdateNetBeatInternal_003Ed__154))]
+		[IteratorStateMachine(typeof(_003CUpdateNetBeatInternal_003Ed__157))]
 		private IEnumerator UpdateNetBeatInternal(NetBeast beast)
 		{
 			return null;
@@ -932,7 +947,7 @@ namespace Femur
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CUpdateCostume_003Ed__156))]
+		[IteratorStateMachine(typeof(_003CUpdateCostume_003Ed__159))]
 		private IEnumerator UpdateCostume(NetBeast beast)
 		{
 			return null;

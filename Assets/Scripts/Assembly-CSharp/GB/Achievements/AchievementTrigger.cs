@@ -15,16 +15,16 @@ namespace GB.Achievements
 		[Tooltip("The trigger collider to listen to")]
 		private Collider TriggerCollider;
 
-		[SerializeField]
 		[Tooltip("collection of trigger colliders to listen to, if this is not 0 'TriggerCollider' will not be used")]
+		[SerializeField]
 		private Collider[] TriggerColliders;
 
-		[SerializeField]
 		[Tooltip("Unique game object to listen for collisions on. Ignored if trigger type does not require a unique object.")]
+		[SerializeField]
 		private GameObject TriggerListenObj;
 
-		[Tooltip("Particular beast body part to listen on. Ignored if the trigger type does not require a particular body part")]
 		[SerializeField]
+		[Tooltip("Particular beast body part to listen on. Ignored if the trigger type does not require a particular body part")]
 		private BodyEnum[] ActorListenPart;
 
 		[SerializeField]

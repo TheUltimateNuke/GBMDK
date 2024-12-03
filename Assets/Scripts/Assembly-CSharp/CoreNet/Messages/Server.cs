@@ -20,8 +20,16 @@ namespace CoreNet.Messages
 
 		public bool IsPassworded;
 
-		public Server(HostedGameInfo info) : this()
-        {
+		public Server(HostedGameInfo info)
+		{
+			IP = null;
+			Port = 0;
+			GameName = null;
+			ModeName = null;
+			MapName = null;
+			CurrentPlayers = 0;
+			MaxPlayers = 0;
+			IsPassworded = false;
 		}
 	}
 }

@@ -34,8 +34,10 @@ namespace GB.UI.Online
 
 			public int MaxPlayers => 0;
 
-			public GamemodeInfo(GameModeEnum mode, int players) : this()
-            {
+			public GamemodeInfo(GameModeEnum mode, int players)
+			{
+				_gameMode = default(GameModeEnum);
+				_maxPlayers = 0;
 			}
 		}
 

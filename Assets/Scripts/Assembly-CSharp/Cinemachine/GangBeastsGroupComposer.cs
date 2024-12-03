@@ -2,9 +2,9 @@ using UnityEngine;
 
 namespace Cinemachine
 {
-	[SaveDuringPlay]
-	[AddComponentMenu(null)]
 	[ExecuteInEditMode]
+	[AddComponentMenu(null)]
+	[SaveDuringPlay]
 	public class GangBeastsGroupComposer : CinemachineComposer
 	{
 		public enum FramingMode
@@ -21,15 +21,15 @@ namespace Cinemachine
 			DollyThenZoom = 2
 		}
 
-		[Space]
 		[Tooltip("The bounding box of the targets should occupy this amount of the screen space.  1 means fill the whole screen.  0.5 means fill half the screen, etc.")]
+		[Space]
 		public float m_GroupFramingSize;
 
 		[Tooltip("What screen dimensions to consider when framing.  Can be Horizontal, Vertical, or both")]
 		public FramingMode m_FramingMode;
 
-		[Range(0f, 20f)]
 		[Tooltip("How aggressively the camera tries to frame the group. Small numbers are more responsive, rapidly adjusting the camera to keep the group in the frame.  Larger numbers give a more heavy slowly responding camera.")]
+		[Range(0f, 20f)]
 		public float m_FrameDamping;
 
 		[Tooltip("How to adjust the camera to get the desired framing.  You can zoom, dolly in/out, or do both.")]

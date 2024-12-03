@@ -5,7 +5,7 @@ namespace CoreNet.Pooling
 {
 	public class Pool : MonoBehaviour
 	{
-		public const float BIG_NUMBER = 999999f;
+		public const float BIG_NUMBER = -200f;
 
 		public static readonly Vector3 DEAD_ZONE;
 

@@ -66,6 +66,8 @@ namespace Femur
 
 		private int killVolumeLayer;
 
+		private static float projectionDistance;
+
 		private void Start()
 		{
 		}
@@ -74,7 +76,7 @@ namespace Femur
 		{
 		}
 
-		private void DamageCheck(InteractableObject collisionInteractable, Transform collisionTransform, Rigidbody collisionRigidbody, Collider collisionCollider, Collision collision, Vector3 relativeVelocity, float velocityMagnitude)
+		private void DamageCheck(InteractableObjectData collisionInteractable, Transform collisionTransform, Rigidbody collisionRigidbody, Collider collisionCollider, Collision collision, Vector3 relativeVelocity, float velocityMagnitude)
 		{
 		}
 
@@ -94,7 +96,15 @@ namespace Femur
 		{
 		}
 
-		public static void GrabCheck(Actor actor, GameObject thisGameObject, Transform thisTransform, Transform collisionTransform, Rigidbody collisionRigidbody)
+		public static void GrabCheck(Actor actor, GameObject thisGameObject, Transform thisTransform, Transform collisionTransform, Rigidbody collisionRigidbody, Vector3 contactPoint)
+		{
+		}
+
+		private static void LeftGrab(Actor actor, GameObject thisGameObject, Transform thisTransform, Transform collisionTransform, Rigidbody collisionRigidbody, InteractableObjectData collisionInteractable, float breakForce, Vector3 contactPoint)
+		{
+		}
+
+		private static void RightGrab(Actor actor, GameObject thisGameObject, Transform thisTransform, Transform collisionTransform, Rigidbody collisionRigidbody, InteractableObjectData collisionInteractable, float breakForce, Vector3 contactPoint)
 		{
 		}
 

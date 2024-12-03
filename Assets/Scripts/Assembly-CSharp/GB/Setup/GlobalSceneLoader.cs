@@ -30,8 +30,13 @@ namespace GB.Setup
 
 			public float fadeScale;
 
-			public LogoSplash(Texture2D _logo, float _fadeIn, float _fadeOut, float _show, float _fadeScale) : this()
-            {
+			public LogoSplash(Texture2D _logo, float _fadeIn, float _fadeOut, float _show, float _fadeScale)
+			{
+				fadeInTime = 0f;
+				logoImage = null;
+				showTime = 0f;
+				fadeOutTime = 0f;
+				fadeScale = 0f;
 			}
 		}
 

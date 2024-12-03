@@ -17,8 +17,11 @@ namespace Femur
 
 			public GameObject _causer;
 
-			public Damage(InteractableObject.Damage type, float amount, GameObject causer) : this()
-            {
+			public Damage(InteractableObject.Damage type, float amount, GameObject causer)
+			{
+				_type = default(InteractableObject.Damage);
+				_amount = 0f;
+				_causer = null;
 			}
 		}
 

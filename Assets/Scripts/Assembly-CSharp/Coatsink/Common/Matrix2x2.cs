@@ -14,8 +14,12 @@ namespace Coatsink.Common
 
 		public static readonly Matrix2x2 Identity;
 
-		public Matrix2x2(float m00, float m01, float m10, float m11) : this()
-        {
+		public Matrix2x2(float m00, float m01, float m10, float m11)
+		{
+			this.m00 = 0f;
+			this.m01 = 0f;
+			this.m10 = 0f;
+			this.m11 = 0f;
 		}
 
 		public static Matrix2x2 Rotation(float angle)

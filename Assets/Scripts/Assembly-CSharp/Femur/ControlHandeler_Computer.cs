@@ -125,5 +125,9 @@ namespace Femur
 		public override void RunCheck()
 		{
 		}
+
+		public override void SwimCheck()
+		{
+		}
 	}
 }

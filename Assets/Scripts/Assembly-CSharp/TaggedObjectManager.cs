@@ -39,8 +39,12 @@ public class TaggedObjectManager
 
 		public DamageType damageType;
 
-		public TaggedObjectsStruct(GameObject _go, GrabType _grabType, TargetType _targetType, DamageType _damageType) : this()
-        {
+		public TaggedObjectsStruct(GameObject _go, GrabType _grabType, TargetType _targetType, DamageType _damageType)
+		{
+			go = null;
+			grabType = default(GrabType);
+			targetType = default(TargetType);
+			damageType = default(DamageType);
 		}
 	}
 

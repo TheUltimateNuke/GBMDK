@@ -20,21 +20,21 @@ namespace GB.Networking.Utils.Spawn
 			HillPoint = 0x40
 		}
 
+		[EnumUtils.EnumFlags]
 		[SerializeField]
 		[Tooltip("Spawn Point Type")]
-		[EnumUtils.EnumFlags]
 		private SpawnPointTypes _spawnPointType;
 
-		[Tooltip("Spawn point will only spawn for the team that is assigned to this group index (-1 = any | -2 = unassigned | -3 = don't care)")]
 		[SerializeField]
+		[Tooltip("Spawn point will only spawn for the team that is assigned to this group index (-1 = any | -2 = unassigned | -3 = don't care)")]
 		private int _groupIndex;
 
-		[SerializeField]
 		[Tooltip("Spawn point will only spawn for the team that is assigned index (-1 = any | -2 = unassigned | -3 = don't care)")]
+		[SerializeField]
 		private int _teamIndex;
 
-		[Tooltip("Weight of use over other points")]
 		[SerializeField]
+		[Tooltip("Weight of use over other points")]
 		private int _ID;
 
 		[SerializeField]

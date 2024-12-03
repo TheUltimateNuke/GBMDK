@@ -14,7 +14,7 @@ namespace GB.Core.UI
 	public class UIDirector : MonoBehaviour
 	{
 		[CompilerGenerated]
-		private sealed class _003CReselectHack_003Ed__52 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CReselectHack_003Ed__53 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -43,7 +43,7 @@ namespace GB.Core.UI
             public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CReselectHack_003Ed__52(int _003C_003E1__state)
+			public _003CReselectHack_003Ed__53(int _003C_003E1__state)
 			{
 			}
 
@@ -88,6 +88,8 @@ namespace GB.Core.UI
 		private ResourceCache _resources;
 
 		public float blurTime;
+
+		public string currentSceneName;
 
 		private bool _showNameBars;
 
@@ -262,7 +264,7 @@ namespace GB.Core.UI
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CReselectHack_003Ed__52))]
+		[IteratorStateMachine(typeof(_003CReselectHack_003Ed__53))]
 		private IEnumerator ReselectHack()
 		{
 			return null;

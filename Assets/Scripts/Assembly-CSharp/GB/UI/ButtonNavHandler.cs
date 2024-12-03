@@ -12,7 +12,7 @@ namespace GB.UI
 	public class ButtonNavHandler : MonoBehaviour, IMoveHandler, IEventSystemHandler, ISelectHandler, IDeselectHandler, IPointerEnterHandler
 	{
 		[CompilerGenerated]
-		private sealed class _003CDelayedSelectRoutine_003Ed__24 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CDelayedSelectRoutine_003Ed__25 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -41,7 +41,7 @@ namespace GB.UI
             public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CDelayedSelectRoutine_003Ed__24(int _003C_003E1__state)
+			public _003CDelayedSelectRoutine_003Ed__25(int _003C_003E1__state)
 			{
 			}
 
@@ -80,8 +80,8 @@ namespace GB.UI
 		[SerializeField]
 		private GameObject onSelectAdditionalGameObject;
 
-		[Tooltip("As above, but for component references")]
 		[SerializeField]
+		[Tooltip("As above, but for component references")]
 		private MonoBehaviour[] onSelectAdditionalComponents;
 
 		[SerializeField]
@@ -95,6 +95,9 @@ namespace GB.UI
 
 		[SerializeField]
 		private bool allowNonButtonMoveActions;
+
+		[SerializeField]
+		private bool handleSelectionWhenDisabled;
 
 		[SerializeField]
 		private GameObject overrideWobbleGO;
@@ -151,7 +154,7 @@ namespace GB.UI
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CDelayedSelectRoutine_003Ed__24))]
+		[IteratorStateMachine(typeof(_003CDelayedSelectRoutine_003Ed__25))]
 		private IEnumerator DelayedSelectRoutine(Selectable selection)
 		{
 			return null;

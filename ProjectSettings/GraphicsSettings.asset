@@ -2,8 +2,8 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!30 &1
 GraphicsSettings:
-  m_ObjectHideFlags: 0
   serializedVersion: 14
+  m_ObjectHideFlags: 0
   m_Deferred:
     m_Mode: 1
     m_Shader: {fileID: 69, guid: 0000000000000000f000000000000000, type: 0}
@@ -39,8 +39,8 @@ GraphicsSettings:
   - {fileID: 16000, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 16001, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 17000, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 4800000, guid: 4a884fe134e17944e9476903f0f5ace3, type: 3}
-  - {fileID: 4800000, guid: 98f97c238eed7ec4a9cdab24185a6d8d, type: 3}
+  - {fileID: 4800000, guid: 8a17552c090f7ab408f659632ae1acc5, type: 3}
+  - {fileID: 4800000, guid: 5a16d89943b3e0b4e9591ab513ce3cd3, type: 3}
   - {fileID: 19, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 65, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 66, guid: 0000000000000000f000000000000000, type: 0}
@@ -66,15 +66,15 @@ GraphicsSettings:
   - {fileID: 15304, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 15312, guid: 0000000000000000f000000000000000, type: 0}
   m_PreloadedShaders:
-  - {fileID: 20000000, guid: 8200787b874325a459e5e3fd5a2439dd, type: 2}
-  - {fileID: 20000000, guid: 57b3c882b599d22459accc3928fa86b3, type: 2}
-  - {fileID: 20000000, guid: 7429fa9369b112943bb65c78b45a9ef7, type: 2}
-  - {fileID: 20000000, guid: 9d7bdcee8460c7f4cbf93f86d5b632cd, type: 2}
-  - {fileID: 20000000, guid: 8a6f9571562a4cb408bc6efeed8a6895, type: 2}
-  - {fileID: 20000000, guid: fab9f5b1535cc344c945100c815a1ef2, type: 2}
+  - {fileID: 20000000, guid: 99b9e09bb98265745b68ffb0c1a532c0, type: 2}
+  - {fileID: 20000000, guid: a9b55a405613eb0458a69bd0c67288ec, type: 2}
+  - {fileID: 20000000, guid: 95128de6898102942bb53924d7a2fae4, type: 2}
+  - {fileID: 20000000, guid: 84f550c7d5794b147a9987657724f5b8, type: 2}
+  - {fileID: 20000000, guid: 0b0b4d85d45edac44a554ac678afd8a5, type: 2}
+  - {fileID: 20000000, guid: 73651a0e2f39efd43bbe382ec1b7ee14, type: 2}
   m_PreloadShadersBatchTimeLimit: -1
   m_SpritesDefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_CustomRenderPipeline: {fileID: 11400000, guid: 0f23bab962b886f4db07135928fba01a, type: 2}
+  m_CustomRenderPipeline: {fileID: 11400000, guid: fbfa8a8dead2b434098b8b2e20e00dbd, type: 2}
   m_TransparencySortMode: 0
   m_TransparencySortAxis: {x: 0, y: 0, z: 1}
   m_DefaultRenderingPath: 1
@@ -149,6 +149,6 @@ GraphicsSettings:
   m_DefaultRenderingLayerMask: 1
   m_LogWhenShaderIsCompiled: 0
   m_SRPDefaultSettings:
-    UnityEngine.Rendering.Universal.UniversalRenderPipeline: {fileID: 11400000, guid: d0ea594b33f2d934bb3534dd74d218aa, type: 2}
+    UnityEngine.Rendering.Universal.UniversalRenderPipeline: {fileID: 11400000, guid: 635295ca7529fae48b81e71c478cb5c7, type: 2}
   m_CameraRelativeLightCulling: 0
   m_CameraRelativeShadowCulling: 0

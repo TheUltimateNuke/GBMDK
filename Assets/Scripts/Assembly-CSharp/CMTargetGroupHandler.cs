@@ -336,6 +336,10 @@ public class CMTargetGroupHandler : MonoBehaviour
 		return null;
 	}
 
+	public void RefreshTargetGroups()
+	{
+	}
+
 	public void RefreshGangs()
 	{
 	}

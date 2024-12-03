@@ -90,6 +90,10 @@ namespace Femur
 		{
 		}
 
+		public override void Drive()
+		{
+		}
+
 		public override void Emote()
 		{
 		}

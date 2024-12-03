@@ -8,8 +8,10 @@ namespace CoreNet.StateSync.Triggers
 
 		public float cachedBreakTorque;
 
-		public JointCache(BreakableJointSync.JointInvulnerables joint):this()
+		public JointCache(BreakableJointSync.JointInvulnerables joint)
 		{
+			cachedBreakForce = 0f;
+			cachedBreakTorque = 0f;
 		}
 	}
 }

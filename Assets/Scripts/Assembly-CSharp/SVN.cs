@@ -30,8 +30,20 @@ public static class SVN
 
 		public readonly string lastChangedDate;
 
-		public Info(string svnInfoOutput) : this()
-        {
+		public Info(string svnInfoOutput)
+		{
+			path = null;
+			workingCopyRootPath = null;
+			url = null;
+			relativeUrl = null;
+			repositoryRoot = null;
+			repositoryRootUUID = null;
+			revision = 0;
+			nodeKind = null;
+			schedule = null;
+			lastChangedAuthor = null;
+			lastChangedRevision = 0;
+			lastChangedDate = null;
 		}
 	}
 

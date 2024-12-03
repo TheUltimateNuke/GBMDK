@@ -40,8 +40,10 @@ public struct ComplexAngle
 
 	public ComplexAngle conjugate => default(ComplexAngle);
 
-	public ComplexAngle(float r, float c) : this()
-    {
+	public ComplexAngle(float r, float c)
+	{
+		this.r = 0f;
+		i = 0f;
 	}
 
 	public override string ToString()

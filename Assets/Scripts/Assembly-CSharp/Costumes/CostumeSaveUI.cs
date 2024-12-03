@@ -94,7 +94,7 @@ namespace Costumes
 		{
 		}
 
-		public void DeleteAction()
+		public void DeleteSave()
 		{
 		}
 

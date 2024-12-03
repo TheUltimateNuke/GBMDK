@@ -24,8 +24,8 @@ namespace GB.UI.Menu
 		[Tooltip("Screen with the online menu controller on")]
 		private BaseMenuScreen _lobbyScreen;
 
-		[SerializeField]
 		[Tooltip("The online menu controller")]
+		[SerializeField]
 		private OnlineMenuController _lobbyMenu;
 
 		[Tooltip("Screen with the wireless menu controller on")]
@@ -40,20 +40,20 @@ namespace GB.UI.Menu
 		[SerializeField]
 		private BaseMenuScreen _onlineChecking;
 
-		[SerializeField]
 		[Tooltip("Screen for creating an online lobby")]
+		[SerializeField]
 		private BaseMenuScreen _onlineCreate;
 
-		[SerializeField]
 		[Tooltip("Screen for joining an online lobby")]
+		[SerializeField]
 		private BaseMenuScreen _onlineJoining;
 
-		[SerializeField]
 		[Tooltip("Screen for leaving an online lobby")]
+		[SerializeField]
 		private BaseMenuScreen _onlineLeaving;
 
-		[SerializeField]
 		[Tooltip("Screen for demo game")]
+		[SerializeField]
 		private BaseMenuScreen _demo;
 
 		[SerializeField]

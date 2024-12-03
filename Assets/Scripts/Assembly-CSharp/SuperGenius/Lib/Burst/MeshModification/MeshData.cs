@@ -42,12 +42,46 @@ namespace SuperGenius.Lib.Burst.MeshModification
 
 		public NativeArray<float3> Offset;
 
-		public MeshData(int vertCount, Allocator allocator, int subIndexCount = 1) : this()
-        {
+		public MeshData(int vertCount, Allocator allocator, int subIndexCount = 1)
+		{
+			Verts = default(NativeList<float3>);
+			Norms = default(NativeList<float3>);
+			UVs = default(NativeList<float2>);
+			BoundryEdges = default(NativeList<float3>);
+			SubIndexCount = 0;
+			SubIndex0 = default(NativeList<int>);
+			SubIndex1 = default(NativeList<int>);
+			SubIndex2 = default(NativeList<int>);
+			SubIndex3 = default(NativeList<int>);
+			SubIndex4 = default(NativeList<int>);
+			SubIndex5 = default(NativeList<int>);
+			SubIndex6 = default(NativeList<int>);
+			SubIndex7 = default(NativeList<int>);
+			SubIndex8 = default(NativeList<int>);
+			SubIndex9 = default(NativeList<int>);
+			SubIndex10 = default(NativeList<int>);
+			Offset = default(NativeArray<float3>);
 		}
 
-		public MeshData(Mesh mesh, Allocator allocator) : this()
-        {
+		public MeshData(Mesh mesh, Allocator allocator)
+		{
+			Verts = default(NativeList<float3>);
+			Norms = default(NativeList<float3>);
+			UVs = default(NativeList<float2>);
+			BoundryEdges = default(NativeList<float3>);
+			SubIndexCount = 0;
+			SubIndex0 = default(NativeList<int>);
+			SubIndex1 = default(NativeList<int>);
+			SubIndex2 = default(NativeList<int>);
+			SubIndex3 = default(NativeList<int>);
+			SubIndex4 = default(NativeList<int>);
+			SubIndex5 = default(NativeList<int>);
+			SubIndex6 = default(NativeList<int>);
+			SubIndex7 = default(NativeList<int>);
+			SubIndex8 = default(NativeList<int>);
+			SubIndex9 = default(NativeList<int>);
+			SubIndex10 = default(NativeList<int>);
+			Offset = default(NativeArray<float3>);
 		}
 
 		public void SetSubIndexCount(int count)

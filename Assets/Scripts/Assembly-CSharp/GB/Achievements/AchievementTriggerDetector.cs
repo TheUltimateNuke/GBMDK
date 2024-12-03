@@ -6,19 +6,19 @@ namespace GB.Achievements
 {
 	public class AchievementTriggerDetector : AchievementManager
 	{
-		[Tooltip("The JSON-friendly name for this achievement")]
 		[SerializeField]
+		[Tooltip("The JSON-friendly name for this achievement")]
 		private string RelatedAchievementName;
 
 		[SerializeField]
 		private AchievementTrigger[] TriggerRequirements;
 
-		[Tooltip("Whether the order the triggers are activated in matters towards achievement progress")]
 		[SerializeField]
+		[Tooltip("Whether the order the triggers are activated in matters towards achievement progress")]
 		private bool OrderImportant;
 
-		[SerializeField]
 		[Tooltip("How many of the assigned elements must trigger for this achievement to be unlocked. \r\nFor most 'OrderImportant' triggers, this should be equal to the number of elements.")]
+		[SerializeField]
 		private int ElementTriggerReqNum;
 
 		[SerializeField]

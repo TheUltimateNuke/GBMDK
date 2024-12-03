@@ -9,6 +9,9 @@ public class ButtonCameraAdaption : MonoBehaviour
 	[SerializeField]
 	private bool triggersOnClick;
 
+	[SerializeField]
+	private bool selectOnEnter;
+
 	private void Awake()
 	{
 	}

@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using GB.Gamemodes;
 using TMPro;
 using UnityEngine.EventSystems;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Components;
 using UnityEngine.UI;
 
 namespace GB.UI
@@ -13,6 +15,10 @@ namespace GB.UI
 		public TextMeshProUGUI titleText;
 
 		public TextMeshProUGUI valueText;
+
+		public LocalizeStringEvent titleString;
+
+		public LocalizeStringEvent valueString;
 
 		private Dictionary<GameModeEnum, int> perModeIndices;
 
@@ -67,7 +73,11 @@ namespace GB.UI
 		{
 		}
 
-		public void UpdateTitle(string text)
+		public void UpdateTitle_Loadstring(string text)
+		{
+		}
+
+		public void UpdateTitle(LocalizedString title)
 		{
 		}
 

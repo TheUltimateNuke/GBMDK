@@ -27,8 +27,10 @@ namespace GB.Menu
 
 			public string[] guids;
 
-			public ControllerGUIDContainer(ControllerType type, string[] guidList) : this()
-            {
+			public ControllerGUIDContainer(ControllerType type, string[] guidList)
+			{
+				action = default(ControllerType);
+				guids = null;
 			}
 		}
 
@@ -48,8 +50,10 @@ namespace GB.Menu
 
 			public PersistantButtonElement element;
 
-			public ElementContainer(InputMapActions ac, PersistantButtonElement elem) : this()
-            {
+			public ElementContainer(InputMapActions ac, PersistantButtonElement elem)
+			{
+				action = default(InputMapActions);
+				element = null;
 			}
 		}
 

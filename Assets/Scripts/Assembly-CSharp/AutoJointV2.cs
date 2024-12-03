@@ -27,6 +27,11 @@ public class AutoJointV2 : MonoBehaviour
 		return null;
 	}
 
+	public bool BuildJoints()
+	{
+		return false;
+	}
+
 	private void OnValidate()
 	{
 	}

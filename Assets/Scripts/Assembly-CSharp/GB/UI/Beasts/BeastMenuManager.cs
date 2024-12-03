@@ -18,6 +18,9 @@ namespace GB.UI.Beasts
 
 			private int _pointIndex;
 
+			[CompilerGenerated]
+			private Action<int, int> m__onAssignedChanged;
+
 			public int PlayerAssigned
 			{
 				get
@@ -44,7 +47,9 @@ namespace GB.UI.Beasts
 			}
 
 			public PointInformation(int pointIndex, Action<int, int> onAssignedChanged) : this()
-            {
+			{
+				_playerAssigned = 0;
+				_pointIndex = 0;
 			}
 
 			public void RefreshPoint()
@@ -57,13 +62,14 @@ namespace GB.UI.Beasts
 		{
 			public int[] Order;
 
-			public SpawnOrder(int[] _order) : this()
-            {
+			public SpawnOrder(int[] _order)
+			{
+				Order = null;
 			}
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CPinBeastsRoutine_003Ed__35 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CPinBeastsRoutine_003Ed__37 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -92,7 +98,7 @@ namespace GB.UI.Beasts
             public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CPinBeastsRoutine_003Ed__35(int _003C_003E1__state)
+			public _003CPinBeastsRoutine_003Ed__37(int _003C_003E1__state)
 			{
 			}
 
@@ -129,6 +135,8 @@ namespace GB.UI.Beasts
 
 		[SerializeField]
 		private BeastMenuSpawner _beastSpawnPoints;
+
+		private List<int> lobbyBeastsInTeams;
 
 		private PointInformation[] _pointInfo;
 
@@ -208,6 +216,11 @@ namespace GB.UI.Beasts
 		{
 		}
 
+		public int GetLobbyBeastTeamCount()
+		{
+			return 0;
+		}
+
 		private void BeastTeamChange(LocalPlayerInfomationCache player, int oldTeam)
 		{
 		}
@@ -254,7 +267,7 @@ namespace GB.UI.Beasts
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CPinBeastsRoutine_003Ed__35))]
+		[IteratorStateMachine(typeof(_003CPinBeastsRoutine_003Ed__37))]
 		public IEnumerator PinBeastsRoutine()
 		{
 			return null;

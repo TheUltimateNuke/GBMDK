@@ -14,16 +14,22 @@ namespace Costumes
 
 			public ushort ColorId;
 
-			public CostumeSaveItem(ushort itemID) : this()
-            {
+			public CostumeSaveItem(ushort itemID)
+			{
+				ItemId = 0;
+				ColorId = 0;
 			}
 
-			public CostumeSaveItem(ushort itemID, ushort colorId) : this()
-            {
+			public CostumeSaveItem(ushort itemID, ushort colorId)
+			{
+				ItemId = 0;
+				ColorId = 0;
 			}
 
-			public CostumeSaveItem(CostumeObject costumeObj) : this()
-            {
+			public CostumeSaveItem(CostumeObject costumeObj)
+			{
+				ItemId = 0;
+				ColorId = 0;
 			}
 		}
 

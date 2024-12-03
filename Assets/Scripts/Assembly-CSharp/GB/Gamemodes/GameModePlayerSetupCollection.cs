@@ -8,7 +8,7 @@ namespace GB.Gamemodes
 	{
 		public List<GameModePlayerSetup> PlayerSetup;
 
-		public GameModeNeeds GetNeeds(GameModeEnum mode, bool privateGame)
+		public GameModeNeeds GetNeeds(GameModeEnum mode, bool privateGame, bool isWirelessMode = false)
 		{
 			return default(GameModeNeeds);
 		}

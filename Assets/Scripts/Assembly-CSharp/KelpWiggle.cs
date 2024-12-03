@@ -6,9 +6,7 @@ public class KelpWiggle : MonoBehaviour
 
 	public float TwistLimit;
 
-	private Transform[] m_BoneTransforms;
-
-	private Vector3[] m_BoneLocalPositions;
+	private Rigidbody[] m_BoneRigidbodies;
 
 	private float[] m_TwistPeriods;
 
@@ -30,7 +28,7 @@ public class KelpWiggle : MonoBehaviour
 	{
 	}
 
-	private void Update()
+	private void FixedUpdate()
 	{
 	}
 }

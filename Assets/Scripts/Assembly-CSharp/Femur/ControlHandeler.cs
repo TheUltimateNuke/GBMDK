@@ -26,6 +26,8 @@ namespace Femur
 
 		public bool onMovingPlatform;
 
+		public Transform currentMovingPlatform;
+
 		public bool leftCanClimb;
 
 		public bool rightCanClimb;
@@ -39,6 +41,8 @@ namespace Femur
 		public float smoothTime;
 
 		public Vector3 lookDirection;
+
+		public Vector3 drivingLookDirection;
 
 		public Vector3 moveDirection;
 
@@ -111,6 +115,8 @@ namespace Femur
 		public bool dropkickFix;
 
 		public bool burning;
+
+		public bool driving;
 
 		protected float GetAnalogInput(string key)
 		{

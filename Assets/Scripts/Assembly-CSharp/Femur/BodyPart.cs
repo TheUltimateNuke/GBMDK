@@ -10,7 +10,7 @@ namespace Femur
 
 		public Collider PartCollider;
 
-		public InteractableObject PartInteractable;
+		public InteractableObjectData PartInteractable;
 
 		public CollisionHandeler PartCollisionHandeler;
 

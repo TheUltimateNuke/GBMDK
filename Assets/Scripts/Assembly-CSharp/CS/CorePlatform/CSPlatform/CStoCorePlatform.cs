@@ -83,6 +83,8 @@ namespace CS.CorePlatform.CSPlatform
 
 		public override int TotalInLobby => 0;
 
+		public override bool HasLobbyInvite => false;
+
 		public override bool SetToUserImage(BaseUserInfo userInfo, ref Texture2D terxtureSetting)
 		{
 			return false;

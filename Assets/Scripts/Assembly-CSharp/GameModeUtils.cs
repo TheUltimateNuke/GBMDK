@@ -18,8 +18,10 @@ public static class GameModeUtils
 
 			public Coroutine coroutine;
 
-			public RespawnElement(NetBeast beast, Coroutine coroutine) : this()
-            {
+			public RespawnElement(NetBeast beast, Coroutine coroutine)
+			{
+				this.beast = null;
+				this.coroutine = null;
 			}
 		}
 

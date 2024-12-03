@@ -10,8 +10,8 @@ namespace GB.Game.Tool
 		[SerializeField]
 		private bool _enableItems;
 
-		[EnumUtils.EnumFlags]
 		[SerializeField]
+		[EnumUtils.EnumFlags]
 		private GameModeEnum _neededMode;
 
 		[SerializeField]

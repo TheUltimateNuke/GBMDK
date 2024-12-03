@@ -24,8 +24,12 @@ namespace GB.View.UI
 
 			public Vector3 offsetPosition;
 
-			public VROverriding(bool active) : this()
-            {
+			public VROverriding(bool active)
+			{
+				overridding = false;
+				posType = default(PositionType);
+				uiForward = 0f;
+				offsetPosition = default(Vector3);
 			}
 		}
 

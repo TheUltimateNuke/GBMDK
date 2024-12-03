@@ -14,8 +14,8 @@ namespace GB.Networking.Environment
 		[SerializeField]
 		private bool DespawnAll;
 
-		[SerializeField]
 		[Range(0f, 1f)]
+		[SerializeField]
 		private float DespawnAllChance;
 
 		private bool _Initialised;

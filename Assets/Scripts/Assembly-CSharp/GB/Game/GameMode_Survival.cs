@@ -40,6 +40,10 @@ namespace GB.Game
 			return null;
 		}
 
+		public override void SendRoundOverMessage(bool mapComplete)
+		{
+		}
+
 		public override void OnBeastDeath(NetBeast beast, Actor actor)
 		{
 		}

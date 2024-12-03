@@ -13,6 +13,8 @@ public class Breath : MonoBehaviour
 
 	private float randomOffset;
 
+	private int pingPongFactor;
+
 	private void Start()
 	{
 	}

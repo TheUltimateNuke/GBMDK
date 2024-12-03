@@ -12,7 +12,7 @@ namespace GB.Networking.Sync
 	public class JointBreakSyncTrigger : BaseSyncTrigger, IAutoJointV2PrecopyEvent
 	{
 		[CompilerGenerated]
-		private sealed class _003CIEnumeratorCheckBreak_003Ed__29 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CIEnumeratorCheckBreak_003Ed__31 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -41,7 +41,7 @@ namespace GB.Networking.Sync
             public object Current => throw new NotImplementedException();
 
             [DebuggerHidden]
-			public _003CIEnumeratorCheckBreak_003Ed__29(int _003C_003E1__state)
+			public _003CIEnumeratorCheckBreak_003Ed__31(int _003C_003E1__state)
 			{
 			}
 
@@ -99,6 +99,8 @@ namespace GB.Networking.Sync
 
 		[SerializeField]
 		private float _randomTorqueMax;
+
+		private JoinedRigidbodysStabilizer _stabilizer;
 
 		private Coroutine _breakCheck;
 
@@ -166,11 +168,15 @@ namespace GB.Networking.Sync
 		{
 		}
 
+		private void FindJointStabilizer()
+		{
+		}
+
 		private void OnJointBreak(float breakForce)
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CIEnumeratorCheckBreak_003Ed__29))]
+		[IteratorStateMachine(typeof(_003CIEnumeratorCheckBreak_003Ed__31))]
 		private IEnumerator IEnumeratorCheckBreak()
 		{
 			return null;

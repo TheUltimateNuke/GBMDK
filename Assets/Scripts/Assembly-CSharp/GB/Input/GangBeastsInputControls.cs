@@ -42,8 +42,9 @@ namespace GB.Input
 
 			public bool enabled => false;
 
-			public PlayerActions(GangBeastsInputControls wrapper) : this()
-            {
+			public PlayerActions(GangBeastsInputControls wrapper)
+			{
+				m_Wrapper = null;
 			}
 
 			public InputActionMap Get()
@@ -62,6 +63,18 @@ namespace GB.Input
 			public static implicit operator InputActionMap(PlayerActions set)
 			{
 				return null;
+			}
+
+			public void AddCallbacks(IPlayerActions instance)
+			{
+			}
+
+			private void UnregisterCallbacks(IPlayerActions instance)
+			{
+			}
+
+			public void RemoveCallbacks(IPlayerActions instance)
+			{
 			}
 
 			public void SetCallbacks(IPlayerActions instance)
@@ -141,8 +154,9 @@ namespace GB.Input
 
 			public bool enabled => false;
 
-			public UIActions(GangBeastsInputControls wrapper) : this()
-            {
+			public UIActions(GangBeastsInputControls wrapper)
+			{
+				m_Wrapper = null;
 			}
 
 			public InputActionMap Get()
@@ -161,6 +175,18 @@ namespace GB.Input
 			public static implicit operator InputActionMap(UIActions set)
 			{
 				return null;
+			}
+
+			public void AddCallbacks(IUIActions instance)
+			{
+			}
+
+			private void UnregisterCallbacks(IUIActions instance)
+			{
+			}
+
+			public void RemoveCallbacks(IUIActions instance)
+			{
 			}
 
 			public void SetCallbacks(IUIActions instance)
@@ -270,7 +296,7 @@ namespace GB.Input
 
 		private readonly InputActionMap m_Player;
 
-		private IPlayerActions m_PlayerActionsCallbackInterface;
+		private List<IPlayerActions> m_PlayerActionsCallbackInterfaces;
 
 		private readonly InputAction m_Player_Jump;
 
@@ -302,7 +328,7 @@ namespace GB.Input
 
 		private readonly InputActionMap m_UI;
 
-		private IUIActions m_UIActionsCallbackInterface;
+		private List<IUIActions> m_UIActionsCallbackInterfaces;
 
 		private readonly InputAction m_UI_Navigate;
 

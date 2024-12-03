@@ -43,11 +43,11 @@ namespace CoreNet.StateSync.Triggers
 		{
 		}
 
-		protected void TriggerStartSync()
+		public void TriggerStartSync()
 		{
 		}
 
-		protected void TriggerStopSync()
+		public void TriggerStopSync()
 		{
 		}
 	}

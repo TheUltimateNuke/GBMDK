@@ -17,8 +17,8 @@ namespace GB.Game
 		[SerializeField]
 		private bool _despawn;
 
-		[SerializeField]
 		[EnumUtils.EnumFlags]
+		[SerializeField]
 		private GameModeEnum _neededMode;
 
 		[SerializeField]

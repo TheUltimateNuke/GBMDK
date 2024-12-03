@@ -10,8 +10,10 @@ public class BuoyancyManager : MonoBehaviour
 
 		public Collider collider;
 
-		public RegisteredLiquid(Liquid liquid, Collider collider):this()
+		public RegisteredLiquid(Liquid liquid, Collider collider)
 		{
+			this.liquid = null;
+			this.collider = null;
 		}
 	}
 

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 namespace GB.VRGUI
 {
@@ -12,8 +13,11 @@ namespace GB.VRGUI
 
 			private SunShafts sunShafts;
 
-			public CameraEffects(Camera mainCam) : this()
-            {
+			public CameraEffects(Camera mainCam)
+			{
+				setup = false;
+				bloom = null;
+				sunShafts = null;
 			}
 
 			public void SetCameraEffectsActive(bool active)

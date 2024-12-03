@@ -15,8 +15,10 @@ namespace GB.Platform.Lobby
 
 			public NamebarHandler nameBar;
 
-			public OrderCarrier(int _id, NamebarHandler _nameBar) : this()
-            {
+			public OrderCarrier(int _id, NamebarHandler _nameBar)
+			{
+				spawnID = 0;
+				nameBar = null;
 			}
 		}
 
@@ -39,6 +41,9 @@ namespace GB.Platform.Lobby
 
 		[SerializeField]
 		private Selectable _selectable;
+
+		[SerializeField]
+		private string _onClickInputCode;
 
 		[SerializeField]
 		private string _kickInputCode;
@@ -120,6 +125,10 @@ namespace GB.Platform.Lobby
 		}
 
 		private void CheckMouseOver()
+		{
+		}
+
+		private void OnClickCheck()
 		{
 		}
 

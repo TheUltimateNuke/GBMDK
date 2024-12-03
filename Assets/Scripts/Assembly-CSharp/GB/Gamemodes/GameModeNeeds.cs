@@ -10,12 +10,15 @@ namespace GB.Gamemodes
 			Pass = 0,
 			Online_Not_Needed = 1,
 			Over_Player_Count = 2,
-			Under_Player_Count = 3
+			Under_Player_Count = 3,
+			Under_Team_Min_Count = 4
 		}
 
 		public int minPlayers;
 
 		public int maxPlayers;
+
+		public int minTeams;
 
 		public int maxTeams;
 
@@ -24,7 +27,7 @@ namespace GB.Gamemodes
 			return null;
 		}
 
-		public Result CheckValid(int totalBeasts)
+		public Result CheckValid(int totalBeasts, int totalTeams = 0)
 		{
 			return default(Result);
 		}

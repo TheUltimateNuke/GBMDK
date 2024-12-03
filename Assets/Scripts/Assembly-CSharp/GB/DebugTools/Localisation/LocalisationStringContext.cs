@@ -20,8 +20,12 @@ namespace GB.DebugTools.Localisation
 
 			public string _name;
 
-			public DisplayMode(string name, string description, DisplayString displayMessage, ClearMessage clearMessage) : this()
-            {
+			public DisplayMode(string name, string description, DisplayString displayMessage, ClearMessage clearMessage)
+			{
+				_displayMessage = null;
+				_clearMessage = null;
+				_description = null;
+				_name = null;
 			}
 		}
 

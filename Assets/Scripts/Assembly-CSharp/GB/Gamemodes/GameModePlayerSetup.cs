@@ -11,9 +11,13 @@ namespace GB.Gamemodes
 
 		public bool hasPrivate;
 
+		public bool hasWirelessNeeds;
+
 		public GameModeNeeds privateNeeds;
 
-		public GameModeNeeds GetNeeds(bool privateGame)
+		public GameModeNeeds wirelessNeeds;
+
+		public GameModeNeeds GetNeeds(bool privateGame, bool isWirelessMode = false)
 		{
 			return default(GameModeNeeds);
 		}

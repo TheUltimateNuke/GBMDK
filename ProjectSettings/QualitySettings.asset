@@ -41,7 +41,7 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 11400000, guid: dadd91c0872928f4295c8d94899d498c, type: 2}
+    customRenderPipeline: {fileID: 11400000, guid: 83489ec56761bc54f8a1deb4c15c274d, type: 2}
     excludedTargetPlatforms: []
   - serializedVersion: 2
     name: Low
@@ -78,7 +78,7 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 11400000, guid: 0facd9c45dccfe54fa285acd885e3758, type: 2}
+    customRenderPipeline: {fileID: 11400000, guid: 718c12b31c81fd64ebecc4df14eb7648, type: 2}
     excludedTargetPlatforms: []
   - serializedVersion: 2
     name: Medium
@@ -115,7 +115,7 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 11400000, guid: 6db10e57ff3d2b542b06032fd01005f1, type: 2}
+    customRenderPipeline: {fileID: 11400000, guid: 8c0fbe066e2f7d84da4fd78b242e9576, type: 2}
     excludedTargetPlatforms: []
   - serializedVersion: 2
     name: High
@@ -152,7 +152,7 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 11400000, guid: 25bd6bc5a326d654c990e8eaab82a039, type: 2}
+    customRenderPipeline: {fileID: 11400000, guid: c142507d677f9b749a63be4aff367474, type: 2}
     excludedTargetPlatforms: []
   - serializedVersion: 2
     name: Highest
@@ -169,7 +169,7 @@ QualitySettings:
     skinWeights: 4
     textureQuality: 0
     anisotropicTextures: 1
-    antiAliasing: 4
+    antiAliasing: 8
     softParticles: 1
     softVegetation: 1
     realtimeReflectionProbes: 0
@@ -189,20 +189,20 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 11400000, guid: 0f23bab962b886f4db07135928fba01a, type: 2}
+    customRenderPipeline: {fileID: 11400000, guid: fbfa8a8dead2b434098b8b2e20e00dbd, type: 2}
     excludedTargetPlatforms: []
   m_PerPlatformDefaultQuality:
-  - Android: 2
-  - Nintendo 3DS: 5
-  - Nintendo Switch: 5
-  - PS4: 5
-  - PSM: 5
-  - PSP2: 2
-  - Standalone: 5
-  - Tizen: 2
-  - WebGL: 3
-  - WiiU: 5
-  - Windows Store Apps: 5
-  - XboxOne: 5
-  - iPhone: 2
-  - tvOS: 2
+    Android: 2
+    Nintendo 3DS: 5
+    Nintendo Switch: 5
+    PS4: 5
+    PSM: 5
+    PSP2: 2
+    Standalone: 5
+    Tizen: 2
+    WebGL: 3
+    WiiU: 5
+    Windows Store Apps: 5
+    XboxOne: 5
+    iPhone: 2
+    tvOS: 2

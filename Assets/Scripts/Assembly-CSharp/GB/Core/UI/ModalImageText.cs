@@ -8,6 +8,8 @@ namespace GB.Core.UI
 		[SerializeField]
 		private LocalizeTextureWithAspectRatioEvent _imageHandler;
 
+		private const string IMAGE_MODAL_DEFAULT = "IMAGE_MODAL_DEFAULT";
+
 		public override void PreInitialise(List<object> parameters)
 		{
 		}

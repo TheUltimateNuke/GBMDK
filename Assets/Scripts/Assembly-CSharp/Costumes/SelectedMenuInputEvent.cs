@@ -27,8 +27,13 @@ namespace Costumes
 
 			public CostumeCustomization.CostumeActions Action;
 
-			public InputListener(string _input, string _inputSwitchOverride, inputType _eventType, PointerEventData.InputButton _button, CostumeCustomization.CostumeActions _action) : this()
-            {
+			public InputListener(string _input, string _inputSwitchOverride, inputType _eventType, PointerEventData.InputButton _button, CostumeCustomization.CostumeActions _action)
+			{
+				Input = null;
+				InputSwitchOverride = null;
+				eventType = default(inputType);
+				MouseButton = default(PointerEventData.InputButton);
+				Action = default(CostumeCustomization.CostumeActions);
 			}
 		}
 

@@ -74,6 +74,14 @@ public class NameBarHandler : MonoBehaviour
 	{
 	}
 
+	private void UpdateWithCurrentBeast()
+	{
+	}
+
+	private void UpdateBeastInfo()
+	{
+	}
+
 	private void UpdateColour()
 	{
 	}

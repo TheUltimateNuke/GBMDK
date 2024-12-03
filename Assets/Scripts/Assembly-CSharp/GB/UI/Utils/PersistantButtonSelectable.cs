@@ -23,8 +23,10 @@ namespace GB.UI.Utils
 
 			public ButtonStyle style;
 
-			public InputMap(string ncode, ButtonStyle nstyle) : this()
-            {
+			public InputMap(string ncode, ButtonStyle nstyle)
+			{
+				code = null;
+				style = default(ButtonStyle);
 			}
 		}
 

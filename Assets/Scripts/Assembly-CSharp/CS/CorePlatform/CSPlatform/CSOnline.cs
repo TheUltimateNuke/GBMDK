@@ -19,8 +19,11 @@ namespace CS.CorePlatform.CSPlatform
 
 			public uint size;
 
-			public MessageQueue(UserInfo target, byte[] message, uint size) : this()
-            {
+			public MessageQueue(UserInfo target, byte[] message, uint size)
+			{
+				this.target = default(UserInfo);
+				this.message = null;
+				this.size = 0u;
 			}
 		}
 
@@ -85,6 +88,8 @@ namespace CS.CorePlatform.CSPlatform
 		public bool IsLobbyHost => false;
 
 		public bool IsJoiningLobby => false;
+
+		public bool HasLobbyInvite => false;
 
 		public int TotalInLobby => 0;
 

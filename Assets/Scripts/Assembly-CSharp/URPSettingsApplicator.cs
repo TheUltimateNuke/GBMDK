@@ -35,6 +35,10 @@ public class URPSettingsApplicator : MonoBehaviour
 	{
 	}
 
+	public void ApplyCameraSettings(UnityEditor.PostProcessing.GraphicsSettings newSettings)
+	{
+	}
+
 	private void ApplyCameraSettings()
 	{
 	}

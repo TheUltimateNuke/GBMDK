@@ -226,6 +226,10 @@ namespace GB.Platform.Lobby
 		{
 		}
 
+		private void PlatformEvents_OnLobbyUserJoinedEvent(BaseUserInfo info)
+		{
+		}
+
 		private void PlatformEvents_OnLobbyUserLeftEvent(BaseUserInfo info)
 		{
 		}

@@ -26,8 +26,10 @@ namespace GB.UI.Beasts
 
 			public ButtonStyle style;
 
-			public InputMap(string ncode, ButtonStyle nstyle) : this()
-            {
+			public InputMap(string ncode, ButtonStyle nstyle)
+			{
+				code = null;
+				style = default(ButtonStyle);
 			}
 		}
 
