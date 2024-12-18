@@ -73,3 +73,5 @@ crashlytics-build.properties
 
 # Ripped and converted assets are ignored for safety reasons
 /[Aa]ssets/QuickAssetMigrator/ConversionOutput/**/*
+
+Exported

@@ -2,9 +2,9 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!47 &1
 QualitySettings:
-  serializedVersion: 5
   m_ObjectHideFlags: 0
-  m_CurrentQuality: 4
+  serializedVersion: 5
+  m_CurrentQuality: 2
   m_QualitySettings:
   - serializedVersion: 2
     name: Lowest
@@ -42,7 +42,9 @@ QualitySettings:
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
     customRenderPipeline: {fileID: 11400000, guid: 83489ec56761bc54f8a1deb4c15c274d, type: 2}
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Standalone
+    - Server
   - serializedVersion: 2
     name: Low
     pixelLightCount: 4
@@ -79,7 +81,9 @@ QualitySettings:
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
     customRenderPipeline: {fileID: 11400000, guid: 718c12b31c81fd64ebecc4df14eb7648, type: 2}
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Standalone
+    - Server
   - serializedVersion: 2
     name: Medium
     pixelLightCount: 4
@@ -153,7 +157,9 @@ QualitySettings:
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
     customRenderPipeline: {fileID: 11400000, guid: c142507d677f9b749a63be4aff367474, type: 2}
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Server
+    - Standalone
   - serializedVersion: 2
     name: Highest
     pixelLightCount: 4
@@ -169,7 +175,7 @@ QualitySettings:
     skinWeights: 4
     textureQuality: 0
     anisotropicTextures: 1
-    antiAliasing: 8
+    antiAliasing: 0
     softParticles: 1
     softVegetation: 1
     realtimeReflectionProbes: 0
@@ -190,7 +196,9 @@ QualitySettings:
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
     customRenderPipeline: {fileID: 11400000, guid: fbfa8a8dead2b434098b8b2e20e00dbd, type: 2}
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Standalone
+    - Server
   m_PerPlatformDefaultQuality:
     Android: 2
     Nintendo 3DS: 5
@@ -198,6 +206,7 @@ QualitySettings:
     PS4: 5
     PSM: 5
     PSP2: 2
+    Server: 0
     Standalone: 5
     Tizen: 2
     WebGL: 3
