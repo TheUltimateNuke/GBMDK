@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f0e5e43d50fde972e117e7fb81d6457, type: 3}
+  m_Name: NewScreenSpaceReflections
+  m_EditorClassIdentifier:
+  m_Active: 0
+  preset: 2
+  maximumIterationCount: 16
+  resolution: 1
+  thickness: 8
+  maximumMarchDistance: 100
+  distanceFade: 0.062
+  vignette: 0.32
+  blueNoise256: {fileID: 2800000, guid: 4b0e18976cc70ba448a9fa962e86165e, type: 3}
+  ScreenSpaceReflectionsMaterial: {fileID: 2100000, guid: 7896b6f4e87747841b6f51b83d595e87, type: 2}
+  GaussianDownsample: {fileID: 7200000, guid: e8b1d05ce540bb24591225dfd640cf51, type: 2}
