@@ -1,6 +1,6 @@
 {
   "name": "com.cementgb.gbmdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "Gang Beasts Mod Development Kit (GBMDK)",
   "description": "Contains dummy scripts and resources for building assets for Gang Beasts mods.",
   "unity": "2021.3",
