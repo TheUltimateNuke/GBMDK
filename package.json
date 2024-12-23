@@ -5,6 +5,13 @@
   "description": "Contains dummy scripts and resources for building assets for Gang Beasts mods.",
   "unity": "2021.3",
   "unityRelease": "33f1",
+  "samples": [
+    {
+      "displayName": "Costume Sample",
+      "description": "Contains a cube hat costume test.",
+      "path": "Samples~/CostumeTest"
+    }
+  ],
   "dependencies": {
     "com.unity.addressables": "1.19.19",
     "com.unity.cinemachine": "2.8.9",
