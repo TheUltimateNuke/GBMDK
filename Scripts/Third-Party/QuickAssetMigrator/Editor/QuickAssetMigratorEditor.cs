@@ -24,7 +24,7 @@ namespace FizzSDK.QuickAssetMigrator
         private string _sourceFolder;
         private List<string> _selectedAssets = new();
         
-        [MenuItem("Window/GBMDK/Quick Asset Migrator")]
+        [MenuItem("Tools/GBMDK/Quick Asset Migrator")]
         public static void ShowWindow()
         {
             GetWindow<QuickAssetMigratorEditor>("Quick Asset Migrator");
