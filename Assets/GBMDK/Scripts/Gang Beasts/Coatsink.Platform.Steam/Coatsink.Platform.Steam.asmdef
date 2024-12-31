@@ -1,0 +1,8 @@
+{
+  "name": "Coatsink.Platform.Steam",
+  "references": [
+    "Coatsink.Platform",
+    "com.rlabrecque.steamworks.net"
+  ],
+  "allowUnsafeCode": true
+}
