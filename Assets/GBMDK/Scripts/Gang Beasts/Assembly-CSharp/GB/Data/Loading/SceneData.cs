@@ -13,17 +13,7 @@ namespace GB.Data.Loading
 	[CreateAssetMenu(fileName = "SceneData", menuName = "Gang Beasts/Data/Scene Data", order = 1)]
 	public class SceneData : ScriptableObject, ILoadedAsset, ICompleteTracker
 	{
-        private void OnValidate()
-        {
-			var currentAssetPath = AssetDatabase.GetAssetPath(this);
-
-			if (!currentAssetPath.IsNullOrWhiteSpace())
-			{
-
-			}
-        }
-
-        public AssetReference _sceneRef;
+	        public AssetReference _sceneRef;
 
 		[SerializeField]
 		private SpawnList _spawnList;
