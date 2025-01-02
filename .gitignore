@@ -73,3 +73,7 @@ crashlytics-build.properties
 
 LICENSE.meta
 README.md.meta
+
+# Skip migrated and exported content, as these can contain game assets we aren't allowed to distribute ourselves.
+/Assets/Exported/**/*
+/Assets/GBMDK/Scripts/GBMDK/Editor/Third-Party/QuickAssetMigrator/ConversionOutput/**/*
