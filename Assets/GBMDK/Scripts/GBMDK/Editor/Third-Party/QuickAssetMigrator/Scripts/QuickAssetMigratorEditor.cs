@@ -14,20 +14,25 @@ namespace FizzSDK.QuickAssetMigrator
     {
         private const string AssetMigratorRepository = "https://github.com/Fizzyhex/asset_migrator_extsdk";
 
-        private bool _shouldMigrateScripts;
-        private bool _shouldMigrateShaders;
+        private static bool _shouldMigrateScripts;
+        private static bool _shouldMigrateShaders = true;
         private string _migratorArguments;
         private bool _isAssetMigratorPresent = true;
         private bool _isFocused;
         private bool _hasMigrated;
         private bool _infoFoldoutVisible;
-        private string _sourceFolder;
+        private static string _sourceFolder;
         private List<string> _selectedAssets = new();
 
         [MenuItem("Tools/GBMDK/Quick Asset Migrator")]
         public static void ShowWindow()
         {
             GetWindow<QuickAssetMigratorEditor>("Quick Asset Migrator");
+        }
+
+        private void OnEnable()
+        {
+            _sourceFolder = File.Exists($"{GetWorkingDirectory()}\\source_folder_saved.txt") ? File.ReadAllText($"{GetWorkingDirectory()}\\source_folder_saved.txt") : string.Empty;
         }
 
         void IHasCustomMenu.AddItemsToMenu(GenericMenu menu)
@@ -54,7 +59,7 @@ namespace FizzSDK.QuickAssetMigrator
         {
             var workingDirectory = GetWorkingDirectory();
             var assetMigratorPath = $@"{workingDirectory}\asset_migrator.exe";
-            return System.IO.File.Exists(assetMigratorPath);
+            return File.Exists(assetMigratorPath);
         }
 
         private static void MoveDirectoryDestructive(string source, string target)
@@ -70,7 +75,7 @@ namespace FizzSDK.QuickAssetMigrator
         private void OnGUI()
         {
             var wasFocused = _isFocused;
-            _isFocused = (focusedWindow == this);
+            _isFocused = focusedWindow == this;
 
             if (wasFocused != _isFocused)
             {
@@ -80,7 +85,7 @@ namespace FizzSDK.QuickAssetMigrator
             if (!_isAssetMigratorPresent)
             {
                 EditorGUILayout.BeginVertical(GUI.skin.box);
-                EditorGUILayout.HelpBox("asset_migrator.exe is missing! Please drag it underneath Assets/QuickAssetMigrator in your project.", MessageType.Error);
+                EditorGUILayout.HelpBox($"asset_migrator.exe is missing! Please drag it underneath {GetWorkingDirectory()} in your project.", MessageType.Error);
 
                 if (GUILayout.Button("Open Repository"))
                 {
@@ -96,9 +101,11 @@ namespace FizzSDK.QuickAssetMigrator
             {
                 var path = StandaloneFileBrowser.OpenFolderPanel("Select Folder", "", false);
 
-                if (path.Length > 0)
+                if (!string.IsNullOrWhiteSpace(path[0]))
                 {
                     _sourceFolder = path[0];
+                    File.WriteAllText($"{GetWorkingDirectory()}\\source_folder_saved.txt", _sourceFolder);
+                    AssetDatabase.Refresh();
                 }
             }
 
@@ -209,13 +216,13 @@ namespace FizzSDK.QuickAssetMigrator
                     FileName = workingDirectory + @"\asset_migrator.exe",
                     Arguments = _migratorArguments,
                     UseShellExecute = false,
-                    WorkingDirectory = workingDirectory
+                    WorkingDirectory = Application.dataPath
                 };
 
                 var process = Process.Start(startInfo);
                 process?.WaitForExit();
 
-                var conversionOutput = $"{workingDirectory}\\{conversionOutputFolderName}";
+                var conversionOutput = $"{conversionOutputPath}";
 
                 if (!_shouldMigrateScripts)
                 {
@@ -238,6 +245,7 @@ namespace FizzSDK.QuickAssetMigrator
                 var folderObject = AssetDatabase.LoadAssetAtPath<UnityEngine.Object>(conversionOutputPath);
                 EditorUtility.FocusProjectWindow();
                 AssetDatabase.OpenAsset(folderObject);
+                AssetDatabase.Refresh();
 
                 _hasMigrated = true;
             }
