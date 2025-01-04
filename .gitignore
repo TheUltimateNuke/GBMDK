@@ -78,4 +78,6 @@ README.md.meta
 /Assets/Exported/**/*
 /Assets/GBMDK/Scripts/GBMDK/Editor/Third-Party/QuickAssetMigrator/ConversionOutput/**/*
 /Assets/GBMDK/Scripts/GBMDK/Editor/Third-Party/QuickAssetMigrator/log.txt
+/Assets/GBMDK/Scripts/GBMDK/Editor/Third-Party/QuickAssetMigrator/log.txt.meta
 /Assets/GBMDK/Scripts/GBMDK/Editor/Third-Party/QuickAssetMigrator/source_folder_saved.txt
+/Assets/GBMDK/Scripts/GBMDK/Editor/Third-Party/QuickAssetMigrator/source_folder_saved.txt.meta
