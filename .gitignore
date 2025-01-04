@@ -76,8 +76,10 @@ README.md.meta
 
 # Skip migrated and exported content, as these can contain game assets we aren't allowed to distribute ourselves.
 /Assets/Exported/**/*
-/Assets/GBMDK/Scripts/GBMDK/Editor/Third-Party/QuickAssetMigrator/ConversionOutput/**/*
-/Assets/GBMDK/Scripts/GBMDK/Editor/Third-Party/QuickAssetMigrator/log.txt
-/Assets/GBMDK/Scripts/GBMDK/Editor/Third-Party/QuickAssetMigrator/log.txt.meta
+/Assets/MigrationOutput/**/*
+
+# User-specific migrator data
+/Assets/log.txt
+/Assets/log.txt.meta
 /Assets/GBMDK/Scripts/GBMDK/Editor/Third-Party/QuickAssetMigrator/source_folder_saved.txt
 /Assets/GBMDK/Scripts/GBMDK/Editor/Third-Party/QuickAssetMigrator/source_folder_saved.txt.meta
