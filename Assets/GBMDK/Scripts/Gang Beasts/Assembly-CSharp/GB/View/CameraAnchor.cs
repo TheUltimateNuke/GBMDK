@@ -5,6 +5,15 @@ namespace GB.View
 {
 	public class CameraAnchor : MonoBehaviour
 	{
+#if UNITY_EDITOR
+		private void OnDrawGizmosSelected()
+		{
+			Matrix4x4 temp = Gizmos.matrix;
+			Gizmos.matrix = Matrix4x4.TRS(transform.position, transform.rotation, Vector3.one);
+			Gizmos.DrawFrustum(Vector3.zero, 70, 3, 0, 1);
+			Gizmos.matrix = temp;
+		}
+#endif
 		[SerializeField]
 		private int _Id;
 

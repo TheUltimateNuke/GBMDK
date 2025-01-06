@@ -1,6 +1,8 @@
-﻿namespace GB.VRGUI
+﻿using UnityEngine;
+
+namespace GB.VRGUI
 {
-    internal class Bloom
+    internal class Bloom : ScriptableObject
     {
     }
 }

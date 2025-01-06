@@ -76,7 +76,7 @@ README.md.meta
 
 # Skip migrated and exported content, as these can contain game assets we aren't allowed to distribute ourselves.
 /Assets/Exported/**/*
-/Assets/MigrationOutput/**/*
+/Assets/ConversionOutput/**/*
 
 # User-specific migrator data
 /Assets/log.txt

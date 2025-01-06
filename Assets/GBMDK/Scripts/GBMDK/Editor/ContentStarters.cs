@@ -1,9 +1,13 @@
+using Costumes;
 using GB.Data.Loading;
 using System.IO;
 using UnityEditor;
 using UnityEditor.AddressableAssets;
 using UnityEditor.SceneManagement;
+using UnityEditor.SceneTemplate;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.SceneManagement;
 
 namespace GBMDK.Editor
 {
@@ -63,29 +67,62 @@ namespace GBMDK.Editor
         }
         */
 
+        [MenuItem("Assets/GBMDK/Starters/Costume Starter", priority = 10000)]
+        public static void CreateCostumeStuff()
+        {
+            var path = GetCurrentSelectedPath();
+
+            var prefabTemplate = PrefabUtility.LoadPrefabContents($"{Application.dataPath}/GBMDK/Prefabs/HatTemplate.prefab");
+            var assetPath = AssetDatabase.GenerateUniqueAssetPath(Path.Combine(path, $"NewCostume.prefab"));
+            var prefab = PrefabUtility.SaveAsPrefabAssetAndConnect(prefabTemplate, assetPath, InteractionMode.AutomatedAction);
+            prefab.name = "NewCostume";
+            Object.DestroyImmediate(prefabTemplate);
+            EditorUtility.SetDirty(prefab);
+
+            MarkAddressable(assetPath, Path.GetFileNameWithoutExtension(assetPath));
+
+            var costumeData = ScriptableObject.CreateInstance<CostumeObject>();
+            costumeData.name = $"{prefab.name}-Data";
+            costumeData.PrimaryPart = CostumeParts.Head;
+            costumeData.Unlocked = true;
+            costumeData.Enabled = true;
+            costumeData.CostumeItems = new AssetReferenceGameObject[]
+            {
+                new AssetReferenceGameObject(AssetDatabase.GUIDFromAssetPath(assetPath).ToString())
+            };
+            var dataPath = AssetDatabase.GenerateUniqueAssetPath(Path.Combine(path, $"{costumeData.name}.asset"));
+            AssetDatabase.CreateAsset(costumeData, dataPath);
+            EditorUtility.SetDirty(costumeData);
+
+            MarkAddressable(dataPath, Path.GetFileNameWithoutExtension(dataPath));
+
+            AssetDatabase.SaveAssets();
+            EditorUtility.FocusProjectWindow();
+            Selection.activeObject = costumeData;
+        }
+
         [MenuItem("Assets/GBMDK/Starters/Map Starter", priority = 10000)]
         public static void CreateMapStuff()
         {
             var path = GetCurrentSelectedPath();
 
-            var newScene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
+            var sceneTemplate = AssetDatabase.LoadAssetAtPath<SceneTemplateAsset>($"Assets/GBMDK/Scenes/MapTemplate_Template.scenetemplate");
             var scenePath = AssetDatabase.GenerateUniqueAssetPath(Path.Combine(path, "NewMap.unity"));
-
-            EditorSceneManager.SaveScene(newScene, scenePath);
-            EditorSceneManager.CloseScene(newScene, false);
+            var newScene = SceneTemplateService.Instantiate(sceneTemplate, false, scenePath);
+            EditorSceneManager.SaveScene(newScene.scene);
 
             MarkAddressable(scenePath, Path.GetFileNameWithoutExtension(scenePath));
 
             var sceneData = ScriptableObject.CreateInstance<SceneData>();
             sceneData.name = "NewMap-Data";
-            sceneData._sceneRef = AddressableAssetSettingsDefaultObject.Settings.CreateAssetReference(Path.GetFileNameWithoutExtension(scenePath));
             var dataPath = AssetDatabase.GenerateUniqueAssetPath(Path.Combine(path, "NewMap-Data.asset"));
+            sceneData._sceneRef = new AssetReference(AssetDatabase.GUIDFromAssetPath(scenePath).ToString());
             AssetDatabase.CreateAsset(sceneData, dataPath);
             EditorUtility.SetDirty(sceneData);
 
             EditorUtility.DisplayDialog("Manual Action Required", $"Asset {sceneData.name} requires field {nameof(sceneData._sceneRef)} to be assigned.", "OK");
             EditorUtility.FocusProjectWindow();
-            
+
             MarkAddressable(dataPath, Path.GetFileNameWithoutExtension(dataPath));
 
             AssetDatabase.SaveAssets();

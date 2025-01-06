@@ -8,6 +8,16 @@ namespace GB.Networking.Utils.Spawn
 {
 	public class GBSpawnPoint : CoreNetSpawnPosition, ISerializationCallbackReceiver
 	{
+#if UNITY_EDITOR
+		[SerializeField]
+		private Mesh _previewMesh;
+
+		private void OnDrawGizmosSelected()
+		{
+			Gizmos.DrawMesh(_previewMesh, transform.position, transform.rotation, Vector3.one);
+		}
+#endif
+
 		[Flags]
 		public enum SpawnPointTypes
 		{
