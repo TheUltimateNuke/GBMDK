@@ -1,5 +1,11 @@
 # GBMDK
-Gang Beasts Mod Development Kit. Contains dummy scripts and resources for building assets for Gang Beasts mods.
+Gang Beasts Mod Development Kit. Contains dummy scripts and resources for building assets for Gang Beasts mods. 
+[Requires Cement 4.0]() (link pending)
+
+## Disclaimer
+This project DOES NOT and SHOULD NOT contain vanilla Gang Beasts assets, such as audio, meshes, textures, etc. in their entirety.  
+Some ripped data values are used, such as serialized MonoBehaviour field presets.  
+All Gang Beasts code is stripped from the ripped scripts. These scripts must ONLY contain gizmos and other editor-specific helpers as working code.  
 
 ## Setup
 
