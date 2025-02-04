@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d4f10c5bca8c10f13f4ed32c2294390, type: 3}
+  m_Name: Water
+  m_EditorClassIdentifier:
+  density: 1
+  drag: 1.5
+  angularDrag: 1.5
+  maxVelocity: 2
+  maxAngularVelocity: 2
+  allowSinking: 1
+  sinkSpeed: 0.1
+  riseSpeed: 0.1
+  ripple: {fileID: 1309955226478975, guid: dcf1f39efd083a04285995fa8db9e045, type: 2}
+  rippleEmitDelay: 0
+  smallSplash: {fileID: 1404301716120796, guid: 5e22bf163d16836409dfc1519b8c8b66, type: 2}
+  largeSplash: {fileID: 1718777789870350, guid: a543decc257c6184990ed3dd72af833a, type: 2}
+  splashEmitDelay: 0
+  smallSplashThreshold: 0
+  smallSplashAngularThreshold: 1
+  largeSplashThreshold: 8
+  largeSplashAngularThreshold: 10
+  bubble: {fileID: 0}
+  bubbleEmitDelay: 0

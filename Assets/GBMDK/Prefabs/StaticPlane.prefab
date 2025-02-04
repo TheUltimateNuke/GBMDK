@@ -206,7 +206,7 @@ MonoBehaviour:
     gameObject: {fileID: 1508254688001222771}
     mainCollider: {fileID: 1508254687089194441}
     priorityModifier: 1
-    grabModifier: 4
+    grabModifier: 2
     damageModifier: 1
     partOfRagdoll: 0
     IgnoreValidate: 0

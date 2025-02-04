@@ -120,7 +120,6 @@ namespace GBMDK.Editor
             AssetDatabase.CreateAsset(sceneData, dataPath);
             EditorUtility.SetDirty(sceneData);
 
-            EditorUtility.DisplayDialog("Manual Action Required", $"Asset {sceneData.name} requires field {nameof(sceneData._sceneRef)} to be assigned.", "OK");
             EditorUtility.FocusProjectWindow();
 
             MarkAddressable(dataPath, Path.GetFileNameWithoutExtension(dataPath));

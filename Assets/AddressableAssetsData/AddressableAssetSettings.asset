@@ -16,7 +16,7 @@ MonoBehaviour:
   m_CachedHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
-  m_OptimizeCatalogSize: 0
+  m_OptimizeCatalogSize: 1
   m_BuildRemoteCatalog: 1
   m_BundleLocalCatalog: 0
   m_CatalogRequestsTimeout: 0
@@ -67,9 +67,9 @@ MonoBehaviour:
       - m_Id: 2fbabeacb3e2957448f9d1b72b19cf77
         m_Value: ModName
       - m_Id: 74a39b37858349046b69a288e568a9f5
-        m_Value: '[UnityEngine.Application.dataPath]/Exported/[ModName]'
+        m_Value: '[UnityEngine.Application.dataPath]/Exported/[ModName]/aa'
       - m_Id: 0f497b7329d329f48bee8ae2131cc1d4
-        m_Value: '{UnityEngine.Application.dataPath}/Mods/[ModName]/aa'
+        m_Value: '{UnityEngine.Application.dataPath}/../Mods/[ModName]/aa'
     m_ProfileEntryNames:
     - m_Id: 1170bf3f060c1f14b8f16886d7c1b5ea
       m_Name: BuildTarget

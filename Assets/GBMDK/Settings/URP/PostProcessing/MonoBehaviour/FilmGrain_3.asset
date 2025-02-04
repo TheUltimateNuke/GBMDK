@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29fa0085f50d5e54f8144f766051a691, type: 3}
   m_Name: FilmGrain
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   active: 1
   type:
     m_OverrideState: 1

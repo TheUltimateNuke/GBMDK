@@ -32,7 +32,7 @@ namespace FizzSDK.QuickAssetMigrator
 
         private void OnEnable()
         {
-            _sourceFolder = File.Exists($"{GetWorkingDirectory()}\\source_folder_saved.txt") ? File.ReadAllText($"{GetWorkingDirectory()}\\source_folder_saved.txt") : string.Empty;
+            _sourceFolder = File.Exists(Path.Combine($"{GetWorkingDirectory()}", "source_folder_saved.txt")) ? File.ReadAllText(Path.Combine(GetWorkingDirectory(), "source_folder_saved.txt")) : string.Empty;
         }
 
         void IHasCustomMenu.AddItemsToMenu(GenericMenu menu)
@@ -43,12 +43,12 @@ namespace FizzSDK.QuickAssetMigrator
 
         private static string GetWorkingDirectory()
         {
-            return Path.Combine(Application.dataPath, "..", "Assets\\GBMDK\\Scripts\\GBMDK\\Editor\\Third-Party\\QuickAssetMigrator");
+            return Path.Combine(Application.dataPath, "GBMDK", "Scripts", "GBMDK", "Editor", "Third-Party", "QuickAssetMigrator");
         }
 
         private static string[] GetExtensions()
         {
-            var extensionOverrides = $@"{GetWorkingDirectory()}\extensions.txt";
+            var extensionOverrides = Path.Combine(GetWorkingDirectory(), "extensions.txt");
 
             return System.IO.File.Exists(extensionOverrides)
                 ? System.IO.File.ReadAllLines(extensionOverrides)
@@ -57,17 +57,14 @@ namespace FizzSDK.QuickAssetMigrator
 
         private static bool CheckForAssetMigrator()
         {
-            var workingDirectory = GetWorkingDirectory();
-            var assetMigratorPath = $@"{workingDirectory}\asset_migrator.exe";
+            var assetMigratorPath = Path.Combine(GetWorkingDirectory(), "asset_migrator.exe");
             return File.Exists(assetMigratorPath);
         }
 
         private static void MoveDirectoryDestructive(string source, string target)
         {
             if (Directory.Exists(target))
-            {
                 Directory.Delete(target, true);
-            }
 
             Directory.Move(source, target);
         }
@@ -78,9 +75,7 @@ namespace FizzSDK.QuickAssetMigrator
             _isFocused = focusedWindow == this;
 
             if (wasFocused != _isFocused)
-            {
                 _isAssetMigratorPresent = CheckForAssetMigrator();
-            }
 
             if (!_isAssetMigratorPresent)
             {
@@ -104,7 +99,7 @@ namespace FizzSDK.QuickAssetMigrator
                 if (!string.IsNullOrWhiteSpace(path[0]))
                 {
                     _sourceFolder = path[0];
-                    File.WriteAllText($"{GetWorkingDirectory()}\\source_folder_saved.txt", _sourceFolder);
+                    File.WriteAllText(Path.Combine(GetWorkingDirectory(), "source_folder_saved.txt"), _sourceFolder);
                     AssetDatabase.Refresh();
                 }
             }
@@ -179,7 +174,7 @@ namespace FizzSDK.QuickAssetMigrator
             {
                 // not wrapping this line :3
                 EditorGUILayout.HelpBox(
-                    "If these boxes are un-ticked, content will be deleted upon Migration. If you're migrating ripped content, you likely want to leave 'keep shaders' and 'keep scripts' un-ticked, as you will only have access to dummy scripts/shaders.",
+                    "If these boxes are un-ticked, content will be deleted upon migration. If you're migrating ripped content, you likely want to leave 'keep shaders' and 'keep scripts' un-ticked, as you will only have access to dummy scripts/shaders.",
                     MessageType.Info);
                 EditorGUILayout.EndFoldoutHeaderGroup();
             }
@@ -213,7 +208,7 @@ namespace FizzSDK.QuickAssetMigrator
 
                 var startInfo = new ProcessStartInfo
                 {
-                    FileName = workingDirectory + @"\asset_migrator.exe",
+                    FileName = Path.Combine(workingDirectory, "asset_migrator.exe"),
                     Arguments = _migratorArguments,
                     UseShellExecute = false,
                     WorkingDirectory = Application.dataPath
@@ -268,40 +263,13 @@ namespace FizzSDK.QuickAssetMigrator
             // note: asset migrator requires double quotes instead of single quotes, otherwise it'll panic and
             // say the paths are invalid!
 
-            var unityAssetsFolder = Application.dataPath.Replace("/", @"\");
+            var unityAssetsFolder = Application.dataPath;
             var escapedPaths = paths.Select(path => $"\"{path}\"");
 
             string[] arguments = { $"\"{sourceFolder}\"", $"\"{unityAssetsFolder}\"" };
             arguments = arguments.Concat(escapedPaths).ToArray();
             Debug.Log(string.Join(" ", arguments));
             return arguments;
-        }
-
-        private static string FindAssetsFolder(string path)
-        {
-            while (true)
-            {
-                var lastSlashIndex = path.LastIndexOf(@"\", StringComparison.Ordinal);
-
-                if (lastSlashIndex == -1)
-                {
-                    return "";
-                }
-
-                path = path[..lastSlashIndex];
-
-                if (path.EndsWith(@"\Assets"))
-                {
-                    return path;
-                }
-            }
-        }
-
-        private static string FindFirstFolder(string path)
-        {
-            if (Directory.Exists(path)) return path;
-            var lastSlashIndex = path.LastIndexOf(@"\", StringComparison.Ordinal);
-            return lastSlashIndex == -1 ? "" : path[..lastSlashIndex];
         }
 
         private static bool IsInDirectory(string path, string directory)
