@@ -23,7 +23,7 @@ All Gang Beasts code is stripped from the ripped scripts. These scripts must ONL
 1. Click `Code` in the top right corner of the repository contents window above
 2. Download the repository either using GitHub Desktop or as a `.zip` file.
 3. Once downloaded (and extracted to a folder if downloaded as `.zip`), open the folder as a Unity project in Unity Hub. This may take a while.
-4. Clear the errors and make sure none persist. If they do, or if you encounter script errors later on while developing, report it as a bug on the [Cement Discord](https://discord.gg/fCwXc5k43w) or on this repo's Issues page. 
+4. Clear the console window and make sure nothing persists. If anything does, or if you encounter script errors later on while developing, report it as a bug on the [Cement Discord](https://discord.gg/fCwXc5k43w) or on this repo's Issues page. 
 
 ## Acknowledgements
 
