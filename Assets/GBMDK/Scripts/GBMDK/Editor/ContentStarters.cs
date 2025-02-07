@@ -72,7 +72,7 @@ namespace GBMDK.Editor
         {
             var path = GetCurrentSelectedPath();
 
-            var prefabTemplate = PrefabUtility.LoadPrefabContents($"{Application.dataPath}/GBMDK/Prefabs/HatTemplate.prefab");
+            var prefabTemplate = PrefabUtility.LoadPrefabContents($"{Application.dataPath}/GBMDK/Prefabs/Templates/CustomContent/HatTemplate.prefab");
             var assetPath = AssetDatabase.GenerateUniqueAssetPath(Path.Combine(path, $"NewCostume.prefab"));
             var prefab = PrefabUtility.SaveAsPrefabAssetAndConnect(prefabTemplate, assetPath, InteractionMode.AutomatedAction);
             prefab.name = "NewCostume";
