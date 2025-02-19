@@ -38,9 +38,11 @@ namespace GB.UI
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CDelayedSelectRoutine_003Ed__25(int _003C_003E1__state)
 			{
 			}
@@ -60,24 +62,24 @@ namespace GB.UI
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
-		[Tooltip("Add a reference to a disabled GameObject here, that will be enabled when this button is selected")]
 		[SerializeField]
+		[Tooltip("Add a reference to a disabled GameObject here, that will be enabled when this button is selected")]
 		private GameObject onSelectAdditionalGameObject;
 
 		[SerializeField]

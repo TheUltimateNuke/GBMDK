@@ -22,8 +22,8 @@ namespace GB.Networking.Utils.Spawn
 		[SerializeField]
 		private float _raduis;
 
-		[SerializeField]
 		[Range(0f, 1f)]
+		[SerializeField]
 		private float _segment;
 
 		[SerializeField]

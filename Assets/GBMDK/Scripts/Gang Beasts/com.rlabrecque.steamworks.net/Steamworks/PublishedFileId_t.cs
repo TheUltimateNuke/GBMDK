@@ -34,12 +34,12 @@ namespace Steamworks
 			return false;
 		}
 
-        public static bool operator !=(PublishedFileId_t x, PublishedFileId_t y)
-        {
-            return false;
-        }
+		public static bool operator !=(PublishedFileId_t x, PublishedFileId_t y)
+		{
+			return false;
+		}
 
-        public bool Equals(PublishedFileId_t other)
+		public bool Equals(PublishedFileId_t other)
 		{
 			return false;
 		}

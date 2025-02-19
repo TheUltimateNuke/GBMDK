@@ -1,17 +1,17 @@
+using System;
 using Audio;
 using GB.Game.Data;
 using GB.Networking.Utils.Spawn;
-using System;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace GB.Data.Loading
 {
-    [CreateAssetMenu(fileName = "SceneData", menuName = "Gang Beasts/Data/Scene Data", order = 1)]
+	[CreateAssetMenu(fileName = "SceneData", menuName = "Gang Beasts/Data/Scene Data", order = 1)]
 	public class SceneData : ScriptableObject, ILoadedAsset, ICompleteTracker
 	{
-	    public AssetReference _sceneRef;
+		public AssetReference _sceneRef;
 
 		[SerializeField]
 		private SpawnList _spawnList;

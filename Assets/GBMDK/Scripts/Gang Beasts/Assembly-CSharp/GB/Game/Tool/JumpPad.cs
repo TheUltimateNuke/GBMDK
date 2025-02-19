@@ -7,8 +7,8 @@ namespace GB.Game.Tool
 {
 	public class JumpPad : MonoBehaviour, IActorOnTriggerEvent
 	{
-		[SerializeField]
 		[EnumUtils.EnumFlags]
+		[SerializeField]
 		private Actor.ControlledTypes _neededMode;
 
 		[SerializeField]

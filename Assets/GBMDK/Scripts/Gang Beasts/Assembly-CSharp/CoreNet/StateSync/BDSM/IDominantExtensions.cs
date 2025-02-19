@@ -40,9 +40,11 @@ namespace CoreNet.StateSync.BDSM
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CLoadSubmissiveOffsetsNextFrame_003Ed__0(int _003C_003E1__state)
 			{
 			}
@@ -62,21 +64,21 @@ namespace CoreNet.StateSync.BDSM
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[IteratorStateMachine(typeof(_003CLoadSubmissiveOffsetsNextFrame_003Ed__0))]
 		public static IEnumerator LoadSubmissiveOffsetsNextFrame(this IDominant dominant, Dictionary<SubmissiveRigidbody, Vector3> submissiveOffsets, Transform transform)

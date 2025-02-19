@@ -7,7 +7,7 @@ namespace Coatsink.UnityServices.Authentication
 {
 	public static class UnityAuthWrapper
 	{
-		[StructLayout(3)]
+		[StructLayout(LayoutKind.Auto)]
 		[CompilerGenerated]
 		private struct _003CDoAuth_003Ed__4 : IAsyncStateMachine
 		{
@@ -25,21 +25,21 @@ namespace Coatsink.UnityServices.Authentication
 			{
 			}
 
-            void IAsyncStateMachine.MoveNext()
-            {
-                throw new System.NotImplementedException();
-            }
+			void IAsyncStateMachine.MoveNext()
+			{
+				MoveNext();
+			}
 
-            [DebuggerHidden]
+			[DebuggerHidden]
 			private void SetStateMachine(IAsyncStateMachine stateMachine)
 			{
 			}
 
-            void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
-            {
-                throw new System.NotImplementedException();
-            }
-        }
+			void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
+			{
+				SetStateMachine(stateMachine);
+			}
+		}
 
 		[StructLayout(3)]
 		[CompilerGenerated]
@@ -55,21 +55,21 @@ namespace Coatsink.UnityServices.Authentication
 			{
 			}
 
-            void IAsyncStateMachine.MoveNext()
-            {
-                throw new System.NotImplementedException();
-            }
+			void IAsyncStateMachine.MoveNext()
+			{
+				MoveNext();
+			}
 
-            [DebuggerHidden]
+			[DebuggerHidden]
 			private void SetStateMachine(IAsyncStateMachine stateMachine)
 			{
 			}
 
-            void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
-            {
-                throw new System.NotImplementedException();
-            }
-        }
+			void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
+			{
+				SetStateMachine(stateMachine);
+			}
+		}
 
 		[StructLayout(3)]
 		[CompilerGenerated]
@@ -89,21 +89,21 @@ namespace Coatsink.UnityServices.Authentication
 			{
 			}
 
-            void IAsyncStateMachine.MoveNext()
-            {
-                throw new System.NotImplementedException();
-            }
+			void IAsyncStateMachine.MoveNext()
+			{
+				MoveNext();
+			}
 
-            [DebuggerHidden]
+			[DebuggerHidden]
 			private void SetStateMachine(IAsyncStateMachine stateMachine)
 			{
 			}
 
-            void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
-            {
-                throw new System.NotImplementedException();
-            }
-        }
+			void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
+			{
+				SetStateMachine(stateMachine);
+			}
+		}
 
 		public static AuthState AuthorizationState { get; private set; }
 

@@ -102,6 +102,10 @@ namespace Femur
 		{
 		}
 
+		public override void Idle()
+		{
+		}
+
 		public override void Jump()
 		{
 		}

@@ -56,9 +56,11 @@ public class JSONObject
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CBakeAsync_003Ed__98(int _003C_003E1__state)
 		{
 		}
@@ -94,31 +96,31 @@ public class JSONObject
 			return null;
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
 
-        IEnumerator<object> IEnumerable<object>.GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
+		IEnumerator<object> IEnumerable<object>.GetEnumerator()
+		{
+			throw new NotImplementedException();
+		}
 
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		IEnumerator IEnumerable.GetEnumerator()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	[CompilerGenerated]
 	private sealed class _003CPrintAsync_003Ed__100 : IEnumerable<string>, IEnumerable, IEnumerator<string>, IEnumerator, IDisposable
@@ -157,11 +159,11 @@ public class JSONObject
 			}
 		}
 
-        string IEnumerator<string>.Current => throw new NotImplementedException();
+		string IEnumerator<string>.Current => throw new NotImplementedException();
 
-        object IEnumerator.Current => throw new NotImplementedException();
+		object IEnumerator.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		[DebuggerHidden]
 		public _003CPrintAsync_003Ed__100(int _003C_003E1__state)
 		{
 		}
@@ -197,31 +199,31 @@ public class JSONObject
 			return null;
 		}
 
-        IEnumerator<string> IEnumerable<string>.GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
+		IEnumerator<string> IEnumerable<string>.GetEnumerator()
+		{
+			throw new NotImplementedException();
+		}
 
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
+		IEnumerator IEnumerable.GetEnumerator()
+		{
+			throw new NotImplementedException();
+		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        void IEnumerator.Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        void IDisposable.Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	[CompilerGenerated]
 	private sealed class _003CStringifyAsync_003Ed__103 : IEnumerable<object>, IEnumerable, IEnumerator<object>, IEnumerator, IDisposable
@@ -268,9 +270,11 @@ public class JSONObject
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CStringifyAsync_003Ed__103(int _003C_003E1__state)
 		{
 		}
@@ -310,31 +314,31 @@ public class JSONObject
 			return null;
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
 
-        IEnumerator<object> IEnumerable<object>.GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
+		IEnumerator<object> IEnumerable<object>.GetEnumerator()
+		{
+			throw new NotImplementedException();
+		}
 
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		IEnumerator IEnumerable.GetEnumerator()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	private const int MAX_DEPTH = 100;
 

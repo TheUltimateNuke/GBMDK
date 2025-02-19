@@ -13,8 +13,8 @@ public class NaughtyPlayersPunisher : MonoBehaviour
 
 	public float reductionAfterTriggering;
 
-	[Header("Playable Areas")]
 	[Space]
+	[Header("Playable Areas")]
 	public bool punishPlayersBelowPlayArea;
 
 	public float lowestPlayableHeight;

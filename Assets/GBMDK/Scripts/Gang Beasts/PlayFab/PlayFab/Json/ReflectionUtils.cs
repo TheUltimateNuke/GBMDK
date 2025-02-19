@@ -110,11 +110,11 @@ namespace PlayFab.Json
 				return null;
 			}
 
-            IEnumerator IEnumerable.GetEnumerator()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			IEnumerator IEnumerable.GetEnumerator()
+			{
+				return GetEnumerator();
+			}
+		}
 
 		private static readonly object[] EmptyObjects;
 

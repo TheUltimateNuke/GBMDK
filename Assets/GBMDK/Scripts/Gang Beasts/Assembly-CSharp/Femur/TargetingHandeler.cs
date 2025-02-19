@@ -20,9 +20,9 @@ namespace Femur
 			Grabbable = 4
 		}
 
-		private const int k_TargettingListInitialiseSize = 32;
+		private const int k_TargettingListInitialiseSize = 16;
 
-		public static List<Actor> actorsToTarget;
+		public List<Actor> actorsToTarget;
 
 		private static GameObject[] _throwPoints;
 

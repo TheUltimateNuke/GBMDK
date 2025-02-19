@@ -51,11 +51,11 @@ namespace Coatsink.Common
 				}
 			}
 
-            public IndexValuePair<T> Current => throw new NotImplementedException();
+			IndexValuePair<T> IEnumerator<IndexValuePair<T>>.Current => throw new NotImplementedException();
 
-            object IEnumerator.Current => throw new NotImplementedException();
+			object IEnumerator.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			[DebuggerHidden]
 			public _003CZipWithIndices_003Ed__19(int _003C_003E1__state)
 			{
 			}
@@ -91,31 +91,31 @@ namespace Coatsink.Common
 				return null;
 			}
 
-            public IEnumerator<IndexValuePair<T>> GetEnumerator()
-            {
-                throw new NotImplementedException();
-            }
+			IEnumerator<IndexValuePair<T>> IEnumerable<IndexValuePair<T>>.GetEnumerator()
+			{
+				throw new NotImplementedException();
+			}
 
-            IEnumerator IEnumerable.GetEnumerator()
-            {
-                throw new NotImplementedException();
-            }
+			IEnumerator IEnumerable.GetEnumerator()
+			{
+				throw new NotImplementedException();
+			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[CompilerGenerated]
 		private sealed class _003CAllPermutationsOf_003Ed__24<TRes, T1, T2> : IEnumerable<TRes>, IEnumerable, IEnumerator<TRes>, IEnumerator, IDisposable
@@ -162,11 +162,11 @@ namespace Coatsink.Common
 				}
 			}
 
-            public TRes Current => throw new NotImplementedException();
+			TRes IEnumerator<TRes>.Current => throw new NotImplementedException();
 
-            object IEnumerator.Current => throw new NotImplementedException();
+			object IEnumerator.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			[DebuggerHidden]
 			public _003CAllPermutationsOf_003Ed__24(int _003C_003E1__state)
 			{
 			}
@@ -206,31 +206,31 @@ namespace Coatsink.Common
 				return null;
 			}
 
-            public IEnumerator<TRes> GetEnumerator()
-            {
-                throw new NotImplementedException();
-            }
+			IEnumerator<TRes> IEnumerable<TRes>.GetEnumerator()
+			{
+				throw new NotImplementedException();
+			}
 
-            IEnumerator IEnumerable.GetEnumerator()
-            {
-                throw new NotImplementedException();
-            }
+			IEnumerator IEnumerable.GetEnumerator()
+			{
+				throw new NotImplementedException();
+			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[CompilerGenerated]
 		private sealed class _003CAllPermutationsOf_003Ed__25<TRes, T1, T2, T3> : IEnumerable<TRes>, IEnumerable, IEnumerator<TRes>, IEnumerator, IDisposable
@@ -285,11 +285,11 @@ namespace Coatsink.Common
 				}
 			}
 
-            public TRes Current => throw new NotImplementedException();
+			TRes IEnumerator<TRes>.Current => throw new NotImplementedException();
 
-            object IEnumerator.Current => throw new NotImplementedException();
+			object IEnumerator.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			[DebuggerHidden]
 			public _003CAllPermutationsOf_003Ed__25(int _003C_003E1__state)
 			{
 			}
@@ -333,31 +333,31 @@ namespace Coatsink.Common
 				return null;
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			IEnumerator<TRes> IEnumerable<TRes>.GetEnumerator()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			IEnumerator IEnumerable.GetEnumerator()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            IEnumerator<TRes> IEnumerable<TRes>.GetEnumerator()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            IEnumerator IEnumerable.GetEnumerator()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[CompilerGenerated]
 		private sealed class _003CAllPermutationsOf_003Ed__26<TRes, T1, T2, T3, T4> : IEnumerable<TRes>, IEnumerable, IEnumerator<TRes>, IEnumerator, IDisposable
@@ -420,11 +420,11 @@ namespace Coatsink.Common
 				}
 			}
 
-            public TRes Current => throw new NotImplementedException();
+			TRes IEnumerator<TRes>.Current => throw new NotImplementedException();
 
-            object IEnumerator.Current => throw new NotImplementedException();
+			object IEnumerator.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			[DebuggerHidden]
 			public _003CAllPermutationsOf_003Ed__26(int _003C_003E1__state)
 			{
 			}
@@ -472,31 +472,31 @@ namespace Coatsink.Common
 				return null;
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			IEnumerator<TRes> IEnumerable<TRes>.GetEnumerator()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			IEnumerator IEnumerable.GetEnumerator()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            IEnumerator<TRes> IEnumerable<TRes>.GetEnumerator()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            IEnumerator IEnumerable.GetEnumerator()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		public static T[] Generate<T>(int qty) where T : new()
 		{
@@ -612,19 +612,19 @@ namespace Coatsink.Common
 			return null;
 		}
 
-		[IteratorStateMachine(typeof(_003CAllPermutationsOf_003Ed__24<, , >))]
+		[IteratorStateMachine(typeof(_003CAllPermutationsOf_003Ed__24<,,>))]
 		public static IEnumerable<TRes> AllPermutationsOf<TRes, T1, T2>(this Func<T1, T2, TRes> generate, IEnumerable<T1> col1, IEnumerable<T2> col2)
 		{
 			return null;
 		}
 
-		[IteratorStateMachine(typeof(_003CAllPermutationsOf_003Ed__25<, , , >))]
+		[IteratorStateMachine(typeof(_003CAllPermutationsOf_003Ed__25<,,,>))]
 		public static IEnumerable<TRes> AllPermutationsOf<TRes, T1, T2, T3>(this Func<T1, T2, T3, TRes> generate, IEnumerable<T1> col1, IEnumerable<T2> col2, IEnumerable<T3> col3)
 		{
 			return null;
 		}
 
-		[IteratorStateMachine(typeof(_003CAllPermutationsOf_003Ed__26<, , , , >))]
+		[IteratorStateMachine(typeof(_003CAllPermutationsOf_003Ed__26<,,,,>))]
 		public static IEnumerable<TRes> AllPermutationsOf<TRes, T1, T2, T3, T4>(this Func<T1, T2, T3, T4, TRes> generate, IEnumerable<T1> col1, IEnumerable<T2> col2, IEnumerable<T3> col3, IEnumerable<T4> col4)
 		{
 			return null;

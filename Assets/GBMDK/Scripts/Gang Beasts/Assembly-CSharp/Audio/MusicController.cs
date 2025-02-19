@@ -50,9 +50,11 @@ namespace Audio
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CTransitionToPaused_003Ed__16(int _003C_003E1__state)
 			{
 			}
@@ -72,21 +74,21 @@ namespace Audio
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[CompilerGenerated]
 		private sealed class _003CTransitionToInGame_003Ed__17 : IEnumerator<object>, IEnumerator, IDisposable
@@ -115,9 +117,11 @@ namespace Audio
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CTransitionToInGame_003Ed__17(int _003C_003E1__state)
 			{
 			}
@@ -137,21 +141,21 @@ namespace Audio
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[CompilerGenerated]
 		private sealed class _003CTransitionToLoading_003Ed__25 : IEnumerator<object>, IEnumerator, IDisposable
@@ -180,9 +184,11 @@ namespace Audio
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CTransitionToLoading_003Ed__25(int _003C_003E1__state)
 			{
 			}
@@ -202,21 +208,21 @@ namespace Audio
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		public static AudioSource _aSideSource;
 

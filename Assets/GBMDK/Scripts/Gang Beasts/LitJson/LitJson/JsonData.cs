@@ -97,23 +97,29 @@ namespace LitJson
 
 		public bool IsString => false;
 
-        public bool IsFixedSize => throw new NotImplementedException();
+		bool IList.IsFixedSize => throw new NotImplementedException();
 
-        public bool IsReadOnly => throw new NotImplementedException();
+		bool IList.IsReadOnly => throw new NotImplementedException();
 
-        public ICollection Keys => throw new NotImplementedException();
+		int ICollection.Count => throw new NotImplementedException();
 
-        public ICollection Values => throw new NotImplementedException();
+		bool ICollection.IsSynchronized => throw new NotImplementedException();
 
-        public bool IsSynchronized => throw new NotImplementedException();
+		object ICollection.SyncRoot => throw new NotImplementedException();
 
-        public object SyncRoot => throw new NotImplementedException();
+		bool IDictionary.IsFixedSize => throw new NotImplementedException();
 
-        object IList.this[int index] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public object this[object key] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        object IOrderedDictionary.this[int index] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+		bool IDictionary.IsReadOnly => throw new NotImplementedException();
 
-        public string this[string prop_name]
+		ICollection IDictionary.Keys => throw new NotImplementedException();
+
+		ICollection IDictionary.Values => throw new NotImplementedException();
+
+		object IDictionary.this[object key] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+		object IOrderedDictionary.this[int index] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+		object IList.this[int index] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+		public string this[string prop_name]
 		{
 			set
 			{
@@ -308,109 +314,139 @@ namespace LitJson
 			return null;
 		}
 
-        public IDictionaryEnumerator GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
+		int IList.Add(object value)
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Insert(int index, object key, object value)
-        {
-            throw new NotImplementedException();
-        }
+		void IList.Clear()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void RemoveAt(int index)
-        {
-            throw new NotImplementedException();
-        }
+		bool IList.Contains(object value)
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Add(object key, object value)
-        {
-            throw new NotImplementedException();
-        }
+		int IList.IndexOf(object value)
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Clear()
-        {
-            throw new NotImplementedException();
-        }
+		void IList.Insert(int index, object value)
+		{
+			throw new NotImplementedException();
+		}
 
-        public bool Contains(object key)
-        {
-            throw new NotImplementedException();
-        }
+		void IList.Remove(object value)
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Remove(object key)
-        {
-            throw new NotImplementedException();
-        }
+		void IList.RemoveAt(int index)
+		{
+			throw new NotImplementedException();
+		}
 
-        public void CopyTo(Array array, int index)
-        {
-            throw new NotImplementedException();
-        }
+		void ICollection.CopyTo(Array array, int index)
+		{
+			throw new NotImplementedException();
+		}
 
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
+		IEnumerator IEnumerable.GetEnumerator()
+		{
+			throw new NotImplementedException();
+		}
 
-        public int IndexOf(object value)
-        {
-            throw new NotImplementedException();
-        }
+		IDictionaryEnumerator IOrderedDictionary.GetEnumerator()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Insert(int index, object value)
-        {
-            throw new NotImplementedException();
-        }
+		void IOrderedDictionary.Insert(int index, object key, object value)
+		{
+			throw new NotImplementedException();
+		}
 
-        public bool GetBoolean()
-        {
-            throw new NotImplementedException();
-        }
+		void IOrderedDictionary.RemoveAt(int index)
+		{
+			throw new NotImplementedException();
+		}
 
-        public double GetDouble()
-        {
-            throw new NotImplementedException();
-        }
+		void IDictionary.Add(object key, object value)
+		{
+			throw new NotImplementedException();
+		}
 
-        public int GetInt()
-        {
-            throw new NotImplementedException();
-        }
+		void IDictionary.Clear()
+		{
+			throw new NotImplementedException();
+		}
 
-        public long GetLong()
-        {
-            throw new NotImplementedException();
-        }
+		bool IDictionary.Contains(object key)
+		{
+			throw new NotImplementedException();
+		}
 
-        public string GetString()
-        {
-            throw new NotImplementedException();
-        }
+		IDictionaryEnumerator IDictionary.GetEnumerator()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void SetBoolean(bool val)
-        {
-            throw new NotImplementedException();
-        }
+		void IDictionary.Remove(object key)
+		{
+			throw new NotImplementedException();
+		}
 
-        public void SetDouble(double val)
-        {
-            throw new NotImplementedException();
-        }
+		bool IJsonWrapper.GetBoolean()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void SetInt(int val)
-        {
-            throw new NotImplementedException();
-        }
+		double IJsonWrapper.GetDouble()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void SetLong(long val)
-        {
-            throw new NotImplementedException();
-        }
+		int IJsonWrapper.GetInt()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void SetString(string val)
-        {
-            throw new NotImplementedException();
-        }
-    }
+		long IJsonWrapper.GetLong()
+		{
+			throw new NotImplementedException();
+		}
+
+		string IJsonWrapper.GetString()
+		{
+			throw new NotImplementedException();
+		}
+
+		void IJsonWrapper.SetBoolean(bool val)
+		{
+			throw new NotImplementedException();
+		}
+
+		void IJsonWrapper.SetDouble(double val)
+		{
+			throw new NotImplementedException();
+		}
+
+		void IJsonWrapper.SetInt(int val)
+		{
+			throw new NotImplementedException();
+		}
+
+		void IJsonWrapper.SetLong(long val)
+		{
+			throw new NotImplementedException();
+		}
+
+		void IJsonWrapper.SetString(string val)
+		{
+			throw new NotImplementedException();
+		}
+	}
 }

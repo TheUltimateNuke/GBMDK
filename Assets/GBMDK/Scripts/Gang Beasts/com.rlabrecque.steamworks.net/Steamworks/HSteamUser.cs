@@ -32,12 +32,12 @@ namespace Steamworks
 			return false;
 		}
 
-        public static bool operator !=(HSteamUser x, HSteamUser y)
-        {
-            return false;
-        }
+		public static bool operator !=(HSteamUser x, HSteamUser y)
+		{
+			return false;
+		}
 
-        public static explicit operator HSteamUser(int value)
+		public static explicit operator HSteamUser(int value)
 		{
 			return default(HSteamUser);
 		}

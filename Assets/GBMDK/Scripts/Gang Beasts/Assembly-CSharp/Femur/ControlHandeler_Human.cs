@@ -10,6 +10,12 @@ namespace Femur
 			Right = 1
 		}
 
+		private IControlHandeler_DriveTarget driveTarget;
+
+		private float driveReleaseDelay;
+
+		private bool prepForRelease;
+
 		private const string BODY_HARMFUL_TAG = "Body (Harmful)";
 
 		private const string BODY_HIGH_PRIORITY = "Body (High Priority)";
@@ -84,6 +90,14 @@ namespace Femur
 		{
 		}
 
+		public override void DriveCheck()
+		{
+		}
+
+		public override void SetDriveTarget(IControlHandeler_DriveTarget target)
+		{
+		}
+
 		public override void DuckCheck()
 		{
 		}
@@ -97,6 +111,10 @@ namespace Femur
 		}
 
 		public override void IdleCheck()
+		{
+		}
+
+		public override void IdleCheckClient()
 		{
 		}
 

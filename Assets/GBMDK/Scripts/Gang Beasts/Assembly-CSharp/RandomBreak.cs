@@ -37,9 +37,11 @@ public class RandomBreak : MonoBehaviour
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CBreakApplyForce_003Ed__22(int _003C_003E1__state)
 		{
 		}
@@ -59,21 +61,21 @@ public class RandomBreak : MonoBehaviour
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	[CompilerGenerated]
 	private sealed class _003CBreakRoutine_003Ed__23 : IEnumerator<object>, IEnumerator, IDisposable
@@ -104,9 +106,11 @@ public class RandomBreak : MonoBehaviour
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CBreakRoutine_003Ed__23(int _003C_003E1__state)
 		{
 		}
@@ -126,21 +130,21 @@ public class RandomBreak : MonoBehaviour
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	[SerializeField]
 	private float minBreakTime;

@@ -45,9 +45,11 @@ public class BurgerBreak : MonoBehaviour
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CBreakRoutine_003Ed__30(int _003C_003E1__state)
 		{
 		}
@@ -67,21 +69,21 @@ public class BurgerBreak : MonoBehaviour
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	[CompilerGenerated]
 	private sealed class _003CBreakFirstSide_003Ed__34 : IEnumerator<object>, IEnumerator, IDisposable
@@ -110,9 +112,11 @@ public class BurgerBreak : MonoBehaviour
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CBreakFirstSide_003Ed__34(int _003C_003E1__state)
 		{
 		}
@@ -132,21 +136,21 @@ public class BurgerBreak : MonoBehaviour
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	[CompilerGenerated]
 	private sealed class _003CBreakSecondSide_003Ed__35 : IEnumerator<object>, IEnumerator, IDisposable
@@ -175,9 +179,11 @@ public class BurgerBreak : MonoBehaviour
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CBreakSecondSide_003Ed__35(int _003C_003E1__state)
 		{
 		}
@@ -197,21 +203,21 @@ public class BurgerBreak : MonoBehaviour
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	[CompilerGenerated]
 	private sealed class _003CBreakApplyForce_003Ed__37 : IEnumerator<object>, IEnumerator, IDisposable
@@ -240,9 +246,11 @@ public class BurgerBreak : MonoBehaviour
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CBreakApplyForce_003Ed__37(int _003C_003E1__state)
 		{
 		}
@@ -262,21 +270,21 @@ public class BurgerBreak : MonoBehaviour
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	private float m_ImpulseMagnitude;
 

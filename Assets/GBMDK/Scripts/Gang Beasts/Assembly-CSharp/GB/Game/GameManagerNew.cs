@@ -109,9 +109,11 @@ namespace GB.Game
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CEndRoundOrGame_003Ed__88(int _003C_003E1__state)
 			{
 			}
@@ -131,21 +133,21 @@ namespace GB.Game
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[CompilerGenerated]
 		private sealed class _003CCloseLocalServer_003Ed__91 : IEnumerator<object>, IEnumerator, IDisposable
@@ -174,9 +176,11 @@ namespace GB.Game
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CCloseLocalServer_003Ed__91(int _003C_003E1__state)
 			{
 			}
@@ -196,21 +200,21 @@ namespace GB.Game
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[CompilerGenerated]
 		private sealed class _003CCloseGame_003Ed__92 : IEnumerator<object>, IEnumerator, IDisposable
@@ -237,9 +241,11 @@ namespace GB.Game
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CCloseGame_003Ed__92(int _003C_003E1__state)
 			{
 			}
@@ -259,21 +265,21 @@ namespace GB.Game
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[CompilerGenerated]
 		private sealed class _003CSpawnRoutine_003Ed__98 : IEnumerator<object>, IEnumerator, IDisposable
@@ -302,9 +308,11 @@ namespace GB.Game
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CSpawnRoutine_003Ed__98(int _003C_003E1__state)
 			{
 			}
@@ -324,21 +332,21 @@ namespace GB.Game
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[CompilerGenerated]
 		private sealed class _003CPreStartCountdown_003Ed__100 : IEnumerator<object>, IEnumerator, IDisposable
@@ -367,9 +375,11 @@ namespace GB.Game
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CPreStartCountdown_003Ed__100(int _003C_003E1__state)
 			{
 			}
@@ -389,21 +399,21 @@ namespace GB.Game
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		private static GameManagerNew instance;
 

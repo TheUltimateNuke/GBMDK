@@ -49,9 +49,11 @@ public class AudioMixerTestManager : MonoSingleton<AudioMixerTestManager>
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CUpdateWeights_003Ed__47(int _003C_003E1__state)
 		{
 		}
@@ -71,21 +73,21 @@ public class AudioMixerTestManager : MonoSingleton<AudioMixerTestManager>
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	[SerializeField]
 	private List<AudioData> _audioData;
@@ -124,8 +126,8 @@ public class AudioMixerTestManager : MonoSingleton<AudioMixerTestManager>
 	[SerializeField]
 	private float tempoRight;
 
-	[Space(10f)]
 	[SerializeField]
+	[Space(10f)]
 	private float trackTransitionTimeInBars;
 
 	[SerializeField]

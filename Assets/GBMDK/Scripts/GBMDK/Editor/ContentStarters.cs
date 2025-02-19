@@ -88,7 +88,7 @@ namespace GBMDK.Editor
             costumeData.Enabled = true;
             costumeData.CostumeItems = new AssetReferenceGameObject[]
             {
-                new AssetReferenceGameObject(AssetDatabase.GUIDFromAssetPath(assetPath).ToString())
+                new(AssetDatabase.GUIDFromAssetPath(assetPath).ToString())
             };
             var dataPath = AssetDatabase.GenerateUniqueAssetPath(Path.Combine(path, $"{costumeData.name}.asset"));
             AssetDatabase.CreateAsset(costumeData, dataPath);
@@ -120,9 +120,18 @@ namespace GBMDK.Editor
             AssetDatabase.CreateAsset(sceneData, dataPath);
             EditorUtility.SetDirty(sceneData);
 
+            MarkAddressable(dataPath, Path.GetFileNameWithoutExtension(dataPath));
+
+            var sceneInfo = ScriptableObject.CreateInstance<CustomMapInfo>();
+            sceneInfo.name = "NewMap-Info";
+            var infoPath = AssetDatabase.GenerateUniqueAssetPath(Path.Combine(path, "NewMap-Info.asset"));
+            sceneInfo.allowedGamemodes = GB.Gamemodes.GameModeEnum.Melee | GB.Gamemodes.GameModeEnum.Waves;
+            AssetDatabase.CreateAsset(sceneInfo, infoPath);
+            EditorUtility.SetDirty(sceneInfo);
+
             EditorUtility.FocusProjectWindow();
 
-            MarkAddressable(dataPath, Path.GetFileNameWithoutExtension(dataPath));
+            MarkAddressable(infoPath, Path.GetFileNameWithoutExtension(infoPath));
 
             AssetDatabase.SaveAssets();
             Selection.activeObject = sceneData;

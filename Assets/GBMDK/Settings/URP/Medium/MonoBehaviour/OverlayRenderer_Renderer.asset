@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debugShaders:
     debugReplacementPS: {fileID: 4800000, guid: aab67f0a234026049bfabaecd2f87e7d, type: 3}
-  m_RendererFeatures:
-  - {fileID: 11400000, guid: d33a4cf8777bb4d43a728d820b742d3c, type: 2}
-  m_RendererFeatureMap: 5c6313897a3a2d54
+  m_RendererFeatures: []
+  m_RendererFeatureMap: 
   m_UseNativeRenderPass: 0
-  postProcessData: {fileID: 0}
+  postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   shaders:
     blitPS: {fileID: 4800000, guid: 06c17292a4e677e4e9814a7ed7c4e836, type: 3}

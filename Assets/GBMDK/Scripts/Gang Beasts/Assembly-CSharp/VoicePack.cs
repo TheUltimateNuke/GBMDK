@@ -32,8 +32,8 @@ public class VoicePack : ScriptableObject
 
 	public AudioClip[] doh;
 
-	[Tooltip("Mungy")]
 	[Header("Chances to play each frame /10000")]
+	[Tooltip("Mungy")]
 	public float grabbing;
 
 	[Tooltip("Meh")]

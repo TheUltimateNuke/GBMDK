@@ -16,5 +16,13 @@ namespace PartyCSharpSDK.Interop
 		{
 			return null;
 		}
+
+		internal unsafe PARTY_INVITATION_CONFIGURATION(PartyCSharpSDK.PARTY_INVITATION_CONFIGURATION publicObject, DisposableCollection disposableCollection) : this()
+		{
+			//IL_002c: Expected I, but got O
+			identifier = default(UTF8StringPtr);
+			revocability = default(PARTY_INVITATION_REVOCABILITY);
+			entityIdCount = 0u;
+		}
 	}
 }

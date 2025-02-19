@@ -90,8 +90,6 @@ namespace Femur
 
 		public float idleTimer;
 
-		public bool idle;
-
 		public float liftTimer;
 
 		public bool run;
@@ -195,6 +193,18 @@ namespace Femur
 		}
 
 		public virtual void SwimCheck()
+		{
+		}
+
+		public virtual void DriveCheck()
+		{
+		}
+
+		public virtual void IdleCheckClient()
+		{
+		}
+
+		public virtual void SetDriveTarget(IControlHandeler_DriveTarget target)
 		{
 		}
 

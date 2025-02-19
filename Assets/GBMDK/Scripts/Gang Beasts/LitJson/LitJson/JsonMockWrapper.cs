@@ -60,24 +60,29 @@ namespace LitJson
 
 		public bool IsString => false;
 
-        public bool IsFixedSize => throw new NotImplementedException();
+		bool IList.IsFixedSize => throw new NotImplementedException();
 
-        public bool IsReadOnly => throw new NotImplementedException();
+		bool IList.IsReadOnly => throw new NotImplementedException();
 
-        public ICollection Keys => throw new NotImplementedException();
+		int ICollection.Count => throw new NotImplementedException();
 
-        public ICollection Values => throw new NotImplementedException();
+		bool ICollection.IsSynchronized => throw new NotImplementedException();
 
-        public int Count => throw new NotImplementedException();
+		object ICollection.SyncRoot => throw new NotImplementedException();
 
-        public bool IsSynchronized => throw new NotImplementedException();
+		bool IDictionary.IsFixedSize => throw new NotImplementedException();
 
-        public object SyncRoot => throw new NotImplementedException();
+		bool IDictionary.IsReadOnly => throw new NotImplementedException();
 
-        public object this[object key] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public object this[int index] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+		ICollection IDictionary.Keys => throw new NotImplementedException();
 
-        public bool GetBoolean()
+		ICollection IDictionary.Values => throw new NotImplementedException();
+
+		object IDictionary.this[object key] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+		object IOrderedDictionary.this[int index] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+		object IList.this[int index] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+		public bool GetBoolean()
 		{
 			return false;
 		}
@@ -202,64 +207,89 @@ namespace LitJson
 			return null;
 		}
 
-        public IDictionaryEnumerator GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
+		int IList.Add(object value)
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Insert(int index, object key, object value)
-        {
-            throw new NotImplementedException();
-        }
+		void IList.Clear()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void RemoveAt(int index)
-        {
-            throw new NotImplementedException();
-        }
+		bool IList.Contains(object value)
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Add(object key, object value)
-        {
-            throw new NotImplementedException();
-        }
+		int IList.IndexOf(object value)
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Clear()
-        {
-            throw new NotImplementedException();
-        }
+		void IList.Insert(int index, object value)
+		{
+			throw new NotImplementedException();
+		}
 
-        public bool Contains(object key)
-        {
-            throw new NotImplementedException();
-        }
+		void IList.Remove(object value)
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Remove(object key)
-        {
-            throw new NotImplementedException();
-        }
+		void IList.RemoveAt(int index)
+		{
+			throw new NotImplementedException();
+		}
 
-        public void CopyTo(Array array, int index)
-        {
-            throw new NotImplementedException();
-        }
+		void ICollection.CopyTo(Array array, int index)
+		{
+			throw new NotImplementedException();
+		}
 
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
+		IEnumerator IEnumerable.GetEnumerator()
+		{
+			throw new NotImplementedException();
+		}
 
-        public int Add(object value)
-        {
-            throw new NotImplementedException();
-        }
+		IDictionaryEnumerator IOrderedDictionary.GetEnumerator()
+		{
+			throw new NotImplementedException();
+		}
 
-        public int IndexOf(object value)
-        {
-            throw new NotImplementedException();
-        }
+		void IOrderedDictionary.Insert(int index, object key, object value)
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Insert(int index, object value)
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IOrderedDictionary.RemoveAt(int index)
+		{
+			throw new NotImplementedException();
+		}
+
+		void IDictionary.Add(object key, object value)
+		{
+			throw new NotImplementedException();
+		}
+
+		void IDictionary.Clear()
+		{
+			throw new NotImplementedException();
+		}
+
+		bool IDictionary.Contains(object key)
+		{
+			throw new NotImplementedException();
+		}
+
+		IDictionaryEnumerator IDictionary.GetEnumerator()
+		{
+			throw new NotImplementedException();
+		}
+
+		void IDictionary.Remove(object key)
+		{
+			throw new NotImplementedException();
+		}
+	}
 }

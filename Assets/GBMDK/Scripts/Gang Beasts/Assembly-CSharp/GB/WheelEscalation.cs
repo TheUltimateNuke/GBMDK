@@ -38,9 +38,11 @@ namespace GB
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CDoFrameEscalation_003Ed__38(int _003C_003E1__state)
 			{
 			}
@@ -60,21 +62,21 @@ namespace GB
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[CompilerGenerated]
 		private sealed class _003CDoSpeedEscalation_003Ed__39 : IEnumerator<object>, IEnumerator, IDisposable
@@ -103,9 +105,11 @@ namespace GB
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CDoSpeedEscalation_003Ed__39(int _003C_003E1__state)
 			{
 			}
@@ -125,21 +129,21 @@ namespace GB
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[CompilerGenerated]
 		private sealed class _003CDoCarriageEscalation_003Ed__40 : IEnumerator<object>, IEnumerator, IDisposable
@@ -170,9 +174,11 @@ namespace GB
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CDoCarriageEscalation_003Ed__40(int _003C_003E1__state)
 			{
 			}
@@ -192,21 +198,21 @@ namespace GB
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[Header("Shared")]
 		[SerializeField]
@@ -256,9 +262,9 @@ namespace GB
 		[HideInInspector]
 		public float speedMalfunctionChance;
 
+		[SerializeField]
 		[Header("Speed Malfunction")]
 		[Space]
-		[SerializeField]
 		private AudioClip speedEscalationStartClip;
 
 		[SerializeField]
@@ -273,9 +279,9 @@ namespace GB
 		[HideInInspector]
 		public float carriageMalfunctionChance;
 
+		[Header("Carriage Malfunction")]
 		[Space]
 		[SerializeField]
-		[Header("Carriage Malfunction")]
 		private List<Rigidbody> CarriageRefs;
 
 		[SerializeField]

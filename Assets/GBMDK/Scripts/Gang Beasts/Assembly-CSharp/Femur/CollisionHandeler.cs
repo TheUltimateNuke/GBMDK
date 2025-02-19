@@ -60,6 +60,8 @@ namespace Femur
 
 		private Transform rootTransform;
 
+		private const float DAMAGE_HAPTIC_DURATION = 0.2f;
+
 		public PartType partType;
 
 		private ContactPoint[] cachedCollisionContacts;

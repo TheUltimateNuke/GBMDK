@@ -2,8 +2,8 @@ using UnityEngine;
 
 public abstract class JK3DMeshMod : MonoBehaviour
 {
-	[SerializeField]
 	[ReadOnly]
+	[SerializeField]
 	public Mesh meshClone;
 
 	public virtual void OnEventSyncStarted(JK3DReference jk3dRef)

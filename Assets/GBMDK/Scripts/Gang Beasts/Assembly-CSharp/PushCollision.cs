@@ -4,7 +4,7 @@ public class PushCollision : MonoBehaviour
 {
 	public Vector3 pushDirection;
 
-	private void OnCollisionEnter(Collision collision)
-    {
+	private void OnCollisionEnter(Collider collider)
+	{
 	}
 }

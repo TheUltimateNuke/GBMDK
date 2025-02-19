@@ -3,8 +3,8 @@ using UnityEngine;
 namespace Cinemachine
 {
 	[ExecuteInEditMode]
-	[AddComponentMenu(null)]
 	[SaveDuringPlay]
+	[AddComponentMenu(null)]
 	public class GangBeastsGroupComposer : CinemachineComposer
 	{
 		public enum FramingMode
@@ -47,12 +47,12 @@ namespace Cinemachine
 		[Tooltip("Set this to limit how far from the target the camera can get.")]
 		public float m_MaximumDistance;
 
-		[Range(1f, 179f)]
 		[Tooltip("If adjusting FOV, will not set the FOV lower than this.")]
+		[Range(1f, 179f)]
 		public float m_MinimumFOV;
 
-		[Tooltip("If adjusting FOV, will not set the FOV higher than this.")]
 		[Range(1f, 179f)]
+		[Tooltip("If adjusting FOV, will not set the FOV higher than this.")]
 		public float m_MaximumFOV;
 
 		[Tooltip("If adjusting Orthographic Size, will not set it lower than this.")]

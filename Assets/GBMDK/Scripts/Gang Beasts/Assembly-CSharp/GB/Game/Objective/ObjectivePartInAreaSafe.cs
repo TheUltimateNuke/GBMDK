@@ -13,8 +13,8 @@ namespace GB.Game.Objective
 		[EnumUtils.EnumFlags]
 		private Actor.ActorState _neededState;
 
-		[EnumUtils.EnumFlags]
 		[SerializeField]
+		[EnumUtils.EnumFlags]
 		private Actor.ActorState _notStates;
 
 		protected override bool OnActorEntered(Actor actor)

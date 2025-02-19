@@ -35,9 +35,11 @@ public class FractureShard : MonoBehaviour
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CDelayCheckJointBreaks_003Ed__21(int _003C_003E1__state)
 		{
 		}
@@ -57,21 +59,21 @@ public class FractureShard : MonoBehaviour
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	[CompilerGenerated]
 	private sealed class _003CCleanupRoutine_003Ed__25 : IEnumerator<object>, IEnumerator, IDisposable
@@ -100,9 +102,11 @@ public class FractureShard : MonoBehaviour
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CCleanupRoutine_003Ed__25(int _003C_003E1__state)
 		{
 		}
@@ -122,21 +126,21 @@ public class FractureShard : MonoBehaviour
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	public SoundEffectScriptable JointBreakSound;
 

@@ -77,9 +77,11 @@ namespace Costumes
 					}
 				}
 
-                public object Current => throw new NotImplementedException();
+				object IEnumerator<object>.Current => throw new NotImplementedException();
 
-                [DebuggerHidden]
+				object IEnumerator.Current => throw new NotImplementedException();
+
+				[DebuggerHidden]
 				public _003CHilightSelectedSlotEnumerator_003Ed__26(int _003C_003E1__state)
 				{
 				}
@@ -99,21 +101,21 @@ namespace Costumes
 				{
 				}
 
-                bool IEnumerator.MoveNext()
-                {
-                    throw new NotImplementedException();
-                }
+				bool IEnumerator.MoveNext()
+				{
+					return MoveNext();
+				}
 
-                public void Reset()
-                {
-                    throw new NotImplementedException();
-                }
+				void IEnumerator.Reset()
+				{
+					throw new NotImplementedException();
+				}
 
-                public void Dispose()
-                {
-                    throw new NotImplementedException();
-                }
-            }
+				void IDisposable.Dispose()
+				{
+					throw new NotImplementedException();
+				}
+			}
 
 			public SlotButton SlotButton;
 
@@ -231,9 +233,11 @@ namespace Costumes
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CApplyCostumeInternal_003Ed__49(int _003C_003E1__state)
 			{
 			}
@@ -253,21 +257,21 @@ namespace Costumes
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		public bool EnableHilight;
 

@@ -158,8 +158,8 @@ public class ScreenSpaceReflections : ScriptableRendererFeature
 	[Tooltip("Choose a quality preset, or use \"Custom\" to create your own custom preset. Don't use a preset higher than \"Medium\" if you desire good performance on consoles.")]
 	public ScreenSpaceReflectionPreset preset;
 
-	[Range(0f, 256f)]
 	[Tooltip("Maximum number of steps in the raymarching pass. Higher values mean more reflections.")]
+	[Range(0f, 256f)]
 	public int maximumIterationCount;
 
 	[Tooltip("Changes the size of the SSR buffer. Downsample it to maximize performances or supersample it for higher quality results with reduced performance.")]

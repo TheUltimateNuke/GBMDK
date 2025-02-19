@@ -32,12 +32,12 @@ namespace Steamworks
 			return false;
 		}
 
-        public static bool operator !=(AccountID_t x, AccountID_t y)
-        {
-            return false;
-        }
+		public static bool operator !=(AccountID_t x, AccountID_t y)
+		{
+			return false;
+		}
 
-        public static explicit operator uint(AccountID_t that)
+		public static explicit operator uint(AccountID_t that)
 		{
 			return 0u;
 		}

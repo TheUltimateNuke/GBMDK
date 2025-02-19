@@ -44,7 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c21034cf5d33a5224ee1e686cb981cfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _previewMesh: {fileID: 4300000, guid: 816cddce02352534eb0601a53392c221, type: 2}
   _spawnPointType: 15
   _groupIndex: -1
   _teamIndex: -1

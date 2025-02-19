@@ -74,9 +74,11 @@ public static class CostumeCloudSaveLoad
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CSaveCostumeRoutine_003Ed__6(int _003C_003E1__state)
 		{
 		}
@@ -96,21 +98,21 @@ public static class CostumeCloudSaveLoad
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	[CompilerGenerated]
 	private sealed class _003CUpdateCostumeRoutine_003Ed__8 : IEnumerator<object>, IEnumerator, IDisposable
@@ -151,9 +153,11 @@ public static class CostumeCloudSaveLoad
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CUpdateCostumeRoutine_003Ed__8(int _003C_003E1__state)
 		{
 		}
@@ -173,21 +177,21 @@ public static class CostumeCloudSaveLoad
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	[CompilerGenerated]
 	private sealed class _003CGetCostumeRoutine_003Ed__10 : IEnumerator<object>, IEnumerator, IDisposable
@@ -224,9 +228,11 @@ public static class CostumeCloudSaveLoad
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CGetCostumeRoutine_003Ed__10(int _003C_003E1__state)
 		{
 		}
@@ -246,21 +252,21 @@ public static class CostumeCloudSaveLoad
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	private const string BASE_URL = "http://gbcostumedb-dev.elasticbeanstalk.com/";
 

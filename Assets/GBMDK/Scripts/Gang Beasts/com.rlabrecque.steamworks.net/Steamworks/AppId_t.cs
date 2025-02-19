@@ -34,12 +34,12 @@ namespace Steamworks
 			return false;
 		}
 
-        public static bool operator !=(AppId_t x, AppId_t y)
-        {
-            return false;
-        }
+		public static bool operator !=(AppId_t x, AppId_t y)
+		{
+			return false;
+		}
 
-        public static explicit operator AppId_t(uint value)
+		public static explicit operator AppId_t(uint value)
 		{
 			return default(AppId_t);
 		}

@@ -5,8 +5,8 @@ public class JK3D : MonoBehaviour
 {
 	private const int kMaxMaterials = 8;
 
-	[ReadOnly]
 	[SerializeField]
+	[ReadOnly]
 	private JK3DAtlasMaterials atlasMaterials;
 
 	public JK3DAtlasMaterial[] GetMaterialsForAtlasContaining(string toContain)

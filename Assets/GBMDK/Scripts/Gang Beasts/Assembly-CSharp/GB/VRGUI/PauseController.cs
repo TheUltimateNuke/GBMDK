@@ -8,15 +8,9 @@ namespace GB.VRGUI
 		{
 			private bool setup;
 
-			private Bloom bloom;
-
-			private SunShafts sunShafts;
-
 			public CameraEffects(Camera mainCam)
 			{
 				setup = false;
-				bloom = null;
-				sunShafts = null;
 			}
 
 			public void SetCameraEffectsActive(bool active)

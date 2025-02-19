@@ -4,7 +4,6 @@ using UnityEngine.AddressableAssets;
 
 namespace Costumes
 {
-	[CreateAssetMenu(fileName = "NewCostumeObject", menuName = "Gang Beasts/Data/Costume Object Data")]
 	public class CostumeObject : ScriptableObject
 	{
 		public ushort _uid;

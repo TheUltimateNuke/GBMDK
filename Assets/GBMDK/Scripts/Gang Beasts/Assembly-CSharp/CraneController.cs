@@ -1,8 +1,11 @@
+using System.Runtime.InteropServices;
 using Audio;
 using Femur;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class CraneController : MonoBehaviour
+[NetworkSettings(channel = 1, sendInterval = 0f)]
+public class CraneController : NetworkBehaviour, IControlHandeler_DriveTarget
 {
 	public enum State
 	{
@@ -11,6 +14,12 @@ public class CraneController : MonoBehaviour
 		active = 2,
 		movingToIdle = 3
 	}
+
+	[SyncVar]
+	public float dampedArmSyncPosition;
+
+	[SyncVar]
+	private float distanceFromCenter;
 
 	public bool hasUser;
 
@@ -21,8 +30,6 @@ public class CraneController : MonoBehaviour
 	public Rigidbody craneBase;
 
 	public Rigidbody craneArm;
-
-	public Rigidbody craneMainJib;
 
 	public Rigidbody[] craneCableParts;
 
@@ -42,11 +49,7 @@ public class CraneController : MonoBehaviour
 
 	public float machineDeckDamping;
 
-	public Rigidbody pistonStart;
-
-	public Rigidbody pistonMiddle;
-
-	public Rigidbody pistonEnd;
+	public float armMovementDamping;
 
 	public Transform seatNode_idle;
 
@@ -89,6 +92,43 @@ public class CraneController : MonoBehaviour
 
 	private AudioController.PooledAudioSource rotateAudioSource;
 
+	private Animator animator;
+
+	private const string CRANE_ARM_MOVE_ANIM = "CraneArmMove";
+
+	[Header("Physics Sync")]
+	public Transform MainJib;
+
+	public Rigidbody MainJibRB;
+
+	public Transform Linkage;
+
+	public Rigidbody LinkageRB;
+
+	public Transform CounterWeight;
+
+	public Rigidbody CounterWeightRB;
+
+	public Transform TieBack;
+
+	public Rigidbody TieBackRB;
+
+	public Transform HeadJib;
+
+	public Rigidbody HeadJibRB;
+
+	public Transform pistonStart;
+
+	public Rigidbody pistonStartRB;
+
+	public Transform pistonMiddle;
+
+	public Rigidbody pistonMiddleRB;
+
+	public Transform pistonEnd;
+
+	public Rigidbody pistonEndRB;
+
 	public State state;
 
 	public bool moveBackground;
@@ -125,9 +165,31 @@ public class CraneController : MonoBehaviour
 
 	private static float ROTATION_SPEED;
 
-	private float distanceFromCenter;
-
 	private Vector3 rotationAngle;
+
+	public float NetworkdampedArmSyncPosition
+	{
+		get
+		{
+			return 0f;
+		}
+		[param: In]
+		set
+		{
+		}
+	}
+
+	public float NetworkdistanceFromCenter
+	{
+		get
+		{
+			return 0f;
+		}
+		[param: In]
+		set
+		{
+		}
+	}
 
 	private void Start()
 	{
@@ -182,6 +244,37 @@ public class CraneController : MonoBehaviour
 	}
 
 	private void SetEngineSmokeColour(Color newCol)
+	{
+	}
+
+	public void ReleaseDriveTarget()
+	{
+	}
+
+	private void UNetVersion()
+	{
+	}
+
+	public override int GetNetworkChannel()
+	{
+		return 0;
+	}
+
+	public override float GetNetworkSendInterval()
+	{
+		return 0f;
+	}
+
+	public override bool OnSerialize(NetworkWriter writer, bool forceAll)
+	{
+		return false;
+	}
+
+	public override void OnDeserialize(NetworkReader reader, bool initialState)
+	{
+	}
+
+	public override void PreStartClient()
 	{
 	}
 }

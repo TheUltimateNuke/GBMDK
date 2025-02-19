@@ -50,8 +50,8 @@ namespace GB.Stages.Train
 
 		public float forceReturnArea;
 
-		[Header("Pools")]
 		[Space]
+		[Header("Pools")]
 		public Pool trackPoolStright;
 
 		public Pool trackPoolLeft;
@@ -62,8 +62,8 @@ namespace GB.Stages.Train
 
 		public Pool trackEscalationEnd;
 
-		[Header("Landslide Escalation")]
 		[Space]
+		[Header("Landslide Escalation")]
 		public float maxLandslideBoulderScale;
 
 		public Transform[] landSlideBoulderSpawns;
@@ -157,8 +157,8 @@ namespace GB.Stages.Train
 		{
 		}
 
-		[ContextMenu("Force Track Spawn")]
 		[Server]
+		[ContextMenu("Force Track Spawn")]
 		public void SpawnTrack()
 		{
 		}

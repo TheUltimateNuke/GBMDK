@@ -44,9 +44,11 @@ public class LocalizationLoader : MonoBehaviour, IAsyncResourceLoader
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CDownloadLocalizations_003Ed__5(int _003C_003E1__state)
 		{
 		}
@@ -66,21 +68,21 @@ public class LocalizationLoader : MonoBehaviour, IAsyncResourceLoader
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	[CompilerGenerated]
 	private sealed class _003CPreloadDefaultTable_003Ed__6<TTable, TEntry> : IEnumerator<object>, IEnumerator, IDisposable where TTable : DetailedLocalizationTable<TEntry> where TEntry : TableEntry
@@ -109,9 +111,11 @@ public class LocalizationLoader : MonoBehaviour, IAsyncResourceLoader
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CPreloadDefaultTable_003Ed__6(int _003C_003E1__state)
 		{
 		}
@@ -131,21 +135,21 @@ public class LocalizationLoader : MonoBehaviour, IAsyncResourceLoader
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	private const string LOCALE_LABEL = "Locale";
 
@@ -170,7 +174,7 @@ public class LocalizationLoader : MonoBehaviour, IAsyncResourceLoader
 		return null;
 	}
 
-	[IteratorStateMachine(typeof(_003CPreloadDefaultTable_003Ed__6<, >))]
+	[IteratorStateMachine(typeof(_003CPreloadDefaultTable_003Ed__6<,>))]
 	private IEnumerator PreloadDefaultTable<TTable, TEntry>(LocalizedDatabase<TTable, TEntry> database) where TTable : DetailedLocalizationTable<TEntry> where TEntry : TableEntry
 	{
 		return null;

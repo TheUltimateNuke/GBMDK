@@ -45,21 +45,21 @@ namespace Coatsink.UnityServices
 			{
 			}
 
-            void IAsyncStateMachine.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			void IAsyncStateMachine.MoveNext()
+			{
+				MoveNext();
+			}
 
-            [DebuggerHidden]
+			[DebuggerHidden]
 			private void SetStateMachine(IAsyncStateMachine stateMachine)
 			{
 			}
 
-            void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
+			{
+				SetStateMachine(stateMachine);
+			}
+		}
 
 		private static UnityServicesManager instance;
 

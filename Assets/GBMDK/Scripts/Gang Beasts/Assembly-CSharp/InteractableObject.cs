@@ -77,9 +77,11 @@ public class InteractableObject : MonoBehaviour
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CDelayedRegisterInteractableObjectAndChildren_003Ed__87(int _003C_003E1__state)
 		{
 		}
@@ -99,21 +101,21 @@ public class InteractableObject : MonoBehaviour
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	[FormerlySerializedAs("priorityModifier")]
 	[HideInInspector]
@@ -123,13 +125,13 @@ public class InteractableObject : MonoBehaviour
 	[HideInInspector]
 	public Grab legacyGrabModifier;
 
-	[FormerlySerializedAs("damageModifier")]
 	[HideInInspector]
+	[FormerlySerializedAs("damageModifier")]
 	public Damage legacyDamageModifier;
 
+	[HideInInspector]
 	[Tooltip("Enable if the rigidbody is part of a ragdoll (This is a workaround for the extra force thats required to lift a ragdoll)")]
 	[FormerlySerializedAs("partOfRagdoll")]
-	[HideInInspector]
 	public bool legacyPartOfRagdoll;
 
 	[HideInInspector]
@@ -148,23 +150,23 @@ public class InteractableObject : MonoBehaviour
 	[HideInInspector]
 	public bool legacyCheckVelocity;
 
-	[HideInInspector]
 	[FormerlySerializedAs("alwaysDrain")]
+	[HideInInspector]
 	public bool legacyAlwaysDrain;
 
 	[FormerlySerializedAs("movingPlatform")]
 	[HideInInspector]
 	public bool legacyMovingPlatform;
 
+	[HideInInspector]
 	[Tooltip("Enable if we want to trigger the budbud voice effect if held")]
 	[FormerlySerializedAs("triggerBudBud")]
-	[HideInInspector]
 	public bool legacyTriggerBudBud;
 
 	public InteractableObjectData interactableObjectData;
 
-	[Space(20f)]
 	[FormerlySerializedAs("childrenInteractableObjectData")]
+	[Space(20f)]
 	public List<InteractableObjectData> childInteractableObjectData;
 
 	[HideInInspector]

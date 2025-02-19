@@ -32,12 +32,12 @@ namespace Steamworks
 			return false;
 		}
 
-        public static bool operator !=(HSteamPipe x, HSteamPipe y)
-        {
-            return false;
-        }
+		public static bool operator !=(HSteamPipe x, HSteamPipe y)
+		{
+			return false;
+		}
 
-        public static explicit operator HSteamPipe(int value)
+		public static explicit operator HSteamPipe(int value)
 		{
 			return default(HSteamPipe);
 		}

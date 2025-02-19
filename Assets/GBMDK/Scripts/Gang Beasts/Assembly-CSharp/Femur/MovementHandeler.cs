@@ -71,6 +71,10 @@ namespace Femur
 		{
 		}
 
+		public virtual void Idle()
+		{
+		}
+
 		public virtual void HeadActionReadying()
 		{
 		}

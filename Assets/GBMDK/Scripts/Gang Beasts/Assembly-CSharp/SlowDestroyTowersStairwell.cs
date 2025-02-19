@@ -35,9 +35,11 @@ public class SlowDestroyTowersStairwell : MonoBehaviour
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CBreakStairsLogic_003Ed__34(int _003C_003E1__state)
 		{
 		}
@@ -57,21 +59,21 @@ public class SlowDestroyTowersStairwell : MonoBehaviour
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	[CompilerGenerated]
 	private sealed class _003CPlayCreakingSounds_003Ed__35 : IEnumerator<object>, IEnumerator, IDisposable
@@ -100,9 +102,11 @@ public class SlowDestroyTowersStairwell : MonoBehaviour
 			}
 		}
 
-        public object Current => throw new NotImplementedException();
+		object IEnumerator<object>.Current => throw new NotImplementedException();
 
-        [DebuggerHidden]
+		object IEnumerator.Current => throw new NotImplementedException();
+
+		[DebuggerHidden]
 		public _003CPlayCreakingSounds_003Ed__35(int _003C_003E1__state)
 		{
 		}
@@ -122,21 +126,21 @@ public class SlowDestroyTowersStairwell : MonoBehaviour
 		{
 		}
 
-        bool IEnumerator.MoveNext()
-        {
-            throw new NotImplementedException();
-        }
+		bool IEnumerator.MoveNext()
+		{
+			return MoveNext();
+		}
 
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+		void IEnumerator.Reset()
+		{
+			throw new NotImplementedException();
+		}
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		void IDisposable.Dispose()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	public Joint jointA;
 
@@ -166,8 +170,8 @@ public class SlowDestroyTowersStairwell : MonoBehaviour
 
 	public Joint[] otherJoints;
 
-	[SerializeField]
 	[HideInInspector]
+	[SerializeField]
 	private Rigidbody[] otherJointsBody;
 
 	public float minBreakGap;

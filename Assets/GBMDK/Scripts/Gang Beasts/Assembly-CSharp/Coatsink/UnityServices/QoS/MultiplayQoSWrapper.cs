@@ -27,21 +27,21 @@ namespace Coatsink.UnityServices.QoS
 			{
 			}
 
-            void IAsyncStateMachine.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			void IAsyncStateMachine.MoveNext()
+			{
+				MoveNext();
+			}
 
-            [DebuggerHidden]
+			[DebuggerHidden]
 			private void SetStateMachine(IAsyncStateMachine stateMachine)
 			{
 			}
 
-            void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
+			{
+				SetStateMachine(stateMachine);
+			}
+		}
 
 		[StructLayout(3)]
 		[CompilerGenerated]
@@ -65,21 +65,21 @@ namespace Coatsink.UnityServices.QoS
 			{
 			}
 
-            void IAsyncStateMachine.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			void IAsyncStateMachine.MoveNext()
+			{
+				MoveNext();
+			}
 
-            [DebuggerHidden]
+			[DebuggerHidden]
 			private void SetStateMachine(IAsyncStateMachine stateMachine)
 			{
 			}
 
-            void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
+			{
+				SetStateMachine(stateMachine);
+			}
+		}
 
 		public const float QosResultFrequencySeconds = 300f;
 

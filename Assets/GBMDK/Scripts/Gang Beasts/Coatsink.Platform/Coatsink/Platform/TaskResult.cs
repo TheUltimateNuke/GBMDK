@@ -49,7 +49,7 @@ namespace Coatsink.Platform
 
 			public readonly T2 Result2;
 
-			public Result(T1 a, T2 b):this()
+			public Result(T1 a, T2 b) : this()
 			{
 			}
 		}
@@ -102,7 +102,7 @@ namespace Coatsink.Platform
 
 			public readonly T3 Result3;
 
-			public Result(T1 a, T2 b, T3 c):this()
+			public Result(T1 a, T2 b, T3 c) : this()
 			{
 			}
 		}

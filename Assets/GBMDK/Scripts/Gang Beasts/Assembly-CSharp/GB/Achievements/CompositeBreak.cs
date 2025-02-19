@@ -7,8 +7,8 @@ namespace GB.Achievements
 	[Serializable]
 	public class CompositeBreak
 	{
-		[Tooltip("Break objects referenced by this composite break group")]
 		[SerializeField]
+		[Tooltip("Break objects referenced by this composite break group")]
 		private JointBreakDetect[] ReferencedBreakDectections;
 
 		[Tooltip("Number of referenced objects that must break for this group to be considered satisfied")]

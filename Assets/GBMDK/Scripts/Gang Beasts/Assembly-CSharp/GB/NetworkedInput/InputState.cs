@@ -41,6 +41,8 @@ namespace GB.NetworkedInput
 
 		private static int kRpcRpc_RescanInput;
 
+		private static int kRpcRpc_SetVibration;
+
 		private static int kCmdCmdAlterDigitalInput;
 
 		private static int kCmdCmdAlterAnalogueInput;
@@ -92,6 +94,11 @@ namespace GB.NetworkedInput
 
 		[ClientRpc]
 		private void Rpc_RescanInput()
+		{
+		}
+
+		[ClientRpc]
+		private void Rpc_SetVibration(float lowFrequency, float highFrequency, float duration)
 		{
 		}
 
@@ -191,7 +198,15 @@ namespace GB.NetworkedInput
 		{
 		}
 
+		protected static void InvokeRpcRpc_SetVibration(NetworkBehaviour obj, NetworkReader reader)
+		{
+		}
+
 		public void CallRpc_RescanInput()
+		{
+		}
+
+		public void CallRpc_SetVibration(float lowFrequency, float highFrequency, float duration)
 		{
 		}
 

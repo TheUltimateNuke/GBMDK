@@ -14,6 +14,7 @@ using UnityEngine.SceneManagement;
 
 namespace Femur
 {
+	[NetworkSettings(channel = 0, sendInterval = 0f)]
 	public class Actor : NetworkBehaviour
 	{
 		public static class PushVolumeCacher
@@ -74,7 +75,8 @@ namespace Femur
 			Fall = 0x20,
 			Climb = 0x40,
 			Swim = 0x80,
-			Drive = 0x100
+			Drive = 0x100,
+			Idle = 0x200
 		}
 
 		public delegate void ActorStateHandler(Actor actor, int connectionID, ActorState state);
@@ -114,9 +116,11 @@ namespace Femur
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CDressBeast_003Ed__150(int _003C_003E1__state)
 			{
 			}
@@ -136,21 +140,21 @@ namespace Femur
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[CompilerGenerated]
 		private sealed class _003CFallbackDress_003Ed__151 : IEnumerator<object>, IEnumerator, IDisposable
@@ -179,9 +183,11 @@ namespace Femur
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CFallbackDress_003Ed__151(int _003C_003E1__state)
 			{
 			}
@@ -201,21 +207,21 @@ namespace Femur
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[CompilerGenerated]
 		private sealed class _003CStart_003Ed__152 : IEnumerator<object>, IEnumerator, IDisposable
@@ -244,9 +250,11 @@ namespace Femur
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CStart_003Ed__152(int _003C_003E1__state)
 			{
 			}
@@ -266,21 +274,21 @@ namespace Femur
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[CompilerGenerated]
 		private sealed class _003CUpdateNetBeatInternal_003Ed__157 : IEnumerator<object>, IEnumerator, IDisposable
@@ -311,9 +319,11 @@ namespace Femur
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CUpdateNetBeatInternal_003Ed__157(int _003C_003E1__state)
 			{
 			}
@@ -333,21 +343,21 @@ namespace Femur
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		[CompilerGenerated]
 		private sealed class _003CUpdateCostume_003Ed__159 : IEnumerator<object>, IEnumerator, IDisposable
@@ -378,9 +388,11 @@ namespace Femur
 				}
 			}
 
-            public object Current => throw new NotImplementedException();
+			object IEnumerator<object>.Current => throw new NotImplementedException();
 
-            [DebuggerHidden]
+			object IEnumerator.Current => throw new NotImplementedException();
+
+			[DebuggerHidden]
 			public _003CUpdateCostume_003Ed__159(int _003C_003E1__state)
 			{
 			}
@@ -400,21 +412,21 @@ namespace Femur
 			{
 			}
 
-            bool IEnumerator.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			bool IEnumerator.MoveNext()
+			{
+				return MoveNext();
+			}
 
-            public void Reset()
-            {
-                throw new NotImplementedException();
-            }
+			void IEnumerator.Reset()
+			{
+				throw new NotImplementedException();
+			}
 
-            public void Dispose()
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IDisposable.Dispose()
+			{
+				throw new NotImplementedException();
+			}
+		}
 
 		private const float TARGET_UPDATE_FREQ = 0.5f;
 
@@ -431,8 +443,8 @@ namespace Femur
 		[SerializeField]
 		private int _playerID;
 
-		[SyncVar(hook = "OnGangIDChanged")]
 		[SerializeField]
+		[SyncVar(hook = "OnGangIDChanged")]
 		private int _gangID;
 
 		[SerializeField]
@@ -1036,6 +1048,11 @@ namespace Femur
 
 		private void UNetVersion()
 		{
+		}
+
+		public override float GetNetworkSendInterval()
+		{
+			return 0f;
 		}
 
 		public override bool OnSerialize(NetworkWriter writer, bool forceAll)

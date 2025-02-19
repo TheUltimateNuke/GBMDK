@@ -67,14 +67,14 @@ namespace TypeReferences
 			return null;
 		}
 
-        void ISerializationCallbackReceiver.OnBeforeSerialize()
-        {
-            throw new NotImplementedException();
-        }
+		public void OnBeforeSerialize()
+		{
+			throw new NotImplementedException();
+		}
 
-        void ISerializationCallbackReceiver.OnAfterDeserialize()
-        {
-            throw new NotImplementedException();
-        }
-    }
+		public void OnAfterDeserialize()
+		{
+			throw new NotImplementedException();
+		}
+	}
 }

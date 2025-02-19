@@ -25,16 +25,16 @@ namespace CoreNet.StateSync.Triggers
 		[SerializeField]
 		private float angleRollTolerance;
 
-		[Tooltip("If a hat is not correctly oriented by default, set it's local forward here")]
 		[SerializeField]
+		[Tooltip("If a hat is not correctly oriented by default, set it's local forward here")]
 		private Vector3 hatLocalForward;
 
 		[SerializeField]
 		[Tooltip("if a hat is not correcly oriented by default, set it's local up here")]
 		private Vector3 hatLocalUp;
 
-		[Tooltip("How far this hat should snap down after being re-attached. Usually the distance between the bottom of the trigger area, and the top of the wearable hat area")]
 		[SerializeField]
+		[Tooltip("How far this hat should snap down after being re-attached. Usually the distance between the bottom of the trigger area, and the top of the wearable hat area")]
 		private float reparentDownshift;
 
 		private float detachTime;

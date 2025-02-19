@@ -22,21 +22,21 @@ public class TentacleSegmentManager : MonoBehaviour
 		{
 		}
 
-        void IAsyncStateMachine.MoveNext()
-        {
-            throw new System.NotImplementedException();
-        }
+		void IAsyncStateMachine.MoveNext()
+		{
+			MoveNext();
+		}
 
-        [DebuggerHidden]
+		[DebuggerHidden]
 		private void SetStateMachine(IAsyncStateMachine stateMachine)
 		{
 		}
 
-        void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
-        {
-            throw new System.NotImplementedException();
-        }
-    }
+		void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
+		{
+			SetStateMachine(stateMachine);
+		}
+	}
 
 	private const int k_TentacleControllersPerAlloc = 10;
 

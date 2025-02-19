@@ -15,8 +15,8 @@ namespace Colorful
 		[Range(1f, 16f)]
 		public float Downscaling;
 
-		[Tooltip("Blending factor.")]
 		[Range(0f, 1f)]
+		[Tooltip("Blending factor.")]
 		public float Amount;
 
 		protected override void OnRenderImage(RenderTexture source, RenderTexture destination)

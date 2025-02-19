@@ -34,12 +34,12 @@ namespace Steamworks
 			return false;
 		}
 
-        public static bool operator !=(SteamAPICall_t x, SteamAPICall_t y)
-        {
-            return false;
-        }
+		public static bool operator !=(SteamAPICall_t x, SteamAPICall_t y)
+		{
+			return false;
+		}
 
-        public static explicit operator SteamAPICall_t(ulong value)
+		public static explicit operator SteamAPICall_t(ulong value)
 		{
 			return default(SteamAPICall_t);
 		}

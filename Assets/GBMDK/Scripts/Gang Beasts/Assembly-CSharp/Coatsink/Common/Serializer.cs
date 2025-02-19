@@ -232,9 +232,9 @@ namespace Coatsink.Common
 		{
 			public Dictionary<string, object> members;
 
-            string IMemberSink.this[string name] { set => throw new NotImplementedException(); }
+			string IMemberSink.this[string name] { set => throw new NotImplementedException(); }
 
-            public object this[string name]
+			public object this[string name]
 			{
 				get
 				{
@@ -521,8 +521,8 @@ namespace Coatsink.Common
 		{
 		}
 
-		[Conditional("CS_DEBUG")]
 		[Conditional("ENABLE_PROFILER")]
+		[Conditional("CS_DEBUG")]
 		private static void PushProfile(string title)
 		{
 		}

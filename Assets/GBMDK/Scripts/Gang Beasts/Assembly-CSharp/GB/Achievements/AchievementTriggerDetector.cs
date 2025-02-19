@@ -13,12 +13,12 @@ namespace GB.Achievements
 		[SerializeField]
 		private AchievementTrigger[] TriggerRequirements;
 
-		[SerializeField]
 		[Tooltip("Whether the order the triggers are activated in matters towards achievement progress")]
+		[SerializeField]
 		private bool OrderImportant;
 
-		[Tooltip("How many of the assigned elements must trigger for this achievement to be unlocked. \r\nFor most 'OrderImportant' triggers, this should be equal to the number of elements.")]
 		[SerializeField]
+		[Tooltip("How many of the assigned elements must trigger for this achievement to be unlocked. \r\nFor most 'OrderImportant' triggers, this should be equal to the number of elements.")]
 		private int ElementTriggerReqNum;
 
 		[SerializeField]

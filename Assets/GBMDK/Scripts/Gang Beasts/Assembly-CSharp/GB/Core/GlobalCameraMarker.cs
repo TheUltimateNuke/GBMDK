@@ -5,8 +5,8 @@ namespace GB.Core
 {
 	public class GlobalCameraMarker : MonoBehaviour
 	{
-		[SerializeField]
 		[HideInInspector]
+		[SerializeField]
 		public List<CMOffsets.CMOffset> CameraOffsets;
 
 		[SerializeField]

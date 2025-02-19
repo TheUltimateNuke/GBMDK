@@ -52,7 +52,7 @@ namespace PartyCSharpSDK.Interop
 
 		internal PARTY_NETWORK_DESCRIPTOR(PartyCSharpSDK.PARTY_NETWORK_DESCRIPTOR publicObject)
 		{
-			
+
 		}
 	}
 }

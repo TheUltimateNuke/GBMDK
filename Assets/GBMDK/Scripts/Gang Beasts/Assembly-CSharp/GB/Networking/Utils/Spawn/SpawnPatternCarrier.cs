@@ -13,8 +13,8 @@ namespace GB.Networking.Utils.Spawn
 		public class Pattern
 		{
 			[SerializeField]
-			[Tooltip("Needed gamemode")]
 			[EnumUtils.EnumFlags]
+			[Tooltip("Needed gamemode")]
 			public GameModeEnum Mode;
 
 			[Tooltip("Needed Min Gangs")]

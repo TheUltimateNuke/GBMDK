@@ -8,16 +8,6 @@ namespace GB.Networking.Utils.Spawn
 {
 	public class GBSpawnPoint : CoreNetSpawnPosition, ISerializationCallbackReceiver
 	{
-#if UNITY_EDITOR
-		[SerializeField]
-		private Mesh _previewMesh;
-
-		private void OnDrawGizmosSelected()
-		{
-			Gizmos.DrawMesh(_previewMesh, transform.position, transform.rotation, Vector3.one);
-		}
-#endif
-
 		[Flags]
 		public enum SpawnPointTypes
 		{
@@ -39,8 +29,8 @@ namespace GB.Networking.Utils.Spawn
 		[Tooltip("Spawn point will only spawn for the team that is assigned to this group index (-1 = any | -2 = unassigned | -3 = don't care)")]
 		private int _groupIndex;
 
-		[Tooltip("Spawn point will only spawn for the team that is assigned index (-1 = any | -2 = unassigned | -3 = don't care)")]
 		[SerializeField]
+		[Tooltip("Spawn point will only spawn for the team that is assigned index (-1 = any | -2 = unassigned | -3 = don't care)")]
 		private int _teamIndex;
 
 		[SerializeField]

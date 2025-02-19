@@ -36,21 +36,21 @@ namespace Coatsink.UnityServices.Matchmaking
 			{
 			}
 
-            void IAsyncStateMachine.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			void IAsyncStateMachine.MoveNext()
+			{
+				MoveNext();
+			}
 
-            [DebuggerHidden]
+			[DebuggerHidden]
 			private void SetStateMachine(IAsyncStateMachine stateMachine)
 			{
 			}
 
-            void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
+			{
+				SetStateMachine(stateMachine);
+			}
+		}
 
 		[StructLayout(3)]
 		[CompilerGenerated]
@@ -68,21 +68,21 @@ namespace Coatsink.UnityServices.Matchmaking
 			{
 			}
 
-            void IAsyncStateMachine.MoveNext()
-            {
-                throw new NotImplementedException();
-            }
+			void IAsyncStateMachine.MoveNext()
+			{
+				MoveNext();
+			}
 
-            [DebuggerHidden]
+			[DebuggerHidden]
 			private void SetStateMachine(IAsyncStateMachine stateMachine)
 			{
 			}
 
-            void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
-            {
-                throw new NotImplementedException();
-            }
-        }
+			void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
+			{
+				SetStateMachine(stateMachine);
+			}
+		}
 
 		private string lastUsedTicket;
 

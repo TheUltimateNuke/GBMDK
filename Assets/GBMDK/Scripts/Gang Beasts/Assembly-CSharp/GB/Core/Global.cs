@@ -27,6 +27,8 @@ namespace GB.Core
 
 		public delegate void SceneHandler(string name);
 
+		public static bool StartupSequenceComplete;
+
 		public static bool Initialised;
 
 		public static readonly string MENU_SCENE_NAME;
