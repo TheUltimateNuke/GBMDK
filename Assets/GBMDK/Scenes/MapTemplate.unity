@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 164029115}
-  m_IndirectSpecularColor: {r: 0.18130223, g: 0.22691344, b: 0.30736196, a: 1}
+  m_IndirectSpecularColor: {r: 0.18130174, g: 0.22691262, b: 0.3073607, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: cf3871699b616fc419ccbbfd27f858df, type: 2}
-  m_LightingSettings: {fileID: 850595691, guid: 8ef72a6f9bf59454a80175714156ed21, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: c29a46c86d05d085eb7fae123ae69442, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -503,6 +503,18 @@ PrefabInstance:
     - target: {fileID: 7310421795408151580, guid: 99f33c5fcdb8b3b49afbc5da718c4a11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 135.76262
+      objectReference: {fileID: 0}
+    - target: {fileID: 7310421795408152643, guid: 99f33c5fcdb8b3b49afbc5da718c4a11, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 2.8015e-41
+      objectReference: {fileID: 0}
+    - target: {fileID: 7310421795408152643, guid: 99f33c5fcdb8b3b49afbc5da718c4a11, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 8e-44
+      objectReference: {fileID: 0}
+    - target: {fileID: 7310421795408152643, guid: 99f33c5fcdb8b3b49afbc5da718c4a11, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99f33c5fcdb8b3b49afbc5da718c4a11, type: 3}
